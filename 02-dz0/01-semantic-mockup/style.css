@@ -1,0 +1,21 @@
+header {
+    height: 10em;
+}
+
+.logo {
+    width: 25%;
+    height: 3em;
+    font-size: 2em;
+    color: #00727f;
+    background-color: aqua;
+}
+
+nav {
+    color: #00727f;
+    background-color: aqua;
+}
+
+footer {
+    color: #00727f;
+    background-color: aqua;
+}
