@@ -14,21 +14,46 @@
     <link rel="stylesheet" href="./components/header.css">
     <link rel="stylesheet" href="./components/main.css">
     <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./components/card.css">
 </head>
+
 <body>
     <div class="page">
         <header class="header">
             <div class="page__box">
-                <div class="header__logo">Logo</div>
+                <div class="header__nav-box">
+                    <div class="header__logo">
+                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect y="1" width="30" height="30" fill="#212429" />
+                            <rect x="38" width="32" height="32" rx="16" fill="#212429" />
+                            <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                        </svg>
+                    </div>
+                    <nav class="header__nav">
+                        <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                        <div class="header__nav-item"><a href="#2" class="header__nav-link">About</a></div>
+                        <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                    </nav>
+                </div>
                 <h1 class="header__title">Reusable component library</h1>
             </div>
         </header>
         <main class="main">
-
+            <div class="page__box">
+                <article class="preview-flex__container">
+                    <div class="preview-flex__card"></div>
+                    <div class="preview-flex__card"></div>
+                    <div class="preview-flex__card"></div>
+                    <div class="preview-flex__card"></div>
+                    <div class="preview-flex__card"></div>
+                    <div class="preview-flex__card"></div>
+                </article>
+            </div>
         </main>
         <footer class="footer">
             <h2 class="footer__title">About</h2>
-            <p class="footer__description">This project is a collection of professionally designed, pre-built, fully responsive HTML snippets you
+            <p class="footer__description">This project is a collection of professionally designed, pre-built, fully
+                responsive HTML snippets you
                 can drop into
                 your projects. Get started by checking out our free preview components, or browsing the PNG previews in
                 the categories
