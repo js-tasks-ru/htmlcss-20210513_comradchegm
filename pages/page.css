@@ -1,0 +1,10 @@
+.page {
+    font: 400 1em "Inter", sans-serif;
+    line-height: 1.5em;
+    color: var(--black, #212429);
+}
+
+.page__box {
+    max-width: 1110px;
+    margin: 0 auto;
+}
