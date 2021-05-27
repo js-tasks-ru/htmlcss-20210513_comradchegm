@@ -31,9 +31,25 @@
     right: 0;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    place-items: center;
-    place-content: space-between;
 }
 
 .calendar__item {
+    display: flex;
+    color: #334D6E;
+    justify-content: center;
+    align-items: center;
+}
+
+.calendar__item_start-date {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.calendar__item_end-date {
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.calendar__item_highlight-date {
+    background-color: #A0B1F5;
 }
