@@ -2,7 +2,6 @@
 /* button primary */
 .button {
     box-sizing: border-box;
-    width: 189px;
     height: 48px;
     border: 2px solid var(--primary);
     border-radius: 8px;
