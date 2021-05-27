@@ -1,0 +1,43 @@
+.page {
+    background-color: #F9FAFC;
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+}
+
+.page__header {
+    grid-area: header;
+    height: 82px;
+    background-color: aqua;
+}
+
+.page__main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 56px;
+    max-width: 1110px;
+    width: 100%;
+    justify-self: center;
+    background-color: chartreuse;
+}
+
+.page__footer {
+    grid-area: footer;
+    display: flex;
+    height: 166px;
+    background-color: blueviolet;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.menu {
+    width: 229px;
+}
