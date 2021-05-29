@@ -19,6 +19,9 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     --alternate: var(--white);
+
+    --small: 64px;
+    --large: 160px;
 }
 
 * {
