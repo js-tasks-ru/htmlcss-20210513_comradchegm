@@ -4,7 +4,7 @@
     justify-content: space-between;
     box-sizing: border-box;
     min-height: 185px;
-    border: 1px solid #ACB5BD;
+    border: 1px solid var(--grey-3);
     border-radius: 0.5em;
     padding: 1em 1.5em 1.5em 1.5em;
     font-size: 1em;
@@ -68,3 +68,4 @@
 .histogram__col:hover .histogram__ttText {
     visibility: visible;
 }
+
