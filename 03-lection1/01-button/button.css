@@ -19,12 +19,9 @@
     transition: background-color 500ms ease-in-out;
 }
 
-.button_primary[disabled]:hover {
-    background-color: var(--primary, #374FC7);
-}
 
 .button_primary[disabled] {
-    cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -45,12 +42,9 @@
     transition: background-color 500ms ease-in-out;
 }
 
-.button_secondary[disabled]:hover {
-    background-color: var(--secondary, #7048E8);
-}
 
 .button_secondary[disabled] {
-    cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -71,12 +65,9 @@
     transition: border-color 500ms ease-in-out;
 }
 
-.button_alternate[disabled]:hover {
-    border-color: var(--grey-3, #acb5bd);
-}
 
 .button_alternate[disabled] {
-    cursor: not-allowed;
+    pointer-events: none;
     opacity: 0.5;
 }
 
