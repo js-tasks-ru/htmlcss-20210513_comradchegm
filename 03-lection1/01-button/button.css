@@ -19,6 +19,7 @@
     transition: background-color 500ms ease-in-out;
 }
 
+
 .button_primary[disabled] {
     pointer-events: none;
     opacity: 0.5;
@@ -41,6 +42,7 @@
     transition: background-color 500ms ease-in-out;
 }
 
+
 .button_secondary[disabled] {
     pointer-events: none;
     opacity: 0.5;
@@ -62,6 +64,7 @@
     cursor: pointer;
     transition: border-color 500ms ease-in-out;
 }
+
 
 .button_alternate[disabled] {
     pointer-events: none;
