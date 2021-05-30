@@ -2,9 +2,8 @@
 /* button primary */
 .button {
     box-sizing: border-box;
-    width: 189px;
     height: 48px;
-    border: 2px solid;
+    border: 2px solid var(--primary);
     border-radius: 8px;
     color: var(--white, #ffffff);
 }
@@ -20,12 +19,9 @@
     transition: background-color 500ms ease-in-out;
 }
 
-.button_primary:hover:disabled {
-    background-color: var(--primary, #374FC7);
-    cursor: not-allowed;
-}
 
-.button_primary:disabled {
+.button_primary[disabled] {
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -46,12 +42,9 @@
     transition: background-color 500ms ease-in-out;
 }
 
-.button_secondary:hover:disabled {
-    background-color: var(--secondary, #7048E8);
-    cursor: not-allowed;
-}
 
-.button_secondary:disabled {
+.button_secondary[disabled] {
+    pointer-events: none;
     opacity: 0.5;
 }
 
@@ -72,12 +65,9 @@
     transition: border-color 500ms ease-in-out;
 }
 
-.button_alternate:hover:disabled {
-    border-color: var(--grey-3, #acb5bd);
-    cursor: not-allowed;
-}
 
-.button_alternate:disabled {
+.button_alternate[disabled] {
+    pointer-events: none;
     opacity: 0.5;
 }
 
