@@ -1,0 +1,24 @@
+.avatar {
+    --avatar-sm: 64px;
+    --avatar-lg: 160px;
+    width: 102px;
+    height: 102px;
+    box-sizing: border-box;
+}
+
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar_sm {
+    width: var(--avatar-sm);
+    height: var(--avatar-sm);
+}
+
+.avatar_lg {
+    width: var(--avatar-lg);
+    height: var(--avatar-lg);
+}
