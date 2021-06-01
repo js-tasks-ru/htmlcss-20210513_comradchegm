@@ -6,9 +6,12 @@
     max-width: 1110px;
     width: 100%;
     justify-self: center;
-    background-color: chartreuse;
 }
 
 .menu {
     width: 229px;
+}
+
+.component {
+    background: var(--white);
 }
