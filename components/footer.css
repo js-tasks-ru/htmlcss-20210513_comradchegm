@@ -1,6 +1,6 @@
 .footer {
     text-align: center;
-    padding: 3.5em 0;
+    padding: 56px 0;
 }
 
 .footer__title {
@@ -10,6 +10,6 @@
 }
 
 .footer__description {
-    max-width: 40em;
+    max-width: 640px;
     margin: 0 auto;
 }
