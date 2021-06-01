@@ -1,0 +1,6 @@
+.page__header {
+    grid-area: header;
+    height: 82px;
+    background-color: aqua;
+    background: var(--white);
+}

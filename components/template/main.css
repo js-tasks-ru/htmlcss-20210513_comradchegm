@@ -1,0 +1,17 @@
+.page__main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 56px;
+    max-width: 1110px;
+    width: 100%;
+    justify-self: center;
+}
+
+.menu {
+    width: 229px;
+}
+
+.component {
+    background: var(--white);
+}

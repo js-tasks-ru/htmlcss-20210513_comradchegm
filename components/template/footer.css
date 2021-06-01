@@ -1,0 +1,11 @@
+.page__footer {
+    grid-area: footer;
+    display: flex;
+    height: 166px;
+    background-color: var(--white);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+}
