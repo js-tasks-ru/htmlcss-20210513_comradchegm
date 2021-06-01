@@ -6,14 +6,12 @@
     max-width: 1110px;
     width: 100%;
     justify-self: center;
-    background-color: chartreuse;
 }
 
 .menu {
     width: 229px;
-    background-color: burlywood;
 }
 
 .component {
-    background-color: darkgrey;
+    background: var(--white);
 }
