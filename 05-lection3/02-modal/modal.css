@@ -33,7 +33,9 @@
 
 .modal__close:hover {
     background: var(--red);
+    cursor: pointer;
 }
+
 .modal__text {
     font-style: normal;
     font-weight: normal;
