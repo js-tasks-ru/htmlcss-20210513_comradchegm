@@ -1,9 +1,6 @@
-:root {
+.avatar {
     --avatar-sm: 64px;
     --avatar-lg: 160px;
-}
-
-.avatar {
     width: 102px;
     height: 102px;
     box-sizing: border-box;
