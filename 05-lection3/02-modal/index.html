@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../assets/css/main.css">
     <link rel="stylesheet" href="../../components/button.css">
     <link rel="stylesheet" href="./modal.css">
+    <link rel="stylesheet" href="./backdrop.css">
     <title>Modal</title>
     <style>
         .wraper {
@@ -18,13 +19,13 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #DDE2E57f;
         }
     </style>
 </head>
 <body>
     <div class="wraper">
         <button class="button button_primary" id="modal-open">Open modal</button>
+        <div class="backdrop" id="backdrop"></div>
         <div class="modal" id="modal">
             <div class="modal__title">Modal title</div>
             <div class="modal__close" id="modal-close">
