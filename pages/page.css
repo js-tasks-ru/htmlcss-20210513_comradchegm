@@ -1,6 +1,6 @@
 .page {
-    font: 400 1em "Inter", sans-serif;
-    line-height: 1.5em;
+    font: 400 16px "Inter", sans-serif;
+    line-height: 24px;
     color: var(--black, #212429);
 }
 
