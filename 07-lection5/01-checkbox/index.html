@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <!-- Страница чекбокса -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./checkbox.css">
-    </head>
-    <body>
 
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./checkbox.css">
+    <style>
+        .fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 8px;
+            height: 200px;
+        }
+
+        .fieldset__legend {
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#action">
+        <fieldset class="fieldset">
+            <legend class="fielset__legend">
+                CHECKBOX
+            </legend>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__native" id="default" name="default" focus>
+                <div class="checkbox__box">
+                    <!-- <svg width="9" height="12" class="checkbox__img">
+                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                        </svg> -->
+                    <svg width="9" height="12" viewBox="0 0 18 13" fill="currentColor" class="checkbox__img"
+                        xmlns="http://www.w3.org/2000/svg" id="check">
+                        <path fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor"
+                            d="M17.7071 0.292893C18.0976 0.683417 18.0976 1.31658 17.7071 1.70711L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289C0.683417 5.90237 1.31658 5.90237 1.70711 6.29289L6 10.5858L16.2929 0.292893C16.6834 -0.0976311 17.3166 -0.0976311 17.7071 0.292893Z"
+                            fill="currentColor" stroke="currentColor"/>
+                    </svg>
+                </div>
+                <span class="checkbox__text">Default</span> 
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__native" id="checked" name="checked" checked>
+                <div class="checkbox__box">
+                    <!-- <svg width="9" height="12" class="checkbox__img">
+                                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                                        </svg> -->
+                    <svg width="9" height="12" viewBox="0 0 18 13" fill="currentColor" class="checkbox__img"
+                        xmlns="http://www.w3.org/2000/svg" id="check">
+                        <path fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor"
+                            d="M17.7071 0.292893C18.0976 0.683417 18.0976 1.31658 17.7071 1.70711L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289C0.683417 5.90237 1.31658 5.90237 1.70711 6.29289L6 10.5858L16.2929 0.292893C16.6834 -0.0976311 17.3166 -0.0976311 17.7071 0.292893Z"
+                            fill="currentColor" stroke="currentColor" />
+                    </svg>
+                </div>
+                <span class="checkbox__text">Checked</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__native" id="disabled" name="disabled" disabled>
+                <div class="checkbox__box">
+                    <!-- <svg width="9" height="12" class="checkbox__img">
+                                                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                                                        </svg> -->
+                    <svg width="9" height="12" viewBox="0 0 18 13" fill="currentColor" class="checkbox__img"
+                        xmlns="http://www.w3.org/2000/svg" id="check">
+                        <path fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor"
+                            d="M17.7071 0.292893C18.0976 0.683417 18.0976 1.31658 17.7071 1.70711L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289C0.683417 5.90237 1.31658 5.90237 1.70711 6.29289L6 10.5858L16.2929 0.292893C16.6834 -0.0976311 17.3166 -0.0976311 17.7071 0.292893Z"
+                            fill="currentColor" stroke="currentColor" />
+                    </svg>
+                </div>
+                <span class="checkbox__text">Disabled</span>
+            </label>
+            <label class="checkbox">
+                <input type="checkbox" class="checkbox__native" id="checked-disabled" name="checked-disabled" checked disabled>
+                <div class="checkbox__box">
+                    <!-- <svg width="9" height="12" class="checkbox__img">
+                                                                            <use xlink:href="../../assets/images/sprite.svg#check"></use>
+                                                                        </svg> -->
+                    <svg width="9" height="12" viewBox="0 0 18 13" fill="currentColor" class="checkbox__img"
+                        xmlns="http://www.w3.org/2000/svg" id="check">
+                        <path fill-rule="evenodd" clip-rule="evenodd" stroke="currentColor"
+                            d="M17.7071 0.292893C18.0976 0.683417 18.0976 1.31658 17.7071 1.70711L6.70711 12.7071C6.31658 13.0976 5.68342 13.0976 5.29289 12.7071L0.292893 7.70711C-0.0976311 7.31658 -0.0976311 6.68342 0.292893 6.29289C0.683417 5.90237 1.31658 5.90237 1.70711 6.29289L6 10.5858L16.2929 0.292893C16.6834 -0.0976311 17.3166 -0.0976311 17.7071 0.292893Z"
+                            fill="currentColor" stroke="currentColor" />
+                    </svg>
+                </div>
+                <span class="checkbox__text">Checked disabled</span>
+            </label>
+        </fieldset>
+    </form>
+</body>
+
 </html>
