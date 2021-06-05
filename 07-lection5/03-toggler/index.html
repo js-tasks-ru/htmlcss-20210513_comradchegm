@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/fonts/fonts.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="./togler.css">
+    <link rel="stylesheet" href="./toggler.css">
     <style>
         .fieldset {
             display: flex;
@@ -37,11 +37,32 @@
                 TOGGLER
             </legend>
             <label class="toggler">
-                <input type="toggler" class="toggler__native" id="default" name="default" focus>
+                <input type="checkbox" class="toggler__native" id="on" name="on" focus>
                 <div class="toggler__box">
                     <div class="toggler__img"></div>
                 </div>
-                <span class="toggler__text">Default</span> 
+                <span class="toggler__text">Off</span> 
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__native" id="off" name="off" checked>
+                <div class="toggler__box">
+                    <div class="toggler__img"></div>
+                </div>
+                <span class="toggler__text">On</span> 
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__native" id="disabled" name="disabled" disabled>
+                <div class="toggler__box">
+                    <div class="toggler__img"></div>
+                </div>
+                <span class="toggler__text">Disabled</span> 
+            </label>
+            <label class="toggler">
+                <input type="checkbox" class="toggler__native" id="default" name="default" checked disabled>
+                <div class="toggler__box">
+                    <div class="toggler__img"></div>
+                </div>
+                <span class="toggler__text">Checked disabled</span> 
             </label>
         </fieldset>
     </form>
