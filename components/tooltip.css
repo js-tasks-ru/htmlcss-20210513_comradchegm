@@ -34,6 +34,11 @@
     transform: translate(-50%, 100%);
 }
 
+.tooltip__label {
+    width: 24px;
+    height: 24px;
+}
+
 .tooltip__label:hover ~ .tooltip__help {
     visibility: visible;
 }
