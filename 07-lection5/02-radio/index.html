@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../../assets/css/normalize.css">
     <link rel="stylesheet" href="../../assets/fonts/fonts.css">
     <link rel="stylesheet" href="../../assets/css/main.css">
-    <link rel="stylesheet" href="./checkbox.css">
+    <link rel="stylesheet" href="./radio.css">
     <style>
         .fieldset {
             display: flex;
@@ -39,8 +39,30 @@
             <label class="radio">
                 <input type="radio" class="radio__native" id="default" name="radio">
                 <div class="radio__box">
+                    <div class="radio__img"></div>
                 </div>
                 <span class="radio__text">Default</span> 
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio__native" id="checked" name="radio" checked>
+                <div class="radio__box">
+                    <div class="radio__img"></div>
+                </div>
+                <span class="radio__text">Checked</span> 
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio__native" id="disabled" name="radio-disabled" disabled>
+                <div class="radio__box">
+                    <div class="radio__img"></div>
+                </div>
+                <span class="radio__text">Disabled</span> 
+            </label>
+            <label class="radio">
+                <input type="radio" class="radio__native" id="checked-disabled" name="radio-disabled" checked disabled>
+                <div class="radio__box">
+                    <div class="radio__img"></div>
+                </div>
+                <span class="radio__text">Checked disabled</span> 
             </label>
         </fieldset>
     </form>
