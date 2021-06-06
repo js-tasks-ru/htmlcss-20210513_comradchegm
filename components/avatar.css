@@ -1,0 +1,22 @@
+.avatar {
+    --avatar-sm: 64px;
+    --avatar-nr: 102px;
+    --avatar-lg: 160px;
+}
+
+.avatar__img {
+    width: var(--avatar-nr);
+    height: var(--avatar-nr);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar__img_sm {
+    width: var(--avatar-sm);
+    height: var(--avatar-sm);
+}
+
+.avatar__img_lg {
+    width: var(--avatar-lg);
+    height: var(--avatar-lg);
+}
