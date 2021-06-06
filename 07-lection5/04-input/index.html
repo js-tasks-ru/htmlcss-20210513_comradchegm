@@ -1,11 +1,49 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
+<!-- Страница полей ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        .fieldset {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border-radius: 8px;
+            height: 200px;
+        }
 
-    </body>
+        .fieldset__legend {
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="#action">
+        <fieldset class="fieldset">
+            <legend class="fielset__legend">
+                INPUT
+            </legend>
+            <label class="input">
+                <input type="text" class="input__native" id="default" name="default" focus>
+                <div class="input__box">
+                    <div class="input__img"></div>
+                </div>
+                <span class="input__text">Default</span> 
+            </label>
+        </fieldset>
+    </form>
+</body>
 </html>
