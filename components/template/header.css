@@ -1,6 +1,45 @@
 .page__header {
     grid-area: header;
-    height: 82px;
-    background-color: aqua;
+    padding-top: 24px;
+    padding-bottom: 62px;
     background: var(--white);
+}
+
+.page__header-nav-box {
+    display: flex;
+    justify-content: center;
+}
+
+.page__header-nav {
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .page__header-nav-item {
+        margin-right: 24px;
+    }
+
+    .page__header-nav-item:last-child {
+        margin-right: 0;
+    }
+
+    .page__header-nav-link {
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .page__header-nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .page__header-nav {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .page__header-nav-box {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
