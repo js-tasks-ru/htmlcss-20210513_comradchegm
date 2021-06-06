@@ -13,7 +13,15 @@
     <link rel="stylesheet" href="./components/header.css">
     <link rel="stylesheet" href="./components/main.css">
     <link rel="stylesheet" href="./components/footer.css">
+    <link rel="stylesheet" href="./components/preview.css">
     <link rel="stylesheet" href="./components/card.css">
+    <link rel="stylesheet" href="./components/avatar.css">
+    <link rel="stylesheet" href="./components/calendar.css">
+    <link rel="stylesheet" href="./components/histogram.css">
+    <link rel="stylesheet" href="./components/sceleton.css">
+    <link rel="stylesheet" href="./components/tooltip.css">
+    <link rel="stylesheet" href="./components/modal.css">
+    <link rel="stylesheet" href="./components/backdrop.css">
 </head>
 <body>
     <div class="page">
@@ -33,18 +41,319 @@
                         <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
                     </nav>
                 </div>
-                <h1 class="header__title">Reusable component library</h1>
+                <div class="header__title">
+                    Reusable component library
+                </div>
             </div>
         </header>
         <main class="main">
             <div class="page__box">
                 <article class="preview-flex__container">
-                    <div class="preview-flex__card"></div>
-                    <div class="preview-flex__card"></div>
-                    <div class="preview-flex__card"></div>
-                    <div class="preview-flex__card"></div>
-                    <div class="preview-flex__card"></div>
-                    <div class="preview-flex__card"></div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="avatar">
+                                <img class="avatar__img avatar__img_lg" src="./06-lection4/01-avatar/public/avatar-200.jpg" alt="profile photo">
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Avatar</span>
+                            <span class="card__subtile">Element</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="calendar">
+                                <div class="calendar__title">
+                                    October 2019
+                                </div>
+                                <div class="calendar__wraper">
+                                    <div class="calendar__inner">
+                                        <span class="calendar__item calendar__item_day">Mon</span>
+                                        <span class="calendar__item calendar__item_day">Tue</span>
+                                        <span class="calendar__item calendar__item_day">Wed</span>
+                                        <span class="calendar__item calendar__item_day">Thu</span>
+                                        <span class="calendar__item calendar__item_day">Fri</span>
+                                        <span class="calendar__item calendar__item_day">Sat</span>
+                                        <span class="calendar__item calendar__item_day">Sun</span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item"></span>
+                                        <span class="calendar__item">1</span>
+                                        <span class="calendar__item">2</span>
+                                        <span class="calendar__item">3</span>
+                                        <span class="calendar__item">4</span>
+                                        <span class="calendar__item">5</span>
+                                        <span class="calendar__item">6</span>
+                                        <span class="calendar__item">7</span>
+                                        <span class="calendar__item">8</span>
+                                        <span class="calendar__item">9</span>
+                                        <span class="calendar__item">10</span>
+                                        <span class="calendar__item">11</span>
+                                        <span class="calendar__item">12</span>
+                                        <span class="calendar__item">13</span>
+                                        <span class="calendar__item">14</span>
+                                        <span class="calendar__item">15</span>
+                                        <span class="calendar__item">16</span>
+                                        <span class="calendar__item">17</span>
+                                        <span class="calendar__item calendar__item_start-date">18</span>
+                                        <span class="calendar__item calendar__item_highlight-date">19</span>
+                                        <span class="calendar__item calendar__item_highlight-date">20</span>
+                                        <span class="calendar__item calendar__item_highlight-date">21</span>
+                                        <span class="calendar__item calendar__item_highlight-date">22</span>
+                                        <span class="calendar__item calendar__item_highlight-date">23</span>
+                                        <span class="calendar__item calendar__item_end-date">24</span>
+                                        <span class="calendar__item">25</span>
+                                        <span class="calendar__item">26</span>
+                                        <span class="calendar__item">27</span>
+                                        <span class="calendar__item">28</span>
+                                        <span class="calendar__item">29</span>
+                                        <span class="calendar__item">30</span>
+                                        <span class="calendar__item">31</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Calendar</span>
+                            <span class="card__subtile">Container</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="histogram">
+                                <div class="histogram__legend">
+                                    <div class="histogram__orders">
+                                        <span class="histogram__title">Total orders</span>
+                                        <span class="histogram__value">50254</span>
+                                    </div>
+                                    <a class="histogram__link" href="#1">View all</a>
+                                </div>
+                                <div class="histogram__graph">
+                                    <div class="histogram__col" style="height: 50px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">50</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 35px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">35</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 22px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">22</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 39px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">39</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 22px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">22</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 39px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">39</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 50px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">50</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 22px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">22</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 35px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">35</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 50px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">50</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 39px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">39</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 22px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">22</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 35px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">35</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 39px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">39</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 35px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">35</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 45px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">45</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 30px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">30</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 11px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">11</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 35px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">35</div>
+                                        </div>
+                                    </div>
+                                    <div class="histogram__col" style="height: 17px">
+                                        <div class="histogram__tooltip">
+                                            <div class="histogram__ttText">17</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Histogram</span>
+                            <span class="card__subtile">Element</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="tooltip">
+                                <div class="tooltip__label">
+                                    <svg width="24" height="24">
+                                        <use xlink:href="./assets/images/sprite.svg#question"></use>
+                                    </svg>
+                                </div>
+                                <div class="tooltip__help">
+                                    <span class="tooltip__text">Help Text</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Tooltip</span>
+                            <span class="card__subtile">Element</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="backdrop" id="backdrop"></div>
+                            <button class="button button_primary" id="modal-open">Open modal</button>
+                            <div class="modal" id="modal">
+                                <div class="modal__title">Modal title</div>
+                                <div class="modal__close" id="modal-close">
+                                    <svg width="14" height="14">
+                                        <use xlink:href="./assets/images/sprite.svg#close"></use>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="modal__text">
+                                        Perspiciatis cum itaque aut. Quia, officiis expedita ex corporis sequi officia ab eligendi dolorum id
+                                        illo voluptates corrupti magni autem facere tenetur?
+                                        Illum quibusdam architecto soluta maiores tempore aut! Ad, quia veritatis saepe reprehenderit ducimus
+                                        cum sunt rem fugiat unde sint labore sequi enim quibusdam error perspiciatis suscipit aut eligendi odio
+                                        eos?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Modal</span>
+                            <span class="card__subtile">Element</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card__content">
+                            <div class="skeleton">
+                                <div class="skeleton__header">
+                                    <div class="skeleton__avatar"></div>
+                                    <div class="skeleton__legend">
+                                        <div class="skeleton__item" style="width: 50%;"></div>
+                                        <div class="skeleton__item" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skeleton__content">
+                                    <div class="skeleton__item"></div>
+                                    <div class="skeleton__item"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__header">
+                            <span class="card__title">Sceleton</span>
+                            <span class="card__subtile">Element</span>
+                        </div>
+                    </div>
                 </article>
             </div>
         </main>
@@ -59,4 +368,5 @@
         </footer>
     </div>
 </body>
+<script src="./components/modal.js"></script>
 </html>
