@@ -12,6 +12,7 @@
 
 .tabs__item {
     margin-right: 40px;
+    padding-bottom: 8px;
 }
 
 .tabs__item:last-child {
@@ -20,8 +21,6 @@
 
 .tabs__title {
     cursor: pointer;
-    box-sizing: border-box;
-    padding-bottom: 8px;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -55,8 +54,7 @@
 
     .tabs__scroller {
         display: block;
-        transform: translate(0, -100%);
-        transform: translate(0, -5px);
+        transform: translate(0, -100%) translate(0, -12px);
         background: var(--white);
     }
 }
