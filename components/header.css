@@ -45,7 +45,9 @@
         font-weight: 500;
         line-height: 64px;
         text-align: left;
+        margin-bottom: 24px;
     }
+
     .header__nav {
         display: flex;
         flex-direction: row;

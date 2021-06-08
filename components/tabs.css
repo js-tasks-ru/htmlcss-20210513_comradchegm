@@ -1,5 +1,61 @@
+.tabs {
+    padding: 0 16px;
+}
+
 .tabs__switcher {
+    display: none;
+}
+
+.tabs__scroller {
+    display: none;
+}
+
+.tabs__item {
+    margin-right: 40px;
+}
+
+.tabs__item:last-child {
+    margin-right: 0;
+}
+
+.tabs__title {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-bottom: 8px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+#all-tab:checked ~ .tabs__scroller #all-lbl, 
+#atoms-tab:checked ~ .tabs__scroller #atoms-lbl, 
+#simple-tab:checked ~ .tabs__scroller #simple-lbl {
+    border-bottom: 5px solid var(--black);
+}
+
+.tabs__content {
+    display: none;
+    padding: 68px 0;
+}
+
+#all-tab:checked ~ .tabs__content_all,
+#atoms-tab:checked ~ .tabs__content_atoms,
+#simple-tab:checked ~ .tabs__content_simple {
     display: block;
-    width: 0;
-    height: 0;
+}
+
+@media screen and (min-width: 1280px) {
+    .tabs {
+        padding: 0;
+    }
+
+    .tabs__scroller {
+        display: block;
+        transform: translate(0, -100%);
+        background: var(--white);
+    }
 }
