@@ -13,6 +13,7 @@
 .tabs__item {
     margin-right: 40px;
     padding-bottom: 8px;
+    border-bottom: 5px solid transparent;
 }
 
 .tabs__item:last-child {
@@ -20,6 +21,7 @@
 }
 
 .tabs__title {
+    color: var(--grey-3);
     cursor: pointer;
     font-family: Inter;
     font-size: 16px;
@@ -35,6 +37,13 @@
 #containers-tab:checked ~ .tabs__scroller #containers-lbl,
 #templates-tab:checked ~ .tabs__scroller #templates-lbl {
     border-bottom: 5px solid var(--black);
+}
+
+#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title, 
+#elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title, 
+#containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title,
+#templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
+    color: var(--black);
 }
 
 .tabs__content {

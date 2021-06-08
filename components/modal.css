@@ -12,6 +12,16 @@
     border-radius: 8px;
 }
 
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000007f;
+    display: none;
+}
+
 .modal__title {
     font-weight: 600;
     font-size: 20px;
@@ -49,7 +59,7 @@
     padding: 8px;
 }
 
-.modal_preview .backdrop {
+.modal_preview .modal__backdrop {
     position: absolute;
     display: block;
     width: 100%;
