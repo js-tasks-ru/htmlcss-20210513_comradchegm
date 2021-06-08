@@ -42,12 +42,12 @@
     transition: rotate 500ms ease-in-out;
 }
 
-.accordion__preview {
+.accordion_preview {
     display: flex;
     flex-direction: column;
     height: 300px;
 }
 
-.accordion__preview .accordion__item {
+.accordion_preview .accordion__item {
     width: 100%;
 }
