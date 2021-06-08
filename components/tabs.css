@@ -56,6 +56,7 @@
     .tabs__scroller {
         display: block;
         transform: translate(0, -100%);
+        transform: translate(0, -5px);
         background: var(--white);
     }
 }

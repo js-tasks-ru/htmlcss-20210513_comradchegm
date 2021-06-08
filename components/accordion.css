@@ -25,6 +25,10 @@
     align-items: center;
 }
 
+.accordion__content {
+    margin-top: 16px;
+}
+
 .accordion__summary::-webkit-details-marker {  /* нестандартный псевдоэлемент Google Chrome */
     display: none;
 }
