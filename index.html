@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./components/tooltip.css">
     <link rel="stylesheet" href="./components/modal.css">
     <link rel="stylesheet" href="./components/backdrop.css">
+    <link rel="stylesheet" href="./components/tabs.css">
 </head>
 <body>
     <div class="page">
@@ -48,6 +49,23 @@
         </header>
         <main class="main">
             <div class="page__box">
+                <div class="tabs">
+                    <input type="radio" name="tabs" class="tabs__switcher" id="#all-tab" checked>
+                    <input type="radio" name="tabs" class="tabs__switcher" id="#atoms-tab">
+                    <input type="radio" name="tabs" class="tabs__switcher" id="#simple-tab">
+                    <div class="tabs__scroller">
+                        <label for="#all-tab">All components</label>
+                        <label for="#atoms-tab">Atoms</label>
+                        <label for="#simple-tab">Simple</label>
+                    </div>
+
+                    <div class="tabs__content tabs__content_complex">
+                        <!-- Сложные компоненты -->
+                    </div>
+                    <div class="tabs__content tabs__content_simple">
+                        <!-- Простые компоненты -->
+                    </div>
+                </div>
                 <article class="preview-flex__container">
                     <div class="card">
                         <div class="card__content">
