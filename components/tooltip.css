@@ -42,3 +42,7 @@
 .tooltip__label:hover ~ .tooltip__help {
     visibility: visible;
 }
+
+.tooltip__preview .tooltip__help {
+    visibility: visible;
+}
