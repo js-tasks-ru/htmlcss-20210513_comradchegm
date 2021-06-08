@@ -1,0 +1,26 @@
+.component {
+    grid-area: component;
+    background: var(--white);
+    margin: 0 16px;
+}
+
+.component__title {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+@media screen and (min-width: 1280px) {
+    .component {
+        margin: 0;
+    }
+
+    .component__title {
+        font-size: 28px;
+        font-weight: 400;
+        line-height: 38px;
+    }
+}

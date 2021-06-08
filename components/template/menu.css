@@ -1,0 +1,11 @@
+.menu {
+    grid-area: main-menu;
+    display: none;
+}
+
+@media screen and (min-width: 1280px) {
+    .menu {
+        width: 229px;
+        display: block;
+    }
+}
