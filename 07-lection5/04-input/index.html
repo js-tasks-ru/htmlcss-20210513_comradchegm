@@ -1,11 +1,105 @@
 <!DOCTYPE html>
-<!-- Страница с полем ввода -->
+<!-- Страница полей ввода -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./input.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <link rel="stylesheet" href="../../assets/css/normalize.css">
+    <link rel="stylesheet" href="../../assets/fonts/fonts.css">
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./input.css">
+    <style>
+        .fieldset {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            border-radius: 8px;
+        }
 
-    </body>
+        .fieldset__legend {
+            font-family: Inter;
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 18px;
+            letter-spacing: 0.04em;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="#action">
+        <fieldset class="fieldset">
+            <label class="input">
+                <div class="input__label">LABEL</div>
+                <input type="text" class="input__field" id="default" name="default" placeholder="Placeholder">
+                <div class="input__img">
+                    <svg width="24" height="24" class="input__svg_success">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                    <svg width="24" height="24" class="input__svg_invalid">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="input">
+                <div class="input__label">FOCUS</div>
+                <input type="text" class="input__field input__field_focus" id="focus" name="focus"
+                    value="Filled Input">
+                <div class="input__img">
+                    <svg width="24" height="24" class="input__svg_success">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                    <svg width="24" height="24" class="input__svg_invalid">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="input">
+                <div class="input__label">SUCCESS</div>
+                <input type="text" class="input__field input__field_success" id="success" name="success"
+                    value="Success">
+                <div class="input__img">
+                    <svg width="24" height="24" class="input__svg_success">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                    <svg width="24" height="24" class="input__svg_invalid">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="input">
+                <div class="input__label">ERROR</div>
+                <input type="text" class="input__field input__field_invalid" id="invald" name="invald"
+                    value="Error">
+                <div class="input__img">
+                    <svg width="24" height="24" class="input__svg_success">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                    <svg width="24" height="24" class="input__svg_invalid">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </label>
+            <label class="input">
+                <div class="input__label">DISABLED</div>
+                <input type="text" class="input__field" id="disabled" name="disabled"
+                    value="Disabled" disabled>
+                <div class="input__img">
+                    <svg width="24" height="24" class="input__svg_success">
+                        <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                    </svg>
+                    <svg width="24" height="24" class="input__svg_invalid">
+                        <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                    </svg>
+                </div>
+            </label>
+            <legend class="fielset__legend">
+                INPUT
+            </legend>
+        </fieldset>
+    </form>
+</body>
 </html>
