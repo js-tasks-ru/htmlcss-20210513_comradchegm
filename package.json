@@ -1,9 +1,10 @@
-g{
+{
   "name": "tasks-htmlcss",
   "version": "1.0.0",
   "description": "Course Materials",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js"
+    "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
+    "build": "postcss src/index.scss -o build/index.css"
   },
   "husky": {
     "hooks": {
