@@ -1,4 +1,4 @@
-{
+g{
   "name": "tasks-htmlcss",
   "version": "1.0.0",
   "description": "Course Materials",
@@ -20,9 +20,17 @@
   "author": "Sergey Zelenov",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.2.6",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
-    "mocha": "^7.1.2"
+    "cssnano": "^5.0.5",
+    "mocha": "^7.1.2",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
+    "postcss-scss": "^3.0.5",
+    "precss": "^4.0.0"
   },
   "dependencies": {
     "husky": "^6.0.0",
