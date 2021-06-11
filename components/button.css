@@ -74,8 +74,3 @@
 .button_alternate:active {
     border-color: var(--grey-2, #dde2e5);
 }
-
-.button_preview {
-    display: flex;
-    flex-direction: column;
-}
