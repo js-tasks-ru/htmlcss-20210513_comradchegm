@@ -1,0 +1,31 @@
+@use "../variables.scss" as variables;
+
+.accordion {
+    &__item {
+        box-sizing: border-box;
+        min-height: 72px;
+        border: 1px solid variables.$black;
+        border-radius: 8px;
+        padding: 24px 32px;
+        margin-bottom: 8px;
+        font: 400 1em "Inter", sans-serif;
+        line-height: 24px;
+    }
+
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+
+    &__summary {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__summary::-webkit-details-marker {
+        display: none;
+    }
+
+    &__item[open] &__arrow {
+        transform: rotate(180deg);
+    }
+}
