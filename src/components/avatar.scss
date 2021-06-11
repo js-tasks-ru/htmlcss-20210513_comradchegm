@@ -1,0 +1,24 @@
+$avatar-sm: 64px;
+$avatar-nr: 102px;
+$avatar-lg: 160px;
+
+.avatar {
+    width: $avatar-nr;
+    height: $avatar-nr;
+    box-sizing: border-box;
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    &_sm {
+        width: $avatar-sm;
+        height: $avatar-sm;
+    }
+    &_lg {
+        width: $avatar-lg;
+        height: $avatar-lg;
+    }
+}
