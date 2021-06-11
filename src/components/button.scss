@@ -14,7 +14,6 @@
     border-radius: 8px;
     color: variables.$white;
 
-    /* button primary */
     &_primary:hover,
     &_secondary:hover,
     &_alternate:hover {
@@ -36,7 +35,6 @@
         @include active(variables.$primary);
     }
 
-    /*button secondary */
     &_secondary {
         background-color: variables.$secondary;
     }
@@ -47,13 +45,11 @@
         @include active(variables.$secondary)
     }
 
-    /*button alternate */
     &_alternate {
         color: variables.$grey-4;
         background-color: variables.$alternate;
         border-color: variables.$grey-3;
     }
-
     &_alternate:hover {
         border-color: lighten(variables.$grey-3, 10%)
     }
