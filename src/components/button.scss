@@ -1,3 +1,5 @@
+@use "../variables.scss" as variables;
+
 @mixin hover($color) {
     background: lighten($color, 10%);
 }
@@ -8,9 +10,9 @@
 .button {
     box-sizing: border-box;
     height: 48px;
-    border: 2px solid $primary;
+    border: 2px solid variables.$primary;
     border-radius: 8px;
-    color: $white;
+    color: variables.$white;
 
     /* button primary */
     &_primary:hover,
@@ -25,52 +27,37 @@
         opacity: 0.5;
     }
     &_primary {
-        background-color: $primary;
+        background-color: variables.$primary;
     }
     &_primary:hover {
-        @include hover($primary)
+        @include hover(variables.$primary)
     }
     &_primary:active {
-        @include active($primary);
+        @include active(variables.$primary);
     }
 
     /*button secondary */
     &_secondary {
-        background-color: $secondary;
+        background-color: variables.$secondary;
     }
     &_secondary:hover {
-        @include hover($secondary)
+        @include hover(variables.$secondary)
     }
     &_secondary:active {
-        @include active($secondary)
+        @include active(variables.$secondary)
     }
 
     /*button alternate */
     &_alternate {
-        color: $grey-4;
-        background-color: $alternate;
-        border-color: $grey-3;
+        color: variables.$grey-4;
+        background-color: variables.$alternate;
+        border-color: variables.$grey-3;
     }
 
     &_alternate:hover {
-        border-color: lighten($grey-3, 10%)
+        border-color: lighten(variables.$grey-3, 10%)
     }
     &_alternate:active {
-        border-color: darken($grey-3, 10%)
+        border-color: darken(variables.$grey-3, 10%)
     }
-}
-
-.normal, .lighten, .darken {
-    width: 100px;
-    height: 100px;
-}
-$test-color: mediumblue;
-.normal {
-    background: $test-color;
-}
-.lighten {
-    background: lighten(mediumblue, 20%);
-}
-.darken {
-    background: darken($test-color, 20%);
 }

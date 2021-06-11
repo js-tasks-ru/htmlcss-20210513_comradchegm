@@ -1,148 +1,18 @@
-@import "../assets/fonts/fonts.css";
-@import "../assets/css/normalize.css";
-* {
-  font-family: "Inter", sans-serif;
-}
+/* Error: Undefined variable.
+ *    ,
+ * 20 |         border: 1px solid variables.$gray-3;
+ *    |                           ^^^^^^^^^^^^^^^^^
+ *    '
+ *   src\components\histogram.scss 20:27  @use
+ *   src\index.scss 4:1                   root stylesheet */
 
-html, body {
-  height: 100%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined variable.\a    \2577 \a 20 \2502          border: 1px solid variables.$gray-3;\d\a    \2502                            ^^^^^^^^^^^^^^^^^\a    \2575 \a   src\\components\\histogram.scss 20:27  @use\a   src\\index.scss 4:1                   root stylesheet";
 }
-
-.button {
-  box-sizing: border-box;
-  height: 48px;
-  border: 2px solid #4263EB;
-  border-radius: 8px;
-  color: #ffffff;
-  /* button primary */
-  /*button secondary */
-  /*button alternate */
-}
-.button_primary:hover, .button_secondary:hover, .button_alternate:hover {
-  cursor: pointer;
-}
-.button_primary:disabled, .button_secondary:disabled, .button_alternate:disabled {
-  pointer-events: none;
-  opacity: 0.5;
-}
-.button_primary {
-  background-color: #4263EB;
-}
-.button_primary:hover {
-  background: #7089f0;
-}
-.button_primary:active {
-  background: #183fe2;
-}
-.button_secondary {
-  background-color: #7048E8;
-}
-.button_secondary:hover {
-  background: #9375ee;
-}
-.button_secondary:active {
-  background: #4d1ce1;
-}
-.button_alternate {
-  color: #495057;
-  background-color: #ffffff;
-  border-color: #ACB5BD;
-}
-.button_alternate:hover {
-  border-color: #c8ced4;
-}
-.button_alternate:active {
-  border-color: #909ca6;
-}
-
-.normal, .lighten, .darken {
-  width: 100px;
-  height: 100px;
-}
-
-.normal {
-  background: mediumblue;
-}
-
-.lighten {
-  background: #3434ff;
-}
-
-.darken {
-  background: #000067;
-}
-
-.histogram, .histogram__legend, .histogram__orders, .histogram__graph {
-  display: flex;
-}
-
-.histogram, .histogram__orders {
-  flex-direction: column;
-}
-
-.histogram__legend, .histogram__graph {
-  flex-direction: row;
-}
-
-.histogram, .histogram__legend {
-  justify-content: space-between;
-}
-
-.histogram {
-  box-sizing: border-box;
-  height: 100%;
-  border: 1px solid var(--grey-3);
-  border-radius: 8px;
-  padding: 16px 24px 24px 24px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-.histogram__link, .histogram__tooltip {
-  display: inline-block;
-}
-
-.histogram__value {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-.histogram__link {
-  text-decoration: none;
-}
-
-.histogram__link:hover {
-  text-decoration: underline;
-}
-
-.histogram__graph {
-  align-items: flex-end;
-  flex-grow: 1;
-}
-
-.histogram__col {
-  background-color: var(--blue);
-  flex-grow: 1;
-  margin-right: 1px;
-}
-
-.histogram__col:last-child {
-  margin-right: 0;
-}
-
-.histogram__tooltip {
-  position: relative;
-  top: -40px;
-}
-
-.histogram__tooltip .histogram__tt-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-}
-
-.histogram__col:hover .histogram__tt-text {
-  visibility: visible;
-}
-
-/*# sourceMappingURL=index-sass.css.map */

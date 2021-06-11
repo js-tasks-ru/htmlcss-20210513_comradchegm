@@ -1,5 +1,4 @@
-@import "./assets/css/main.scss";
+@use "./assets/css/main.scss";
 
-// Components
-@import "./components/button.scss";
-@import "./components/histogram.scss";
+@use "./components/button.scss";
+@use "./components/histogram.scss";
