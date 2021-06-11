@@ -1,0 +1,43 @@
+@use "../variables.scss" as variables;
+
+.tooltip {
+    position: relative;
+
+    &__help, &__help::after {
+        position: absolute;
+    }
+    &__help {
+        visibility: hidden;
+        box-sizing: border-box;
+        padding: 10px 21px;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, -9px);
+        background: variables.$blue;
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    }
+    &__text {
+        display: inline-block;
+        width: 87px;
+        color: variables.$grey-2;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    &__help::after {
+        content: "";
+        border: 7px solid transparent;
+        border-top: 6px solid variables.$blue;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+    }
+    &__label {
+        width: 24px;
+        height: 24px;
+    }
+    &__label:hover ~ &__help {
+        visibility: visible;
+    }
+}
