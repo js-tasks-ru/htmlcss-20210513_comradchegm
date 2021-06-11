@@ -4,7 +4,8 @@
   "description": "Course Materials",
   "scripts": {
     "test": "cross-env NODE_ENV=test mocha --no-warnings --ignore=node_modules/** **/*.test.js",
-    "build": "postcss src/index.scss -o build/index.css"
+    "build": "postcss build/index-sass.css -o build/index.css",
+    "build-sass": "sass ./src/index.scss ./build/index-sass.css"
   },
   "husky": {
     "hooks": {
@@ -24,7 +25,7 @@
     "autoprefixer": "^10.2.6",
     "chai": "^4.2.0",
     "cross-env": "^7.0.2",
-    "cssnano": "^5.0.6",
+    "cssnano": "^3.10.0",
     "mocha": "^7.1.2",
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1",
@@ -32,6 +33,7 @@
     "postcss-nested": "^5.0.5",
     "postcss-scss": "^3.0.5",
     "precss": "^3.1.2",
+    "sass": "^1.34.1",
     "scss": "^0.2.4"
   },
   "dependencies": {
