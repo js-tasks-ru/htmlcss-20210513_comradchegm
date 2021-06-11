@@ -1,8 +1,8 @@
 @mixin hover($color) {
-    background: lighten($color, 20%);
+    background: lighten($color, 10%);
 }
 @mixin active($color) {
-    background: lighten($color, 40%);
+    background: darken($color, 10%);
 }
 
 .button {
@@ -53,10 +53,10 @@
     }
 
     &_alternate:hover {
-        border-color: lighten($grey-3, 20%)
+        border-color: lighten($grey-3, 10%)
     }
     &_alternate:active {
-        border-color: lighten($grey-3, 40%)
+        border-color: darken($grey-3, 10%)
     }
 }
 

@@ -29,19 +29,19 @@ html, body {
   background-color: #4263EB;
 }
 .button_primary:hover {
-  background: #9eaff5;
+  background: #7089f0;
 }
 .button_primary:active {
-  background: #fafbff;
+  background: #183fe2;
 }
 .button_secondary {
   background-color: #7048E8;
 }
 .button_secondary:hover {
-  background: #b7a3f3;
+  background: #9375ee;
 }
 .button_secondary:active {
-  background: #fefdff;
+  background: #4d1ce1;
 }
 .button_alternate {
   color: #495057;
@@ -49,10 +49,10 @@ html, body {
   border-color: #ACB5BD;
 }
 .button_alternate:hover {
-  border-color: #e5e8ea;
+  border-color: #c8ced4;
 }
 .button_alternate:active {
-  border-color: white;
+  border-color: #909ca6;
 }
 
 .normal, .lighten, .darken {
