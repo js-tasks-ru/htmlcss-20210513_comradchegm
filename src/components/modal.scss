@@ -1,0 +1,53 @@
+@use "../variables.scss" as variables;
+
+.modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    display: none;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    transform: translate(-50%, -50%);
+    background: variables.$white;
+    flex-direction: column;
+    width: 428px;
+    border-radius: 8px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        color: variables.$grey-4;
+    }
+    &__backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #0000007f;
+        display: none;
+    }
+    &__close {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 18px;
+        height: 18px;
+        top: 15px;
+        right: 15px;
+        transform: translate(50%, -50%);
+    }
+    &__close:hover {
+        background: variables.$red;
+        cursor: pointer;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: variables.$grey-4;
+    }
+}
