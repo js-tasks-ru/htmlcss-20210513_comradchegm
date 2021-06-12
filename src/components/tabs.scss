@@ -1,0 +1,65 @@
+@use "../variables.scss" as variables;
+
+.tabs {
+    padding: 0 16px;
+
+    &__switcher, &__scroller, &__content {
+        display: none;
+    }
+    &__item {
+        margin-right: 40px;
+        padding-bottom: 8px;
+        border-bottom: 5px solid transparent;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__title {
+        color: variables.$grey-3;
+        cursor: pointer;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    &__content {
+        padding: 68px 0;
+    }
+}
+
+
+#all-tab:checked ~ .tabs__scroller #all-lbl, 
+#elements-tab:checked ~ .tabs__scroller #elements-lbl, 
+#containers-tab:checked ~ .tabs__scroller #containers-lbl,
+#templates-tab:checked ~ .tabs__scroller #templates-lbl {
+    border-bottom: 5px solid variables.$black;
+}
+
+#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title, 
+#elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title, 
+#containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title,
+#templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
+    color: variables.$black;
+}
+
+#all-tab:checked ~ .tabs__content_all, 
+#elements-tab:checked ~ .tabs__content_elements, 
+#containers-tab:checked ~ .tabs__content_containers,
+#templates-tab:checked ~ .tabs__content_templates {
+    display: block;
+}
+
+@media screen and (min-width: 1280px) {
+    .tabs {
+        padding: 0;
+
+        &__scroller {
+            display: block;
+            transform: translate(0, -100%) translate(0, -12px);
+            background: variables.$white;
+        }
+    }
+}

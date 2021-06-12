@@ -426,6 +426,66 @@ html, body {
   margin: 0 auto;
 }
 
+.tabs {
+  padding: 0 16px;
+}
+.tabs__switcher, .tabs__scroller, .tabs__content {
+  display: none;
+}
+.tabs__item {
+  margin-right: 40px;
+  padding-bottom: 8px;
+  border-bottom: 5px solid transparent;
+}
+.tabs__item:last-child {
+  margin-right: 0;
+}
+.tabs__title {
+  color: #ACB5BD;
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.tabs__content {
+  padding: 68px 0;
+}
+
+#all-tab:checked ~ .tabs__scroller #all-lbl,
+#elements-tab:checked ~ .tabs__scroller #elements-lbl,
+#containers-tab:checked ~ .tabs__scroller #containers-lbl,
+#templates-tab:checked ~ .tabs__scroller #templates-lbl {
+  border-bottom: 5px solid #212429;
+}
+
+#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title,
+#elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title,
+#containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title,
+#templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
+  color: #212429;
+}
+
+#all-tab:checked ~ .tabs__content_all,
+#elements-tab:checked ~ .tabs__content_elements,
+#containers-tab:checked ~ .tabs__content_containers,
+#templates-tab:checked ~ .tabs__content_templates {
+  display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .tabs {
+    padding: 0;
+  }
+  .tabs__scroller {
+    display: block;
+    transform: translate(0, -100%) translate(0, -12px);
+    background: #ffffff;
+  }
+}
 .button {
   box-sizing: border-box;
   height: 48px;
