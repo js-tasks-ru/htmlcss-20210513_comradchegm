@@ -8,10 +8,7 @@
     margin-bottom: 8px;
     font: 400 16px "Inter", sans-serif;
     line-height: 24px;
-}
-
-.accordion__item[open] {
-    overflow: auto;
+    min-height: fit-content;
 }
 
 .accordion__item:last-child {
@@ -45,9 +42,6 @@
 .accordion_preview {
     display: flex;
     flex-direction: column;
-    height: 300px;
-}
-
-.accordion_preview .accordion__item {
-    width: 100%;
+    height: 400px;
+    overflow: auto;
 }
