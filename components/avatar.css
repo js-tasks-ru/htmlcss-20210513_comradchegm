@@ -20,3 +20,8 @@
     width: var(--avatar-lg);
     height: var(--avatar-lg);
 }
+
+.avatar__img_preview {
+    width: 200px;
+    height: 200px;
+}

@@ -1,4 +1,4 @@
-.modal {
+.modal__window {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -8,8 +8,17 @@
     background: var(--white);
     display: none;
     flex-direction: column;
-    width: 428px;
     border-radius: 8px;
+}
+
+.modal__backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000007f;
+    display: none;
 }
 
 .modal__title {
@@ -24,8 +33,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     top: 15px;
     right: 15px;
     transform: translate(50%, -50%);
@@ -42,4 +51,24 @@
     font-size: 16px;
     line-height: 24px;
     color: var(--grey-4);
+}
+
+.modal_preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 8px;
+}
+
+.modal__backdrop_preview {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #0000003f;
+}
+
+.modal__window_preview {
+    position: relative;
+    display: block;
 }
