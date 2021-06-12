@@ -17,3 +17,7 @@ $success: $blue;
 $primary: $blue;
 $secondary: $purple;
 $alternate: $white;
+
+@mixin box-shadow {
+    box-shadow: 0px 2px 4px 0px #2124290D;
+}

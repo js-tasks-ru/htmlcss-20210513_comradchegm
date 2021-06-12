@@ -7,7 +7,7 @@
         position: absolute;
     }
     &__help {
-        visibility: hidden;
+        display: none;
         box-sizing: border-box;
         padding: 10px 21px;
         bottom: 100%;
@@ -38,6 +38,9 @@
         height: 24px;
     }
     &__label:hover ~ &__help {
-        visibility: visible;
+        display: block;
+    }
+    &__help_preview {
+        display: block;
     }
 }

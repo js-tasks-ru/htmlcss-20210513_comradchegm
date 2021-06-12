@@ -477,22 +477,40 @@ html, body {
     background: #ffffff;
   }
 }
-.preview-flex__container {
+.card {
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
+  grid-template-rows: 4fr 1fr;
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 32px 40px;
+  box-shadow: 0px 2px 4px 0px #2124290D;
+}
+.card__content, .card__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card__content {
+  margin-bottom: 16px;
+}
+.card__title, .card__subtile {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  letter-spacing: 0;
+  text-align: center;
+}
+.card__title {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.card__subtile {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
 
-@media screen and (min-width: 768px) {
-  .preview-flex__container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .preview-flex__container {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
 .button {
   box-sizing: border-box;
   height: 48px;
@@ -539,6 +557,7 @@ html, body {
 
 .accordion__item {
   box-sizing: border-box;
+  width: 100%;
   min-height: 72px;
   border: 1px solid #212429;
   border-radius: 8px;
@@ -546,6 +565,7 @@ html, body {
   margin-bottom: 8px;
   font: 400 1em "Inter", sans-serif;
   line-height: 24px;
+  overflow: auto;
 }
 .accordion__item:last-child {
   margin-bottom: 0;
@@ -575,6 +595,7 @@ html, body {
 }
 .histogram {
   box-sizing: border-box;
+  width: 100%;
   height: 100%;
   border: 1px solid #ACB5BD;
   border-radius: 8px;
@@ -661,7 +682,7 @@ html, body {
   position: absolute;
 }
 .tooltip__help {
-  visibility: hidden;
+  display: none;
   box-sizing: border-box;
   padding: 10px 21px;
   bottom: 100%;
@@ -692,20 +713,22 @@ html, body {
   height: 24px;
 }
 .tooltip__label:hover ~ .tooltip__help {
-  visibility: visible;
+  display: block;
+}
+.tooltip__help_preview {
+  display: block;
 }
 
-.modal {
+.modal__window {
+  display: none;
   position: fixed;
   left: 50%;
   top: 50%;
-  display: none;
   box-sizing: border-box;
   padding: 30px 40px;
   transform: translate(-50%, -50%);
   background: #ffffff;
   flex-direction: column;
-  width: 428px;
   border-radius: 8px;
 }
 .modal__title {
@@ -744,6 +767,18 @@ html, body {
   font-size: 16px;
   line-height: 24px;
   color: #495057;
+}
+.modal__backdrop_preview {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.modal__window_preview {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .calendar {
@@ -821,6 +856,32 @@ html, body {
 .avatar_lg {
   width: 160px;
   height: 160px;
+}
+
+.preview-flex__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.preview-flex__accordion {
+  height: 300px;
+}
+.preview-flex__modal {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .preview-flex__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .preview-flex__container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 /*# sourceMappingURL=index-sass.css.map */

@@ -1,7 +1,18 @@
-.preview-flex__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 30px;
+.preview-flex {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    &__accordion {
+        height: 300px;
+    }
+    &__modal {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+    }
 }
 
 @media screen and (min-width: 768px) {
