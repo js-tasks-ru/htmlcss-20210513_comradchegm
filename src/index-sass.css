@@ -857,6 +857,10 @@ html, body {
   width: 160px;
   height: 160px;
 }
+.avatar_pr {
+  width: 200px;
+  height: 200px;
+}
 
 .preview-flex__container {
   display: grid;

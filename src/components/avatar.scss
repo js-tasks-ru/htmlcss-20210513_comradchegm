@@ -1,6 +1,7 @@
 $avatar-sm: 64px;
 $avatar-nr: 102px;
 $avatar-lg: 160px;
+$avatar-pr: 200px;
 
 .avatar {
     width: $avatar-nr;
@@ -20,5 +21,9 @@ $avatar-lg: 160px;
     &_lg {
         width: $avatar-lg;
         height: $avatar-lg;
+    }
+    &_pr {
+        width: $avatar-pr;
+        height: $avatar-pr;
     }
 }
