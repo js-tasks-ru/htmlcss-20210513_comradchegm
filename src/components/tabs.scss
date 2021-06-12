@@ -28,28 +28,24 @@
     &__content {
         padding: 68px 0;
     }
-}
-
-
-#all-tab:checked ~ .tabs__scroller #all-lbl, 
-#elements-tab:checked ~ .tabs__scroller #elements-lbl, 
-#containers-tab:checked ~ .tabs__scroller #containers-lbl,
-#templates-tab:checked ~ .tabs__scroller #templates-lbl {
-    border-bottom: 5px solid variables.$black;
-}
-
-#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title, 
-#elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title, 
-#containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title,
-#templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
-    color: variables.$black;
-}
-
-#all-tab:checked ~ .tabs__content_all, 
-#elements-tab:checked ~ .tabs__content_elements, 
-#containers-tab:checked ~ .tabs__content_containers,
-#templates-tab:checked ~ .tabs__content_templates {
-    display: block;
+    #all-tab:checked ~ &__scroller #all-lbl, 
+    #elements-tab:checked ~ &__scroller #elements-lbl, 
+    #containers-tab:checked ~ &__scroller #containers-lbl,
+    #templates-tab:checked ~ &__scroller #templates-lbl {
+        border-bottom: 5px solid variables.$black;
+    }
+    #all-tab:checked ~ &__scroller #all-lbl &__title, 
+    #elements-tab:checked ~ &__scroller #elements-lbl &__title, 
+    #containers-tab:checked ~ &__scroller #containers-lbl &__title,
+    #templates-tab:checked ~ &__scroller #templates-lbl &__title {
+        color: variables.$black;
+    }
+    #all-tab:checked ~ &__content_all, 
+    #elements-tab:checked ~ &__content_elements, 
+    #containers-tab:checked ~ &__content_containers,
+    #templates-tab:checked ~ &__content_templates {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 1280px) {

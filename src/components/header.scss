@@ -1,7 +1,12 @@
+@use "../variables.scss" as variables;
+
 .header {
     padding-top: 96px;
     padding-bottom: 56px;
 
+    &__logo {
+        color: variables.$black;
+    }
     &__nav-box {
         display: flex;
         justify-content: center;

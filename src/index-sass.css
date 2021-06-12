@@ -362,6 +362,9 @@ html, body {
   padding-top: 96px;
   padding-bottom: 56px;
 }
+.header__logo {
+  color: #212429;
+}
 .header__nav-box {
   display: flex;
   justify-content: center;
@@ -454,25 +457,13 @@ html, body {
 .tabs__content {
   padding: 68px 0;
 }
-
-#all-tab:checked ~ .tabs__scroller #all-lbl,
-#elements-tab:checked ~ .tabs__scroller #elements-lbl,
-#containers-tab:checked ~ .tabs__scroller #containers-lbl,
-#templates-tab:checked ~ .tabs__scroller #templates-lbl {
+#all-tab:checked ~ .tabs__scroller #all-lbl, #elements-tab:checked ~ .tabs__scroller #elements-lbl, #containers-tab:checked ~ .tabs__scroller #containers-lbl, #templates-tab:checked ~ .tabs__scroller #templates-lbl {
   border-bottom: 5px solid #212429;
 }
-
-#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title,
-#elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title,
-#containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title,
-#templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
+#all-tab:checked ~ .tabs__scroller #all-lbl .tabs__title, #elements-tab:checked ~ .tabs__scroller #elements-lbl .tabs__title, #containers-tab:checked ~ .tabs__scroller #containers-lbl .tabs__title, #templates-tab:checked ~ .tabs__scroller #templates-lbl .tabs__title {
   color: #212429;
 }
-
-#all-tab:checked ~ .tabs__content_all,
-#elements-tab:checked ~ .tabs__content_elements,
-#containers-tab:checked ~ .tabs__content_containers,
-#templates-tab:checked ~ .tabs__content_templates {
+#all-tab:checked ~ .tabs__content_all, #elements-tab:checked ~ .tabs__content_elements, #containers-tab:checked ~ .tabs__content_containers, #templates-tab:checked ~ .tabs__content_templates {
   display: block;
 }
 

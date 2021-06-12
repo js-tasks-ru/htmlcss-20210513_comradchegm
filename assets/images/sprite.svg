@@ -1,5 +1,11 @@
 <svg>
     <defs>
+        <symbol width="110" height="32" viewBox="0 0 110 32" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" id="logo">
+            <rect y="1" width="30" height="30" fill="currentColor" />
+            <rect x="38" width="32" height="32" rx="16" fill="currentColor" />
+            <path d="M78 0L110 32H78V0Z" fill="currentColor" />
+        </symbol>
         <symbol width="22" height="22" viewBox="0 0 22 22" fill="currentColor"
             xmlns="http://www.w3.org/2000/svg" id="question">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11C20 6.02944 15.9706 2 11 2ZM0 11C0 4.92487 4.92487 0 11 0C17.0751 0 22 4.92487 22 11C22 17.0751 17.0751 22 11 22C4.92487 22 0 17.0751 0 11Z" fill="currentColor"/>
