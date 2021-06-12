@@ -1,4 +1,8 @@
 @use "./assets/css/main.scss";
+@use "./assets/css/page.scss";
+@use "./components/header.scss";
+@use "./components/main-block.scss";
+@use "./components/footer.scss";
 
 @use "./components/button.scss";
 @use "./components/accordion.scss";
