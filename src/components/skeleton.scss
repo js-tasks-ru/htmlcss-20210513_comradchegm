@@ -1,0 +1,44 @@
+@use '../variables.scss' as variables;
+
+.skeleton {
+    &,
+    &__header,
+    &__legend,
+    &__content {
+        display: flex;
+    }
+    &,
+    &__legend,
+    &__content {
+        flex-direction: column;
+    }
+    & {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 192px;
+        border: 1px solid variables.$grey-3;
+        border-radius: 8px;
+        padding: 24px 40px 24px 24px;
+    }
+    &__header {
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+    &__legend {
+        flex-grow: 1;
+    }
+    &__avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: variables.$grey-2;
+        margin-right: 16px;
+    }
+    &__item {
+        height: 20px;
+        background: linear-gradient(
+            92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+        );
+        margin-top: 8px;
+    }
+}
