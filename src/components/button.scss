@@ -1,0 +1,64 @@
+@use '../variables.scss' as variables;
+
+@mixin hover($color) {
+    background: lighten($color, 10%);
+}
+@mixin active($color) {
+    background: darken($color, 10%);
+}
+
+.button {
+    box-sizing: border-box;
+    height: 48px;
+    border: 2px solid variables.$primary;
+    border-radius: 8px;
+    color: variables.$white;
+
+    &_primary:hover,
+    &_secondary:hover,
+    &_alternate:hover {
+        cursor: pointer;
+    }
+    &_primary:disabled,
+    &_secondary:disabled,
+    &_alternate:disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+    &_primary {
+        background-color: variables.$primary;
+    }
+    &_primary:hover {
+        @include hover(variables.$primary)
+    }
+    &_primary:active {
+        @include active(variables.$primary);
+    }
+
+    &_secondary {
+        background-color: variables.$secondary;
+    }
+    &_secondary:hover {
+        @include hover(variables.$secondary)
+    }
+    &_secondary:active {
+        @include active(variables.$secondary)
+    }
+
+    &_alternate {
+        color: variables.$grey-4;
+        background-color: variables.$alternate;
+        border-color: variables.$grey-3;
+    }
+    &_alternate:hover {
+        border-color: lighten(variables.$grey-3, 10%)
+    }
+    &_alternate:active {
+        border-color: darken(variables.$grey-3, 10%)
+    }
+    &_preview {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+}

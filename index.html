@@ -6,25 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reusable component library</title>
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/fonts/fonts.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./pages/page.css">
-    <link rel="stylesheet" href="./components/header.css">
-    <link rel="stylesheet" href="./components/main.css">
-    <link rel="stylesheet" href="./components/footer.css">
-    <link rel="stylesheet" href="./components/preview.css">
-    <link rel="stylesheet" href="./components/card.css">
-    <link rel="stylesheet" href="./components/button.css">
-    <link rel="stylesheet" href="./components/accordion.css">
-    <link rel="stylesheet" href="./components/avatar.css">
-    <link rel="stylesheet" href="./components/calendar.css">
-    <link rel="stylesheet" href="./components/histogram.css">
-    <link rel="stylesheet" href="./components/sceleton.css">
-    <link rel="stylesheet" href="./components/tooltip.css">
-    <link rel="stylesheet" href="./components/modal.css">
-    <link rel="stylesheet" href="./components/backdrop.css">
-    <link rel="stylesheet" href="./components/tabs.css">
+    <link rel="stylesheet" href="./build/index.css">
 </head>
 <body>
     <div class="page">
@@ -32,11 +14,8 @@
             <div class="page__box">
                 <div class="header__nav-box">
                     <div class="header__logo">
-                        <svg width="110" height="32" viewBox="0 0 110 32" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <rect y="1" width="30" height="30" fill="#212429" />
-                            <rect x="38" width="32" height="32" rx="16" fill="#212429" />
-                            <path d="M78 0L110 32H78V0Z" fill="#212429" />
+                        <svg width="110" height="32">
+                            <use xlink:href="./assets/images/sprite.svg#logo"></use>
                         </svg>
                     </div>
                     <nav class="header__nav">
@@ -76,19 +55,11 @@
                         <section class="preview-flex__container">
                             <!-- Button -->
                             <div class="card">
-                                <div class="card__content" style="display: flex;flex-direction: column;">
-                                    <p>
-                                        <button class="button button_primary">Primary</button>
-                                        <button class="button button_primary" disabled>Primary disabled</button>
-                                    </p>
-                                    <p>
-                                        <button class="button button_secondary">Secondary</button>
-                                        <button class="button button_secondary" disabled>Secondary disabled</button>
-                                    </p>
-                                    <p>
-                                        <button class="button button_alternate">Alternate</button>
-                                        <button class="button button_alternate" disabled>Alternate disabled</button>
-                                    </p>
+                                <a href="#component1" class="card__link"></a>
+                                <div class="card__content">
+                                    <button class="button button_primary button_preview">Primary</button>
+                                    <button class="button button_secondary button_preview">Secondary</button>
+                                    <button class="button button_alternate button_preview">Alternate</button>
                                 </div>
                                 <div class="card__header">
                                     <span class="card__title">Button</span>
@@ -97,11 +68,12 @@
                             </div>
                             <!-- Accordion -->
                             <div class="card">
-                                <div class="card__content accordion_preview">
-                                    <details class="accordion__item">
+                                <a href="#component2" class="card__link"></a>
+                                <div class="card__content preview-flex__accordion">
+                                    <details class="accordion__item accordion_preview">
                                         <summary class="accordion__summary">
                                             <span class="accordion__title">Accordion item 1</span>
-                                            <svg class="accordion__arrow" width="24" height="24">
+                                            <svg class="accordion__arrow" width="26" height="26">
                                                 <use xlink:href="./assets/images/sprite.svg#arrow"></use>
                                             </svg>
                                         </summary>
@@ -113,10 +85,10 @@
                                             modi.
                                         </div>
                                     </details>
-                                    <details class="accordion__item">
+                                    <details class="accordion__item accordion_preview">
                                         <summary class="accordion__summary">
                                             <span class="accordion__title">Accordion item 2</span>
-                                            <svg class="accordion__arrow" width="24" height="24">
+                                            <svg class="accordion__arrow" width="26" height="26">
                                                 <use xlink:href="./assets/images/sprite.svg#arrow"></use>
                                             </svg>
                                         </summary>
@@ -128,10 +100,10 @@
                                             modi.
                                         </div>
                                     </details>
-                                    <details class="accordion__item">
+                                    <details class="accordion__item accordion_preview">
                                         <summary class="accordion__summary">
                                             <span class="accordion__title">Accordion item 3</span>
-                                            <svg class="accordion__arrow" width="24" height="24">
+                                            <svg class="accordion__arrow" width="26" height="26">
                                                 <use xlink:href="./assets/images/sprite.svg#arrow"></use>
                                             </svg>
                                         </summary>
@@ -151,8 +123,9 @@
                             </div>
                             <!-- Histogram -->
                             <div class="card">
+                                <a href="#component3" class="card__link"></a>
                                 <div class="card__content">
-                                    <div class="histogram histogram_preview">
+                                    <div class="histogram">
                                         <div class="histogram__legend">
                                             <div class="histogram__orders">
                                                 <span class="histogram__title">Total orders</span>
@@ -321,6 +294,7 @@
                             </div>
                             <!-- Skeleton -->
                             <div class="card">
+                                <a href="#component4" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="skeleton">
                                         <div class="skeleton__header">
@@ -337,12 +311,13 @@
                                     </div>
                                 </div>
                                 <div class="card__header">
-                                    <span class="card__title">Sceleton</span>
+                                    <span class="card__title">Skeleton</span>
                                     <span class="card__subtile">Element</span>
                                 </div>
                             </div>
                             <!-- Tooltip -->
                             <div class="card">
+                                <a href="#component5" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="tooltip">
                                         <div class="tooltip__label">
@@ -350,7 +325,7 @@
                                                 <use xlink:href="./assets/images/sprite.svg#question"></use>
                                             </svg>
                                         </div>
-                                        <div class="tooltip__help tooltip_preview-help">
+                                        <div class="tooltip__help tooltip__help_preview">
                                             <span class="tooltip__text">Help Text</span>
                                         </div>
                                     </div>
@@ -362,8 +337,9 @@
                             </div>
                             <!-- Modal -->
                             <div class="card">
+                                <a href="#component6" class="card__link"></a>
                                 <div class="card__content">
-                                    <div class="modal modal_preview">
+                                    <div class="modal preview-flex__modal">
                                         <div class="modal__backdrop modal__backdrop_preview" id="backdrop"></div>
                                         <div class="modal__window modal__window_preview" id="modal">
                                             <div class="modal__title">Modal title</div>
@@ -389,6 +365,7 @@
                             </div>
                             <!-- Calendar -->
                             <div class="card">
+                                <a href="#component7" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="calendar">
                                         <div class="calendar__title">
@@ -449,9 +426,10 @@
                             </div>
                             <!-- Avatar -->
                             <div class="card">
+                                <a href="#component8" class="card__link"></a>
                                 <div class="card__content">
-                                    <div class="avatar">
-                                        <img class="avatar__img avatar__img_preview"
+                                    <div class="avatar avatar_pr">
+                                        <img class="avatar__img"
                                             src="./assets/images/avatar-200.jpg"
                                             alt="profile photo"
                                         >
@@ -476,7 +454,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer">
+        <footer class="footer" id="component">
             <h2 class="footer__title">About</h2>
             <p class="footer__description">This project is a collection of professionally designed, pre-built, fully
                 responsive HTML snippets you
@@ -487,5 +465,4 @@
         </footer>
     </div>
 </body>
-<script src="./assets/js/modal.js"></script>
 </html>

@@ -1,0 +1,25 @@
+@use "../variables.scss" as variables;
+
+.preview-flex {
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    &__modal {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        padding: 8px;
+    }
+    @include variables.media-tab {
+        &__container {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @include variables.media-pc {
+        &__container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}

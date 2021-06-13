@@ -1,0 +1,11 @@
+@use '../../../assets/fonts/fonts.css';
+@use '../../../assets/css/normalize.css';
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
