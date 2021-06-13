@@ -1,9 +1,11 @@
-@use "../variables.scss" as variables;
+@use '../variables.scss' as variables;
 
 .tabs {
     padding: 0 16px;
 
-    &__switcher, &__scroller, &__content {
+    &__switcher,
+    &__scroller,
+    &__content {
         display: none;
     }
     &__item {
@@ -28,20 +30,26 @@
     &__content {
         padding: 68px 0;
     }
-    #all-tab:checked ~ &__scroller #all-lbl, 
-    #elements-tab:checked ~ &__scroller #elements-lbl, 
+    #all-tab:checked ~ &__scroller #all-lbl,
+ 
+    #elements-tab:checked ~ &__scroller #elements-lbl,
+ 
     #containers-tab:checked ~ &__scroller #containers-lbl,
     #templates-tab:checked ~ &__scroller #templates-lbl {
         border-bottom: 5px solid variables.$black;
     }
-    #all-tab:checked ~ &__scroller #all-lbl &__title, 
-    #elements-tab:checked ~ &__scroller #elements-lbl &__title, 
+    #all-tab:checked ~ &__scroller #all-lbl &__title,
+ 
+    #elements-tab:checked ~ &__scroller #elements-lbl &__title,
+ 
     #containers-tab:checked ~ &__scroller #containers-lbl &__title,
     #templates-tab:checked ~ &__scroller #templates-lbl &__title {
         color: variables.$black;
     }
-    #all-tab:checked ~ &__content_all, 
-    #elements-tab:checked ~ &__content_elements, 
+    #all-tab:checked ~ &__content_all,
+ 
+    #elements-tab:checked ~ &__content_elements,
+ 
     #containers-tab:checked ~ &__content_containers,
     #templates-tab:checked ~ &__content_templates {
         display: block;

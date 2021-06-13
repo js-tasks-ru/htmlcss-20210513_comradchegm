@@ -1,16 +1,22 @@
-@use "../variables.scss" as variables;
+@use '../variables.scss' as variables;
 
 .histogram {
-    &, &__legend, &__orders, &__graph {
+    &,
+    &__legend,
+    &__orders,
+    &__graph {
         display: flex;
     }
-    &, &__orders {
+    &,
+    &__orders {
         flex-direction: column;
     }
-    &__legend, &__graph {
+    &__legend,
+    &__graph {
         flex-direction: row;
     }
-    &, &__legend {
+    &,
+    &__legend {
         justify-content: space-between;
     }
 
@@ -24,7 +30,8 @@
         font-size: 16px;
         line-height: 24px;
     }
-    &__link, &__tooltip {
+    &__link,
+    &__tooltip {
         display: inline-block;
     }
     &__value {

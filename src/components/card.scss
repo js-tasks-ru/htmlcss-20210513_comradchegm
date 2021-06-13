@@ -1,4 +1,4 @@
-@use "../variables.scss" as variables;
+@use '../variables.scss' as variables;
 
 .card {
     display: grid;
@@ -8,7 +8,8 @@
     padding: 32px 40px;
     @include variables.box-shadow;
 
-    &__content, &__header {
+    &__content,
+    &__header {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -17,7 +18,8 @@
     &__content {
         margin-bottom: 16px;
     }
-    &__title, &__subtile {
+    &__title,
+    &__subtile {
         font-family: Roboto, sans-serif;
         font-style: normal;
         letter-spacing: 0;

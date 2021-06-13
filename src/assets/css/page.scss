@@ -1,7 +1,7 @@
-@use "../../variables.scss" as variables;
+@use '../../variables.scss' as variables;
 
 .page {
-    font: 400 16px "Inter", sans-serif;
+    font: 400 16px 'Inter', sans-serif;
     line-height: 24px;
     color: variables.$black;
 

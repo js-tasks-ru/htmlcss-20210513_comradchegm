@@ -343,7 +343,8 @@ template {
   font-family: "Inter", sans-serif;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -565,7 +566,7 @@ html, body {
   margin-bottom: 8px;
   font: 400 1em "Inter", sans-serif;
   line-height: 24px;
-  overflow: auto;
+  min-height: max-content;
 }
 .accordion__item:last-child {
   margin-bottom: 0;
@@ -866,9 +867,6 @@ html, body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-}
-.preview-flex__accordion {
-  height: 300px;
 }
 .preview-flex__modal {
   position: relative;

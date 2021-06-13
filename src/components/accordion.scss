@@ -1,4 +1,4 @@
-@use "../variables.scss" as variables;
+@use '../variables.scss' as variables;
 
 .accordion {
     &__item {
@@ -9,9 +9,9 @@
         border-radius: 8px;
         padding: 24px 32px;
         margin-bottom: 8px;
-        font: 400 1em "Inter", sans-serif;
+        font: 400 1em 'Inter', sans-serif;
         line-height: 24px;
-        overflow: auto;
+        min-height: max-content;
     }
 
     &__item:last-child {
