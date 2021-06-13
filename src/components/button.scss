@@ -56,4 +56,9 @@
     &_alternate:active {
         border-color: darken(variables.$grey-3, 10%)
     }
+    &_preview {
+        display: block;
+        width: 100%;
+        margin-bottom: 16px;
+    }
 }

@@ -1,3 +1,5 @@
+@use "../variables.scss" as variables;
+
 .preview-flex {
     &__container {
         display: grid;
@@ -10,16 +12,14 @@
         height: 100%;
         padding: 8px;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .preview-flex__container {
-        grid-template-columns: 1fr 1fr;
+    @include variables.media-tab {
+        &__container {
+            grid-template-columns: 1fr 1fr;
+        }
     }
-}
-
-@media screen and (min-width: 1280px) {
-    .preview-flex__container {
-        grid-template-columns: 1fr 1fr 1fr;
+    @include variables.media-pc {
+        &__container {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
 }

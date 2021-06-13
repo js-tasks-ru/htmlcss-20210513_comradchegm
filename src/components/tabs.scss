@@ -1,8 +1,6 @@
 @use '../variables.scss' as variables;
 
 .tabs {
-    padding: 0 16px;
-
     &__switcher,
     &__scroller,
     &__content {
@@ -24,42 +22,31 @@
         font-style: normal;
         font-weight: 400;
         line-height: 24px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: left;
     }
     &__content {
         padding: 68px 0;
     }
     #all-tab:checked ~ &__scroller #all-lbl,
- 
     #elements-tab:checked ~ &__scroller #elements-lbl,
- 
     #containers-tab:checked ~ &__scroller #containers-lbl,
     #templates-tab:checked ~ &__scroller #templates-lbl {
         border-bottom: 5px solid variables.$black;
     }
     #all-tab:checked ~ &__scroller #all-lbl &__title,
- 
     #elements-tab:checked ~ &__scroller #elements-lbl &__title,
- 
     #containers-tab:checked ~ &__scroller #containers-lbl &__title,
     #templates-tab:checked ~ &__scroller #templates-lbl &__title {
         color: variables.$black;
     }
     #all-tab:checked ~ &__content_all,
- 
     #elements-tab:checked ~ &__content_elements,
- 
     #containers-tab:checked ~ &__content_containers,
     #templates-tab:checked ~ &__content_templates {
         display: block;
     }
-}
-
-@media screen and (min-width: 1280px) {
-    .tabs {
-        padding: 0;
-
+    @include variables.media-pc {
         &__scroller {
             display: block;
             transform: translate(0, -100%) translate(0, -12px);

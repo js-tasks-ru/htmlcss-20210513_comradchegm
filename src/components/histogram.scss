@@ -40,6 +40,9 @@
     }
     &__link {
         text-decoration: none;
+        color: variables.$blue;
+        letter-spacing: 0;
+        text-align: right;
     }
     &__link:hover {
         text-decoration: underline;
