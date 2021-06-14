@@ -12,6 +12,11 @@
         height: 100%;
         padding: 8px;
     }
+    &__checkbox, &__radio {
+        padding-left: 33%;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
     @include variables.media-tab {
         &__container {
             grid-template-columns: 1fr 1fr;
