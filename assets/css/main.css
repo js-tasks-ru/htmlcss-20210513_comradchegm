@@ -19,6 +19,10 @@
     --primary: var(--blue);
     --secondary: var(--purple);
     --alternate: var(--white);
+
+    --main-page-clr: #F9FAFC;
+
+    --page-width: 1110px;
 }
 
 * {
