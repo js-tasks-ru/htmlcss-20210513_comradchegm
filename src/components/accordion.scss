@@ -23,6 +23,9 @@
     &__summary::-webkit-details-marker {
         display: none;
     }
+    &__content {
+        margin-top: 16px;
+    }
     &__item[open] &__arrow {
         transform: rotate(180deg);
     }
