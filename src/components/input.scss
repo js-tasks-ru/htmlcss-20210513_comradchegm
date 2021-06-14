@@ -34,11 +34,10 @@
         position: absolute;
         transform: translate(-42px, 16px);
     }
-    &__field:focus {
+    &__field:focus, &__field_focus {
         border: 1px solid variables.$blue;
     }
     &__field_focus {
-        border: 1px solid variables.$blue;
         border-radius: 8px;
     }
     &__field_success, &__field_invalid {
@@ -50,12 +49,11 @@
     &__svg_success, &__svg_invalid {
         display: none;
     }
-    &__field_success ~ &__img &__svg_success {
+    &__field_success ~ &__img &__svg_success, &__field_invalid ~ &__img &__svg_invalid {
         display: block;
         color: variables.$success-field;
     }
     &__field_invalid ~ &__img &__svg_invalid {
-        display: block;
         color: variables.$invalid;
     }
     &__field:disabled {
