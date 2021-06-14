@@ -1,0 +1,85 @@
+@use '../variables.scss' as variables;
+
+.input {
+    display: inline-block;
+    position: relative;
+}
+
+.input__field {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 1px solid variables.$grey-2;
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 56px;
+    outline: none;
+    appearance: none;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.input__label {
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    text-align: left;
+}
+
+.input__img {
+    display: inline-block;
+    position: absolute;
+    transform: translate(-42px, 16px);
+}
+
+.input__field:focus {
+    border: 1px solid variables.$blue;
+}
+
+.input__field_focus {
+    outline: none;
+    border: 1px solid variables.$blue;
+    border-radius: 8px;
+}
+
+.input__field_success, .input__field_invalid {
+    padding-right: 56px;
+}
+
+.input__field_invalid, .input__field_invalid:focus {
+    border-color: #F03D3E;
+}
+
+.input__svg_success, .input__svg_invalid {
+    display: none;
+}
+
+.input__field_success ~ .input__img .input__svg_success {
+    display: block;
+    color: #374FC7;
+}
+
+.input__field_invalid ~ .input__img .input__svg_invalid {
+    display: block;
+    color: #F03D3E;
+}
+
+.input__field:disabled {
+    background: #0000003f;
+}
+
+.input_preview {
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.input__field_preview {
+    width: 100%;
+}
