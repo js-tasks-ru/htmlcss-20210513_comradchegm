@@ -1,16 +1,9 @@
 @use '../variables.scss' as variables;
 
-@mixin hover($color) {
-    background: lighten($color, 10%);
-}
-@mixin active($color) {
-    background: darken($color, 10%);
-}
-
 .button {
     box-sizing: border-box;
     height: 48px;
-    border: 2px solid variables.$primary;
+    border: 2px solid var(--primary);
     border-radius: 8px;
     color: var(--main-background);
 
@@ -26,35 +19,35 @@
         opacity: .5;
     }
     &_primary {
-        background-color: variables.$primary;
+        background: var(--primary);
     }
     &_primary:hover {
-        @include hover(variables.$primary)
+        background: var(--primary-hvr);
     }
     &_primary:active {
-        @include active(variables.$primary);
+        background: var(--primary-act);
     }
 
     &_secondary {
-        background-color: variables.$secondary;
+        background: var(--secondary);
     }
     &_secondary:hover {
-        @include hover(variables.$secondary)
+        background: var(--secondary-hvr);
     }
     &_secondary:active {
-        @include active(variables.$secondary)
+        background: var(--secondary-act);
     }
 
     &_alternate {
-        color: variables.$grey-4;
-        background-color: variables.$alternate;
-        border-color: variables.$grey-3;
+        color: var(--grey-4);
+        background-color: var(--alternate);
+        border-color: var(--alternate-brd);
     }
     &_alternate:hover {
-        border-color: lighten(variables.$grey-3, 10%)
+        border-color: var(--alternate-brd-hvr);
     }
     &_alternate:active {
-        border-color: darken(variables.$grey-3, 10%)
+        border-color: var(--alternate-brd-act);
     }
     &_preview {
         display: block;

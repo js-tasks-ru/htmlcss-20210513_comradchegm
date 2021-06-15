@@ -20,7 +20,7 @@ $disabled-field: #0000003f;
 $primary: $blue;
 $secondary: $purple;
 $alternate: $white;
-
+$alternate-brd: $grey-3;
 $main-page-clr: #F9FAFC;
 
 $page-width: 1110px;
@@ -48,6 +48,28 @@ $page-width: 1110px;
 }
 
 :root {
-    --main-backgraund: #ffffff;
-    --main-color: #212429;
+    --white: #ffffff;
+    --black: #212429;
+    --purple: #7048E8;
+    --blue: #4263EB;
+    --grey-1: #F8F9FA;
+    --grey-2: #DDE2E5;
+    --grey-3: #ACB5BD;
+    --grey-4: #495057;
+
+    --main-backgraund: var(--white);
+    --main-color: var(--black);
+
+    --primary: var(--blue);
+    --primary-hvr: lighten($primary, 10%);
+    --primary-act: darken($primary, 10%);
+
+    --secondary: var(--purple);
+    --secondary-hvr: lighten($secondary, 10%);
+    --secondary-act: darken($secondary, 10%);
+
+    --alternate: var(--white);
+    --alternate-brd: var(--grey-3);
+    --alternate-brd-hvr: lighten($alternate-brd, 10%)
+    --alternate-brd-act: darken($alternate-brd, 10%)
 }

@@ -16,7 +16,7 @@
 }
 
 .radio__text {
-    color: variables.$grey-4;
+    color: var(--grey-4);
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -32,7 +32,7 @@
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    border: 1px solid variables.$grey-2;
+    border: 1px solid var(--grey-2);
     border-radius: 50%;
     width: 28px;
     height: 28px;
@@ -43,7 +43,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: variables.$blue;
+    background: var(--blue);
 }
 
 .radio__box, .radio__text {
@@ -51,7 +51,7 @@
 }
 
 .radio__native:checked ~ .radio__box {
-    border: 2px solid variables.$blue;
+    border: 2px solid var(--blue);
 }
 
 .radio__native:checked ~ .radio__box .radio__img {
@@ -59,13 +59,13 @@
 }
 
 .radio__native:disabled ~ .radio__box {
-    background: variables.$grey-2;
-    border: 2px solid variables.$grey-3;
+    background: var(--grey-2);
+    border: 2px solid var(--grey-3);
     pointer-events: none;
 }
 
 .radio__native:disabled ~ .radio__box .radio__img {
-    background: variables.$grey-3;
+    background: var(--grey-3);
 }
 
 .radio__native:disabled ~ .radio__text {

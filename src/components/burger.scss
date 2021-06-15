@@ -18,14 +18,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: variables.$black;
+    color: var(--main-color);
 }
 
 .burger__open {
     background: variables.$main-page-clr;
 }
 .burger__open:hover {
-    background: variables.$grey-2;
+    background: var(--grey-2);
 }
 
 .burger__close:hover {
@@ -33,7 +33,7 @@
 }
 
 .burger__close {
-    background: variables.$grey-2;
+    background: var(--grey-2);
     border-radius: 50%;
     visibility: hidden;
 }
@@ -82,7 +82,7 @@
     line-height: 26px;
     letter-spacing: 0;
     text-align: left;
-    color: variables.$grey-3;
+    color: var(--grey-3);
 }
 
 .burger__item, .burger__main-link {
@@ -94,7 +94,7 @@
     letter-spacing: 0;
     text-align: left;
     text-decoration: none;
-    color: variables.$black;
+    color: var(--main-color);
 }
 
 .burger__main-link {
@@ -124,7 +124,7 @@
     line-height: 24px;
     letter-spacing: 0;
     text-align: left;
-    color: variables.$grey-4;
+    color: var(--grey-4);
 }
 
 @media screen and (min-width: 1280px) {

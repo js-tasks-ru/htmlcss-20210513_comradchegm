@@ -16,7 +16,7 @@
     }
     &__field {
         box-sizing: border-box;
-        border: 1px solid variables.$grey-2;
+        border: 1px solid var(--grey-2);
         border-radius: 8px;
         padding: 0 24px;
         height: 56px;
@@ -35,7 +35,7 @@
         transform: translate(-42px, 16px);
     }
     &__field:focus, &__field_focus {
-        border: 1px solid variables.$blue;
+        border: 1px solid var(--blue);
     }
     &__field_focus {
         border-radius: 8px;

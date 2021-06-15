@@ -16,7 +16,7 @@
         opacity: 0;
     }
     &__text {
-        color: variables.$grey-4;
+        color: var(--grey-4);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -28,7 +28,7 @@
     &__box {
         display: inline-block;
         box-sizing: border-box;
-        border: 1px solid variables.$grey-2;
+        border: 1px solid var(--grey-2);
         border-radius: 14px;
         width: 52px;
         height: 28px;
@@ -40,13 +40,13 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background: variables.$grey-2;
+        background: var(--grey-2);
     }
     &__box, &__text {
         cursor: pointer;
     }
     &__native:checked ~ &__box {
-        background: variables.$blue;
+        background: var(--blue);
     }
     &__native:checked ~ &__box &__img {
         background: var(--main-background);

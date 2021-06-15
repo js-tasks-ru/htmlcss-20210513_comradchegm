@@ -4,7 +4,7 @@
     padding: 16px 16px 69px 16px;
 
     &__logo {
-        color: variables.$black;
+        color: var(--main-color);
     }
     &__nav-wrapper {
         display: flex;
@@ -41,19 +41,19 @@
         line-height: 24px;
         letter-spacing: 0;
         text-align: right;
-        color: variables.$grey-3;
+        color: var(--grey-3);
     }
     &__nav-item:first-child &__nav-link {
-        color: variables.$black;
+        color: var(--main-color);
     }
     &__nav-link:hover {
         text-decoration: none;
     }
     &__nav-link:visited {
-        color: variables.$grey-3;
+        color: var(--grey-3);
     }
     &__nav-item:first-child &__nav-link:visited {
-        color: variables.$black;
+        color: var(--main-color);
     }
     @include variables.media-pc {
         & {

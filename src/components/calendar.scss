@@ -8,7 +8,7 @@
         align-items: center;
     }
     box-sizing: border-box;
-    border: 1px solid variables.$grey-3;
+    border: 1px solid var(--grey-3);
     border-radius: 8px;
     width: 100%;
     padding: 28px 30px 40px 30px;
@@ -52,7 +52,7 @@
     }
     &__item_start-date,
     &__item_end-date {
-        background-color: variables.$blue;
+        background-color: var(--blue);
         color: var(--main-background);
     }
     &__item_highlight-date {
