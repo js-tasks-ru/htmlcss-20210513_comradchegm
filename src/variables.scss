@@ -21,6 +21,8 @@ $primary: $blue;
 $secondary: $purple;
 $alternate: $white;
 
+$main-page-clr: #F9FAFC;
+
 $page-width: 1110px;
 
 @mixin box-shadow {
@@ -43,4 +45,9 @@ $page-width: 1110px;
     @media screen and (min-width: 400px) {
         @content;
     }
+}
+
+:root {
+    --main-backgraund: #ffffff;
+    --main-color: #212429;
 }

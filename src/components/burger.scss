@@ -1,0 +1,134 @@
+@use '../variables.scss' as variables;
+
+.burger {
+    position: relative;
+    z-index: 20;
+}
+
+.burger__open, .burger__close, .burger__menu {
+    position: fixed;
+}
+
+.burger__open, .burger__close {
+    top: 32px;
+    left: 32px;
+    width: 32px;
+    height: 32px;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: variables.$black;
+}
+
+.burger__open {
+    background: variables.$main-page-clr;
+}
+.burger__open:hover {
+    background: variables.$grey-2;
+}
+
+.burger__close:hover {
+    background: variables.$red;
+}
+
+.burger__close {
+    background: variables.$grey-2;
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.burger__logo {
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.burger__menu, .burger__menu[data-open] {
+    transition: transform 200ms ease-in-out;
+}
+
+.burger__menu {
+    top: 0;
+    left: 0;
+    width: 96vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    padding: 0 16px 16px 16px;
+    background: variables.$main-page-clr;
+    display: grid;
+    grid-template-rows:
+        64px
+        78px
+        66px
+        calc(100vh - 64px - 78px - 66px - 72px)
+        72px;
+}
+
+.burger__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.burger__title {
+    display: flex;
+    align-items: center;
+    height: 66px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0;
+    text-align: left;
+    color: variables.$grey-3;
+}
+
+.burger__item, .burger__main-link {
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    text-decoration: none;
+    color: variables.$black;
+}
+
+.burger__main-link {
+    padding-top: 24px;
+}
+
+.burger__item {
+    margin-bottom: 16px;
+}
+
+.burger__menu[data-open] {
+    transform: translateX(0);
+}
+
+.burger__menu[data-open] ~ .burger__open {
+    visibility: hidden;
+}
+
+.burger__menu[data-open] ~ .burger__close {
+    visibility: visible;
+}
+
+.burger__theme-title {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    color: variables.$grey-4;
+}
+
+@media screen and (min-width: 1280px) {
+    .burger {
+        display: none;
+    }
+}

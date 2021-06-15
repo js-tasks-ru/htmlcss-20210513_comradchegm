@@ -1104,7 +1104,144 @@ body {
 .theme-toggler__sun, .theme-toggler__moon {
   color: #ACB5BD;
 }
+.theme-toggler_burger {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 78px;
+  border-top: 1px solid #DDE2E5;
+  border-bottom: 1px solid #DDE2E5;
+  justify-content: space-between;
+}
 
+.burger {
+  position: relative;
+  z-index: 20;
+}
+
+.burger__open, .burger__close, .burger__menu {
+  position: fixed;
+}
+
+.burger__open, .burger__close {
+  top: 32px;
+  left: 32px;
+  width: 32px;
+  height: 32px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #212429;
+}
+
+.burger__open {
+  background: #F9FAFC;
+}
+
+.burger__open:hover {
+  background: #DDE2E5;
+}
+
+.burger__close:hover {
+  background: #F03D3E;
+}
+
+.burger__close {
+  background: #DDE2E5;
+  border-radius: 50%;
+  visibility: hidden;
+}
+
+.burger__logo {
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger__menu, .burger__menu[data-open] {
+  transition: transform 200ms ease-in-out;
+}
+
+.burger__menu {
+  top: 0;
+  left: 0;
+  width: 96vw;
+  height: 100vh;
+  transform: translateX(-100vw);
+  padding: 0 16px 16px 16px;
+  background: #F9FAFC;
+  display: grid;
+  grid-template-rows: 64px 78px 66px calc(100vh - 64px - 78px - 66px - 72px) 72px;
+}
+
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.burger__title {
+  display: flex;
+  align-items: center;
+  height: 66px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #ACB5BD;
+}
+
+.burger__item, .burger__main-link {
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+  color: #212429;
+}
+
+.burger__main-link {
+  padding-top: 24px;
+}
+
+.burger__item {
+  margin-bottom: 16px;
+}
+
+.burger__menu[data-open] {
+  transform: translateX(0);
+}
+
+.burger__menu[data-open] ~ .burger__open {
+  visibility: hidden;
+}
+
+.burger__menu[data-open] ~ .burger__close {
+  visibility: visible;
+}
+
+.burger__theme-title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  color: #495057;
+}
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+}
 .input {
   position: relative;
 }

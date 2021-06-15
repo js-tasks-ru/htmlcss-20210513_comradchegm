@@ -10,5 +10,14 @@
     &__sun, &__moon {
         color: variables.$grey-3;
     }
+    &_burger {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        height: 78px;
+        border-top: 1px solid variables.$grey-2;
+        border-bottom: 1px solid variables.$grey-2;
+        justify-content: space-between;
+    }
 }
 
