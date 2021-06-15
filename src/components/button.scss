@@ -12,7 +12,7 @@
     height: 48px;
     border: 2px solid variables.$primary;
     border-radius: 8px;
-    color: variables.$white;
+    color: var(--main-background);
 
     &_primary:hover,
     &_secondary:hover,

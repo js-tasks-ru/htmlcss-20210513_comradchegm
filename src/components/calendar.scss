@@ -53,7 +53,7 @@
     &__item_start-date,
     &__item_end-date {
         background-color: variables.$blue;
-        color: variables.$white;
+        color: var(--main-background);
     }
     &__item_highlight-date {
         background-color: #A0B1F5;

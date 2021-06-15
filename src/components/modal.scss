@@ -9,7 +9,7 @@
         box-sizing: border-box;
         padding: 30px 40px;
         transform: translate(-50%, -50%);
-        background: variables.$white;
+        background: var(--main-background);
         flex-direction: column;
         border-radius: 8px;
     }

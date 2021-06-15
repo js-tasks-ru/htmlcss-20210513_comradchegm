@@ -33,7 +33,7 @@
     }
     &__img {
         visibility: hidden;
-        color: variables.$white;
+        color: var(--main-background);
         stroke-width: 3px;
     }
     &__box, &__text {
