@@ -1,23 +1,23 @@
 @use '../variables.scss' as variables;
 
 .header {
-    padding: 96px 16px 56px 16px;
+    padding: 16px 16px 69px 16px;
 
     &__logo {
         color: variables.$black;
     }
-    &__nav-wrapper, &__nav-box {
+    &__nav-wrapper {
         display: flex;
+        align-items: center;
+        margin-bottom: 48px;
     }
     &__nav-box {
+        display: flex;
         flex-grow: 1;
         justify-content: center;
     }
-    &__nav-wrapper {
-        align-items: center;
-    }
-    &__nav-wrapper {
-        flex-direction: column;
+    &__nav, &__nav-wrapper .theme-toggler {
+        display: none;
     }
     &__title {
         font-size: 28px;
@@ -26,9 +26,6 @@
         line-height: 38px;
         letter-spacing: 0;
         text-align: left;
-    }
-    &__nav {
-        display: none;
     }
     &__nav-item {
         margin-right: 24px;
@@ -59,6 +56,9 @@
         color: variables.$black;
     }
     @include variables.media-pc {
+        & {
+            padding: 24px 0 77px 0;
+        }
         &__title {
             font-size: 50px;
             font-weight: 500;
@@ -66,14 +66,12 @@
             text-align: left;
         }
         &__nav-wrapper {
-            flex-direction: row;
+            margin-bottom: 40px;
         }
-        &__nav {
+        &__nav, &__nav-wrapper .theme-toggler {
             display: flex;
-            flex-direction: row;
         }
         &__nav-box {
-            flex-direction: row;
             justify-content: space-between;
             align-items: center;
         }
