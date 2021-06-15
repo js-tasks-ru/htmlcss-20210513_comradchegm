@@ -6,9 +6,18 @@
     &__logo {
         color: variables.$black;
     }
-    &__nav-box {
+    &__nav-wrapper, &__nav-box {
         display: flex;
+    }
+    &__nav-box {
+        flex-grow: 1;
         justify-content: center;
+    }
+    &__nav-wrapper {
+        align-items: center;
+    }
+    &__nav-wrapper {
+        flex-direction: column;
     }
     &__title {
         font-size: 28px;
@@ -25,7 +34,7 @@
         margin-right: 24px;
     }
     &__nav-item:last-child {
-        margin-right: 0;
+        margin-right: 56px;
     }
     &__nav-link {
         text-decoration: none;
@@ -56,6 +65,9 @@
             line-height: 64px;
             text-align: left;
         }
+        &__nav-wrapper {
+            flex-direction: row;
+        }
         &__nav {
             display: flex;
             flex-direction: row;
@@ -63,6 +75,7 @@
         &__nav-box {
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
     }
 }

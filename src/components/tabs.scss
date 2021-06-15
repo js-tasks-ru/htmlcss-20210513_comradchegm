@@ -2,7 +2,6 @@
 
 .tabs {
     &__switcher,
-    &__scroller,
     &__content {
         display: none;
     }
@@ -14,6 +13,10 @@
     &__item:last-child {
         margin-right: 0;
     }
+    &__scroller {
+        display: flex;
+        flex-wrap: nowrap;
+    }
     &__title {
         color: variables.$grey-3;
         cursor: pointer;
@@ -24,6 +27,7 @@
         line-height: 24px;
         letter-spacing: 0;
         text-align: left;
+        white-space: nowrap;
     }
     &__content {
         padding: 68px 0;
@@ -45,12 +49,5 @@
     #containers-tab:checked ~ &__content_containers,
     #templates-tab:checked ~ &__content_templates {
         display: block;
-    }
-    @include variables.media-pc {
-        &__scroller {
-            display: block;
-            transform: translate(0, -100%) translate(0, -12px);
-            background: variables.$white;
-        }
     }
 }

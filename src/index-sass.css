@@ -365,9 +365,18 @@ body {
 .header__logo {
   color: #212429;
 }
-.header__nav-box {
+.header__nav-wrapper, .header__nav-box {
   display: flex;
+}
+.header__nav-box {
+  flex-grow: 1;
   justify-content: center;
+}
+.header__nav-wrapper {
+  align-items: center;
+}
+.header__nav-wrapper {
+  flex-direction: column;
 }
 .header__title {
   font-size: 28px;
@@ -384,7 +393,7 @@ body {
   margin-right: 24px;
 }
 .header__nav-item:last-child {
-  margin-right: 0;
+  margin-right: 56px;
 }
 .header__nav-link {
   text-decoration: none;
@@ -415,6 +424,9 @@ body {
     line-height: 64px;
     text-align: left;
   }
+  .header__nav-wrapper {
+    flex-direction: row;
+  }
   .header__nav {
     display: flex;
     flex-direction: row;
@@ -422,6 +434,7 @@ body {
   .header__nav-box {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -444,7 +457,7 @@ body {
   margin: 0 auto;
 }
 
-.tabs__switcher, .tabs__scroller, .tabs__content {
+.tabs__switcher, .tabs__content {
   display: none;
 }
 .tabs__item {
@@ -454,6 +467,10 @@ body {
 }
 .tabs__item:last-child {
   margin-right: 0;
+}
+.tabs__scroller {
+  display: flex;
+  flex-wrap: nowrap;
 }
 .tabs__title {
   color: #ACB5BD;
@@ -465,6 +482,7 @@ body {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
+  white-space: nowrap;
 }
 .tabs__content {
   padding: 68px 0;
@@ -477,13 +495,6 @@ body {
 }
 #all-tab:checked ~ .tabs__content_all, #elements-tab:checked ~ .tabs__content_elements, #containers-tab:checked ~ .tabs__content_containers, #templates-tab:checked ~ .tabs__content_templates {
   display: block;
-}
-@media screen and (min-width: 1280px) {
-  .tabs__scroller {
-    display: block;
-    transform: translate(0, -100%) translate(0, -12px);
-    background: #ffffff;
-  }
 }
 
 .card {
@@ -1083,6 +1094,17 @@ body {
 }
 .toggler__native:focus ~ .toggler__text {
   text-decoration: underline;
+}
+
+.theme-toggler {
+  display: flex;
+  align-items: center;
+}
+.theme-toggler__toggler {
+  margin: 0 20px;
+}
+.theme-toggler__sun, .theme-toggler__moon {
+  color: #ACB5BD;
 }
 
 .input {
