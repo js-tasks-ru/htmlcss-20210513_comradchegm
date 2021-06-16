@@ -1,0 +1,42 @@
+@use '../../variables.scss' as variables;
+
+.template-page__header {
+    grid-area: header;
+    background: var(--main-background);
+
+    &__header-nav-box {
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 64px;
+    }
+    &__header-nav {
+        display: none;
+    }
+    @include variables.media-pc {
+        &__header-nav-item {
+            margin-right: 24px;
+        }
+        &__header-nav-item:last-child {
+            margin-right: 0;
+        }
+        &__header-nav-link {
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &__header-nav-link:hover {
+            text-decoration: underline;
+        }
+        &__header-nav {
+            display: flex;
+            flex-direction: row;
+        }
+        &__header-nav-box {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
