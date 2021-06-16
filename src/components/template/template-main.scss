@@ -4,7 +4,7 @@
     grid-area: main;
 
     @include variables.media-pc {
-        &__main {
+        & {
             display: grid;
             grid-template-columns: auto 1fr;
             grid-template-areas: 

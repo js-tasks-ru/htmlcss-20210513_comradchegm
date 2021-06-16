@@ -19,7 +19,7 @@
         color: var(--main-color);
     }
     &__open {
-        background: var(--main-page-clr);
+        background: var(--main-page-bgr);
     }
     &__open:hover {
         background: var(--open-hvr);
@@ -48,7 +48,7 @@
         height: 100vh;
         transform: translateX(-100vw);
         padding: 0 16px 16px 16px;
-        background: var(--main-page-clr);
+        background: var(--main-page-bgr);
         display: grid;
         grid-template-rows:
             64px

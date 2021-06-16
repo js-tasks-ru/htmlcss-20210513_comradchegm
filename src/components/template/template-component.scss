@@ -1,0 +1,26 @@
+@use '../../variables.scss' as variables;
+
+.component {
+    grid-area: component;
+    background: var(--main-background);
+    margin: 0 16px;
+
+    &__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+    @include variables.media-pc {
+        & {
+            margin: 0;
+        }
+        &__title {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 38px;
+        }
+    }
+}
