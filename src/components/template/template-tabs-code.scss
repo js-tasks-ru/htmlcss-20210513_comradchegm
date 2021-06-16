@@ -1,0 +1,48 @@
+@use '../../variables.scss' as variables;
+
+.tabs-code {
+    &__switcher,
+    &__item {
+        margin-right: 40px;
+        padding-bottom: 8px;
+        border-bottom: 5px solid transparent;
+    }
+    &__item:last-child {
+        margin-right: 0;
+    }
+    &__scroller {
+        display: flex;
+        flex-wrap: nowrap;
+        transform: translate(0, -38px);
+    }
+    &__title {
+        color: var(--grey-3);
+        cursor: pointer;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        white-space: nowrap;
+    }
+    &__switcher, &__content {
+        display: none;
+    }
+    #html-tab:checked ~ &__scroller #html-lbl,
+    #css-tab:checked ~ &__scroller #css-lbl,
+    #java-script-tab:checked ~ &__scroller #java-script-lbl {
+        border-bottom: 5px solid var(--main-color);
+    }
+    #html-tab:checked ~ &__scroller #all-lbl &__title,
+    #css-tab:checked ~ &__scroller #css-lbl &__title,
+    #java-script-tab:checked ~ &__scroller #java-script-lbl &__title {
+        color: var(--main-color);
+    }
+    #html-tab:checked ~ &__content_html,
+    #css-tab:checked ~ &__content_css,
+    #java-script-tab:checked ~ &__content_java-script {
+        display: block;
+    }
+}

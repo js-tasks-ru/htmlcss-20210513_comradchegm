@@ -4,6 +4,7 @@
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+    cursor: pointer;
 
     &__native, &__native:disabled ~ &__box, &__native:disabled ~ &__text {
         pointer-events: none;
@@ -41,9 +42,6 @@
         height: 24px;
         border-radius: 50%;
         background: var(--grey-2);
-    }
-    &__box, &__text {
-        cursor: pointer;
     }
     &__native:checked ~ &__box {
         background: var(--blue);

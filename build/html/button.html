@@ -73,18 +73,18 @@
                         </nav>
                     </div>
                     <div class="theme-toggler">
-                        <svg class="theme-toggler__sun" width="24" height="24">
-                            <use xlink:href="../../assets/images/sprite.svg#sun"></use>
-                        </svg>
                         <label class="toggler theme-toggler__toggler">
                             <input type="checkbox" class="toggler__native" id="on" name="on">
-                            <div class="toggler__box">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
                                 <div class="toggler__img"></div>
                             </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
                         </label>
-                        <svg class="theme-toggler__moon" width="24" height="24">
-                            <use xlink:href="../../assets/images/sprite.svg#moon"></use>
-                        </svg>
                     </div>
                 </div>
             </div>
@@ -109,7 +109,40 @@
             </div>
             <div class="component">
                 <div class="component__title">Button</div>
-                <div class="component__content">
+                <div class="component__preview">
+                    <button class="button button_primary">Primary</button>
+                    <button class="button button_secondary">Secondary</button>
+                    <button class="button button_alternate">Alternate</button>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            HTML
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            CSS
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            Java Script
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
