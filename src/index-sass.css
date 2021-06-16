@@ -1398,38 +1398,40 @@ body {
 .template-page__header {
   grid-area: header;
   background: var(--main-background);
+  padding: 16px 16px 69px 16px;
 }
-.template-page__header__header-nav-box {
+.template-page__header-nav-box {
   box-sizing: border-box;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   position: relative;
   height: 64px;
 }
-.template-page__header__header-nav {
+.template-page__header-nav {
   display: none;
 }
 @media screen and (min-width: 1280px) {
-  .template-page__header__header-nav-item {
+  .template-page__header-nav-item {
     margin-right: 24px;
   }
-  .template-page__header__header-nav-item:last-child {
+  .template-page__header-nav-item:last-child {
     margin-right: 0;
   }
-  .template-page__header__header-nav-link {
+  .template-page__header-nav-link {
     text-decoration: none;
     font-size: 16px;
     line-height: 24px;
   }
-  .template-page__header__header-nav-link:hover {
+  .template-page__header-nav-link:hover {
     text-decoration: underline;
   }
-  .template-page__header__header-nav {
+  .template-page__header-nav {
     display: flex;
     flex-direction: row;
   }
-  .template-page__header__header-nav-box {
+  .template-page__header-nav-box {
     flex-direction: row;
     justify-content: space-between;
   }

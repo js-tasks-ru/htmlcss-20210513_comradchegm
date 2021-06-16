@@ -59,17 +59,33 @@
                         </svg>
                     </div>
                 </div>
-                <div class="template-page__header-nav-box">
-                    <div class="page__header-logo">
-                        <svg width="110" height="32">
-                            <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <svg class="theme-toggler__sun" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                        </svg>
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <div class="toggler__box">
+                                <div class="toggler__img"></div>
+                            </div>
+                        </label>
+                        <svg class="theme-toggler__moon" width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#moon"></use>
                         </svg>
                     </div>
-                    <nav class="template-page__header-nav">
-                        <div class="template-page__header-nav-item"><a href="#1" class="template-page__header-nav-link">Components</a></div>
-                        <div class="template-page__header-nav-item"><a href="#2" class="template-page__header-nav-link">About</a></div>
-                        <div class="template-page__header-nav-item"><a href="#3" class="template-page__header-nav-link">Contact</a></div>
-                    </nav>
                 </div>
             </div>
         </div>

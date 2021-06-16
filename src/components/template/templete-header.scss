@@ -3,8 +3,9 @@
 .template-page__header {
     grid-area: header;
     background: var(--main-background);
-
-    &__header-nav-box {
+    padding: 16px 16px 69px 16px;
+    
+    &-nav-box {
         box-sizing: border-box;
         display: flex;
         flex-direction: row;
@@ -13,29 +14,29 @@
         position: relative;
         height: 64px;
     }
-    &__header-nav {
+    &-nav {
         display: none;
     }
     @include variables.media-pc {
-        &__header-nav-item {
+        &-nav-item {
             margin-right: 24px;
         }
-        &__header-nav-item:last-child {
+        &-nav-item:last-child {
             margin-right: 0;
         }
-        &__header-nav-link {
+        &-nav-link {
             text-decoration: none;
             font-size: 16px;
             line-height: 24px;
         }
-        &__header-nav-link:hover {
+        &-nav-link:hover {
             text-decoration: underline;
         }
-        &__header-nav {
+        &-nav {
             display: flex;
             flex-direction: row;
         }
-        &__header-nav-box {
+        &-nav-box {
             flex-direction: row;
             justify-content: space-between;
         }
