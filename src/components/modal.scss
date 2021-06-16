@@ -41,7 +41,7 @@
         transform: translate(50%, -50%);
     }
     &__close:hover {
-        background: variables.$red;
+        background: var(--close-hvr);
         cursor: pointer;
     }
     &__text {

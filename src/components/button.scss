@@ -5,7 +5,14 @@
     height: 48px;
     border: 2px solid var(--primary);
     border-radius: 8px;
-    color: var(--main-background);
+    color: var(--button-clr);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
 
     &_primary:hover,
     &_secondary:hover,
@@ -39,7 +46,7 @@
     }
 
     &_alternate {
-        color: var(--grey-4);
+        color: var(--alternate-clr);
         background-color: var(--alternate);
         border-color: var(--alternate-brd);
     }

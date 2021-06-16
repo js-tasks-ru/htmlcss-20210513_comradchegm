@@ -44,20 +44,20 @@
         padding-right: 56px;
     }
     &__field_invalid, &__field_invalid:focus {
-        border-color: variables.$invalid;
+        border-color: var(--invalid);
     }
     &__svg_success, &__svg_invalid {
         display: none;
     }
     &__field_success ~ &__img &__svg_success, &__field_invalid ~ &__img &__svg_invalid {
         display: block;
-        color: variables.$success-field;
+        color: var(--success);
     }
     &__field_invalid ~ &__img &__svg_invalid {
-        color: variables.$invalid;
+        color: var(--invalid);
     }
     &__field:disabled {
-        background: variables.$disabled-field;
+        background: var(--disabled);
     }
     &_preview, &__field_preview {
         width: 100%;
