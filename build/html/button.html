@@ -8,6 +8,7 @@
     <title>Button</title>
     <link rel="stylesheet" href="../index.css">
     <script defer src="../../assets/js/burger-menu.js"></script>
+    <script src="../../assets/js/highlight.min.js"></script>
 </head>
 <body>
     <div class="template-page">
@@ -135,7 +136,7 @@
                         <div class="tabs-code__content tabs-code__content_html">
                             <!-- HTML -->
                             <pre>
-                                <code>
+                                <code data-language="html">
 &lt;ul&gt;
     &lt;li&gt;
         &lt;button class=&quot;button button_primary button_preview&quot;&gt;Primary&lt;/button&gt;
@@ -152,11 +153,79 @@
                         </div>
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
-                            CSS
+                            <pre>
+                                <code data-language="scss">
+@use &apos;../variables.scss&apos; as variables;
+
+.button {
+    box-sizing: border-box;
+    height: 48px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: var(--button-clr);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+
+    &amp;_primary:hover,
+    &amp;_secondary:hover,
+    &amp;_alternate:hover {
+        cursor: pointer;
+    }
+    &amp;_primary:disabled,
+    &amp;_secondary:disabled,
+    &amp;_alternate:disabled {
+        pointer-events: none;
+        opacity: .5;
+    }
+    &amp;_primary {
+        background: var(--primary);
+    }
+    &amp;_primary:hover {
+        background: var(--primary-hvr);
+    }
+    &amp;_primary:active {
+        background: var(--primary-act);
+    }
+
+    &amp;_secondary {
+        background: var(--secondary);
+    }
+    &amp;_secondary:hover {
+    background: var(--secondary-hvr);
+    }
+    &amp;_secondary:active {
+        background: var(--secondary-act);
+    }
+
+    &amp;_alternate {
+        color: var(--alternate-clr);
+        background-color: var(--alternate);
+        border-color: var(--alternate-brd);
+    }
+    &amp;_alternate:hover {
+        border-color: var(--alternate-brd-hvr);
+    }
+    &amp;_alternate:active {
+        border-color: var(--alternate-brd-act);
+    }
+    &amp;_preview {
+        display: block;
+        width: 100%;
+    }
+}
+                                </code>
+                            </pre>
                         </div>
                         <div class="tabs-code__content tabs-code__content_java-script">
                             <!-- Java Script -->
-                            Java Script
+                            <pre>
+                                <code data-language="java-script"></code>
+                            </pre>
                         </div>
                     </div>
                 </div>
@@ -167,4 +236,5 @@
         </div>
     </div>
 </body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
 </html>

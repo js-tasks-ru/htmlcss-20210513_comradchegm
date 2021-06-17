@@ -12,6 +12,9 @@
         height: 100%;
         padding: 8px;
     }
+    &__button {
+        justify-content: space-around;
+    }
     &__checkbox, &__radio, &__toggler {
         padding-left: 33%;
         justify-content: space-around;
