@@ -13,7 +13,8 @@
     &__scroller {
         display: flex;
         flex-wrap: nowrap;
-        transform: translate(0, -38px);
+        transform: translate(0, -37px);
+        padding: 0 16px;
     }
     &__title {
         color: var(--grey-3);

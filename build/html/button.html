@@ -110,9 +110,11 @@
             <div class="component">
                 <div class="component__title">Button</div>
                 <div class="component__preview">
-                    <button class="button button_primary">Primary</button>
-                    <button class="button button_secondary">Secondary</button>
-                    <button class="button button_alternate">Alternate</button>
+                    <div class="component__preview-button">
+                        <button class="button button_primary button_preview">Primary</button>
+                        <button class="button button_secondary button_preview">Secondary</button>
+                        <button class="button button_alternate button_preview">Alternate</button>
+                    </div>
                 </div>
                 <div class="component__code">
                     <div class="tabs-code">
@@ -132,7 +134,21 @@
                         </div>
                         <div class="tabs-code__content tabs-code__content_html">
                             <!-- HTML -->
-                            HTML
+                            <pre>
+                                <code>
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;button class=&quot;button button_primary button_preview&quot;&gt;Primary&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class=&quot;button button_secondary button_preview&quot;&gt;Secondary&lt;/button&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;button class=&quot;button button_alternate button_preview&quot;&gt;Alternate&lt;/button&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                </code>
+                            </pre>
                         </div>
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
