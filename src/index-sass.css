@@ -719,6 +719,9 @@ body {
 .histogram__col:hover .histogram__tt-text {
   visibility: visible;
 }
+.histogram_preview {
+  height: 300px;
+}
 
 .skeleton, .skeleton__header, .skeleton__legend, .skeleton__content {
   display: flex;
@@ -1338,7 +1341,7 @@ body {
   height: 100%;
   padding: 8px;
 }
-.preview-flex__button, .preview-flex__accordion {
+.preview-flex__button, .preview-flex__accordion, .preview-flex__histogam {
   display: flex;
   flex-direction: column;
 }
