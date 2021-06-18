@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- Страница button -->
+<!-- Страница tooltip -->
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button</title>
+    <title>Tooltip</title>
     <link rel="stylesheet" href="../index.css">
     <script defer src="../../assets/js/burger-menu.js"></script>
 </head>
@@ -108,12 +108,9 @@
                 <a class="menu__item" href="./input.html">Input</a>
             </div>
             <div class="component">
-                <div class="component__title">Button</div>
-                <div class="component__preview preview-flex__button">
-                    <div class="component__preview_button">
-                        <button class="button button_primary button_preview">Primary</button>
-                        <button class="button button_secondary button_preview">Secondary</button>
-                        <button class="button button_alternate button_preview">Alternate</button>
+                <div class="component__title">Tooltip</div>
+                <div class="component__preview preview-flex__accordion">
+                    <div class="component__preview_accordion">
                     </div>
                 </div>
                 <div class="component__code">
@@ -136,17 +133,6 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
-&lt;ul&gt;
-    &lt;li&gt;
-        &lt;button class=&quot;button button_primary button_preview&quot;&gt;Primary&lt;/button&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;button class=&quot;button button_secondary button_preview&quot;&gt;Secondary&lt;/button&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;button class=&quot;button button_alternate button_preview&quot;&gt;Alternate&lt;/button&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
                                 </code>
                             </pre>
                         </div>
@@ -154,67 +140,6 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
-.button {
-    box-sizing: border-box;
-    height: 48px;
-    border: 2px solid var(--primary);
-    border-radius: 8px;
-    color: var(--button-clr);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0;
-    text-align: center;
-
-    &amp;_primary:hover,
-    &amp;_secondary:hover,
-    &amp;_alternate:hover {
-        cursor: pointer;
-    }
-    &amp;_primary:disabled,
-    &amp;_secondary:disabled,
-    &amp;_alternate:disabled {
-        pointer-events: none;
-        opacity: .5;
-    }
-    &amp;_primary {
-        background: var(--primary);
-    }
-    &amp;_primary:hover {
-        background: var(--primary-hvr);
-    }
-    &amp;_primary:active {
-        background: var(--primary-act);
-    }
-
-    &amp;_secondary {
-        background: var(--secondary);
-    }
-    &amp;_secondary:hover {
-    background: var(--secondary-hvr);
-    }
-    &amp;_secondary:active {
-        background: var(--secondary-act);
-    }
-
-    &amp;_alternate {
-        color: var(--alternate-clr);
-        background-color: var(--alternate);
-        border-color: var(--alternate-brd);
-    }
-    &amp;_alternate:hover {
-        border-color: var(--alternate-brd-hvr);
-    }
-    &amp;_alternate:active {
-        border-color: var(--alternate-brd-act);
-    }
-    &amp;_preview {
-        display: block;
-        width: 100%;
-    }
-}
                                 </code>
                             </pre>
                         </div>
