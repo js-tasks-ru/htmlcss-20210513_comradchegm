@@ -56,4 +56,7 @@
     &__native:focus ~ &__text {
         text-decoration: underline;
     }
+    &_preview {
+        margin-bottom: 16px;
+    }
 }
