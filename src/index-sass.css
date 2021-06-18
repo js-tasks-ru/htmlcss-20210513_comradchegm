@@ -997,13 +997,15 @@ body {
 .checkbox__native:focus ~ .checkbox__text {
   text-decoration: underline;
 }
+.checkbox_preview {
+  margin-bottom: 16px;
+}
 
 .radio {
   display: inline-flex;
   flex-direction: row;
   align-items: center;
 }
-
 .radio__native {
   position: absolute;
   width: 0;
@@ -1012,7 +1014,6 @@ body {
   outline: none;
   opacity: 0;
 }
-
 .radio__text {
   color: var(--grey-4);
   font-family: Inter;
@@ -1024,7 +1025,6 @@ body {
   text-align: left;
   padding-left: 12px;
 }
-
 .radio__box {
   display: inline-flex;
   justify-content: center;
@@ -1035,7 +1035,6 @@ body {
   width: 28px;
   height: 28px;
 }
-
 .radio__img {
   display: none;
   width: 18px;
@@ -1043,36 +1042,32 @@ body {
   border-radius: 50%;
   background: var(--blue);
 }
-
 .radio__box, .radio__text {
   cursor: pointer;
 }
-
 .radio__native:checked ~ .radio__box {
   border: 2px solid var(--blue);
 }
-
 .radio__native:checked ~ .radio__box .radio__img {
   display: block;
 }
-
 .radio__native:disabled ~ .radio__box {
   background: var(--grey-2);
   border: 2px solid var(--grey-3);
   pointer-events: none;
 }
-
 .radio__native:disabled ~ .radio__box .radio__img {
   background: var(--grey-3);
 }
-
 .radio__native:disabled ~ .radio__text {
   opacity: 0.5;
   pointer-events: none;
 }
-
 .radio__native:focus ~ .radio__text {
   text-decoration: underline;
+}
+.radio_preview {
+  margin-bottom: 16px;
 }
 
 .toggler {
@@ -1131,6 +1126,9 @@ body {
 }
 .toggler__native:focus ~ .toggler__text {
   text-decoration: underline;
+}
+.toggler_preview {
+  margin-bottom: 16px;
 }
 
 .theme-toggler {
