@@ -12,9 +12,18 @@
         height: 100%;
         padding: 8px;
     }
+    &__button, &__accordion {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button {
+        align-items: center;
+    }
+    &__accordion {
+        align-items: flex-start;
+    }
     &__checkbox, &__radio, &__toggler {
         padding-left: 33%;
-        justify-content: space-around;
         align-items: flex-start;
     }
     @include variables.media-tab {

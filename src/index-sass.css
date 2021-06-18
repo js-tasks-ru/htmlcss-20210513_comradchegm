@@ -1340,9 +1340,18 @@ body {
   height: 100%;
   padding: 8px;
 }
+.preview-flex__button, .preview-flex__accordion {
+  display: flex;
+  flex-direction: column;
+}
+.preview-flex__button {
+  align-items: center;
+}
+.preview-flex__accordion {
+  align-items: flex-start;
+}
 .preview-flex__checkbox, .preview-flex__radio, .preview-flex__toggler {
   padding-left: 33%;
-  justify-content: space-around;
   align-items: flex-start;
 }
 @media screen and (min-width: 768px) {
@@ -1662,19 +1671,22 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   min-height: 270px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   padding: 0 16px 89px 16px;
 }
 .component__code {
   border-top: 1px solid var(--grey-2);
   padding: 0 16px;
 }
-.component__preview-button {
-  width: 250px;
-  height: 250px;
+.component__preview_button, .component__preview_accordion {
   display: flex;
   flex-direction: column;
+}
+.component__preview_accordion {
+  width: 100%;
+  min-height: max-content;
+}
+.component__preview_button {
+  width: 250px;
   justify-content: space-around;
 }
 @media screen and (min-width: 1280px) {
@@ -1724,7 +1736,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
 #html-tab:checked ~ .tabs-code__scroller #html-lbl, #css-tab:checked ~ .tabs-code__scroller #css-lbl, #java-script-tab:checked ~ .tabs-code__scroller #java-script-lbl {
   border-bottom: 5px solid var(--main-color);
 }
-#html-tab:checked ~ .tabs-code__scroller #all-lbl .tabs-code__title, #css-tab:checked ~ .tabs-code__scroller #css-lbl .tabs-code__title, #java-script-tab:checked ~ .tabs-code__scroller #java-script-lbl .tabs-code__title {
+#html-tab:checked ~ .tabs-code__scroller #html-lbl .tabs-code__title, #css-tab:checked ~ .tabs-code__scroller #css-lbl .tabs-code__title, #java-script-tab:checked ~ .tabs-code__scroller #java-script-lbl .tabs-code__title {
   color: var(--main-color);
 }
 #html-tab:checked ~ .tabs-code__content_html, #css-tab:checked ~ .tabs-code__content_css, #java-script-tab:checked ~ .tabs-code__content_java-script {

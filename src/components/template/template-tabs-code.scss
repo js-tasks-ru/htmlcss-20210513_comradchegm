@@ -36,7 +36,7 @@
     #java-script-tab:checked ~ &__scroller #java-script-lbl {
         border-bottom: 5px solid var(--main-color);
     }
-    #html-tab:checked ~ &__scroller #all-lbl &__title,
+    #html-tab:checked ~ &__scroller #html-lbl &__title,
     #css-tab:checked ~ &__scroller #css-lbl &__title,
     #java-script-tab:checked ~ &__scroller #java-script-lbl &__title {
         color: var(--main-color);
