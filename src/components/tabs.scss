@@ -16,6 +16,7 @@
     &__scroller {
         display: flex;
         flex-wrap: nowrap;
+        transform: translate(0, -37px);
     }
     &__title {
         color: var(--grey-3);

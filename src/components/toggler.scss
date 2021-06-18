@@ -45,6 +45,7 @@
     }
     &__native:checked ~ &__box {
         background: var(--blue);
+        border-color: var(--blue);
     }
     &__native:checked ~ &__box &__img {
         background: var(--main-background);
