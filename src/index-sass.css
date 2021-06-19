@@ -990,13 +990,12 @@ body {
 .checkbox__native:checked ~ .checkbox__box .checkbox__img {
   visibility: visible;
 }
-.checkbox__native:disabled ~ .checkbox__box {
+.checkbox__native:disabled ~ .checkbox__box, .checkbox__native:disabled ~ .checkbox__text {
   opacity: 0.5;
   pointer-events: none;
 }
-.checkbox__native:disabled ~ .checkbox__text {
-  opacity: 0.5;
-  pointer-events: none;
+.checkbox__native:disabled ~ .checkbox__box {
+  background: var(--grey-2);
 }
 .checkbox__native:focus ~ .checkbox__text {
   text-decoration: underline;
@@ -1680,7 +1679,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   border-top: 1px solid var(--grey-2);
   padding: 0 16px;
 }
-.component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar {
+.component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar, .component__preview_checkbox, .component__preview_radio {
   display: flex;
   flex-direction: column;
 }
@@ -1706,6 +1705,10 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
 }
 .component__preview_modal-window {
   z-index: 40;
+}
+.component__preview_checkbox, .component__preview_radio {
+  padding-left: 30%;
+  align-items: flex-start;
 }
 @media screen and (min-width: 1280px) {
   .component__title {

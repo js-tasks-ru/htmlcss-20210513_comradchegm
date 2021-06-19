@@ -45,13 +45,13 @@
     &__native:checked ~ &__box &__img {
         visibility: visible;
     }
-    &__native:disabled ~ &__box {
+    &__native:disabled ~ &__box,
+    &__native:disabled ~ &__text{
         opacity: 0.5;
         pointer-events: none;
     }
-    &__native:disabled ~ &__text {
-        opacity: 0.5;
-        pointer-events: none;
+    &__native:disabled ~ &__box {
+        background: var(--grey-2);
     }
     &__native:focus ~ &__text {
         text-decoration: underline;

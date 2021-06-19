@@ -109,8 +109,35 @@
             </div>
             <div class="component">
                 <div class="component__title">Checkbox</div>
-                <div class="component__preview preview-flex__accordion">
-                    <div class="component__preview_accordion">
+                <div class="component__preview">
+                    <div class="component__preview_checkbox">
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="default" name="default" focus>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Default</span>
+                        </label>
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="checked" name="checked" checked>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Checked</span>
+                        </label>
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="disabled" name="disabled" disabled>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Disabled</span>
+                        </label>
                     </div>
                 </div>
                 <div class="component__code">
@@ -133,6 +160,35 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;div&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;default&quot; name=&quot;default&quot; focus&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Default&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;checked&quot; name=&quot;checked&quot; checked&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Checked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;disabled&quot; name=&quot;disabled&quot; disabled&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Disabled&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>
@@ -140,6 +196,66 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.checkbox {
+    &amp;, &amp;__box {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    &amp;__native {
+        position: absolute;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        pointer-events: none;
+    }
+    &amp;__text {
+        color: var(--grey-4);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        padding-left: 12px;
+    }
+    &amp;__box {
+        box-sizing: border-box;
+        border: 1px solid var(--grey-2);
+        border-radius: 4px;
+        width: 28px;
+        height: 28px;
+    }
+    &amp;__img {
+        visibility: hidden;
+        color: var(--main-background);
+        stroke-width: 3px;
+    }
+    &amp;__box, &amp;__text {
+        cursor: pointer;
+    }
+    &amp;__native:checked ~ &amp;__box {
+        background: var(--blue);
+    }
+    &amp;__native:checked ~ &amp;__box &amp;__img {
+        visibility: visible;
+    }
+    &amp;__native:disabled ~ &amp;__box,
+    &amp;__native:disabled ~ &amp;__text{
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &amp;__native:disabled ~ &amp;__box {
+        background: var(--grey-2);
+    }
+    &amp;__native:focus ~ &amp;__text {
+        text-decoration: underline;
+    }
+    &amp;_preview {
+        margin-bottom: 16px;
+    }
+}
                                 </code>
                             </pre>
                         </div>

@@ -28,7 +28,9 @@
     &__preview_button,
     &__preview_accordion,
     &__preview_modal,
-    &__preview_avatar {
+    &__preview_avatar,
+    &__preview_checkbox,
+    &__preview_radio {
         display: flex;
         flex-direction: column;
     }
@@ -54,6 +56,10 @@
     }
     &__preview_modal-window {
         z-index: 40;
+    }
+    &__preview_checkbox, &__preview_radio {
+        padding-left: 30%;
+        align-items: flex-start;
     }
     @include variables.media-pc {
         &__title {
