@@ -110,8 +110,57 @@
             </div>
             <div class="component">
                 <div class="component__title">Calendar</div>
-                <div class="component__preview preview-flex__calendar">
-                    <div class="component__preview_calendar">
+                <div class="component__preview">
+                    <div class="calendar">
+                        <div class="calendar__title">
+                            October 2019
+                        </div>
+                        <div class="calendar__wraper">
+                            <div class="calendar__inner">
+                                <span class="calendar__item calendar__item_day">Mon</span>
+                                <span class="calendar__item calendar__item_day">Tue</span>
+                                <span class="calendar__item calendar__item_day">Wed</span>
+                                <span class="calendar__item calendar__item_day">Thu</span>
+                                <span class="calendar__item calendar__item_day">Fri</span>
+                                <span class="calendar__item calendar__item_day">Sat</span>
+                                <span class="calendar__item calendar__item_day">Sun</span>
+                                <span class="calendar__item"></span>
+                                <span class="calendar__item"></span>
+                                <span class="calendar__item"></span>
+                                <span class="calendar__item"></span>
+                                <span class="calendar__item">1</span>
+                                <span class="calendar__item">2</span>
+                                <span class="calendar__item">3</span>
+                                <span class="calendar__item">4</span>
+                                <span class="calendar__item">5</span>
+                                <span class="calendar__item">6</span>
+                                <span class="calendar__item">7</span>
+                                <span class="calendar__item">8</span>
+                                <span class="calendar__item">9</span>
+                                <span class="calendar__item">10</span>
+                                <span class="calendar__item">11</span>
+                                <span class="calendar__item">12</span>
+                                <span class="calendar__item">13</span>
+                                <span class="calendar__item">14</span>
+                                <span class="calendar__item">15</span>
+                                <span class="calendar__item">16</span>
+                                <span class="calendar__item">17</span>
+                                <span class="calendar__item calendar__item_start-date">18</span>
+                                <span class="calendar__item calendar__item_highlight-date">19</span>
+                                <span class="calendar__item calendar__item_highlight-date">20</span>
+                                <span class="calendar__item calendar__item_highlight-date">21</span>
+                                <span class="calendar__item calendar__item_highlight-date">22</span>
+                                <span class="calendar__item calendar__item_highlight-date">23</span>
+                                <span class="calendar__item calendar__item_end-date">24</span>
+                                <span class="calendar__item">25</span>
+                                <span class="calendar__item">26</span>
+                                <span class="calendar__item">27</span>
+                                <span class="calendar__item">28</span>
+                                <span class="calendar__item">29</span>
+                                <span class="calendar__item">30</span>
+                                <span class="calendar__item">31</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="component__code">
@@ -134,6 +183,57 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;div class=&quot;calendar&quot;&gt;
+    &lt;div class=&quot;calendar__title&quot;&gt;
+        October 2019
+    &lt;/div&gt;
+    &lt;div class=&quot;calendar__wraper&quot;&gt;
+        &lt;div class=&quot;calendar__inner&quot;&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Mon&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Tue&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Wed&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Thu&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Fri&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Sat&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_day&quot;&gt;Sun&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;1&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;2&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;3&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;4&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;5&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;6&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;7&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;8&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;9&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;10&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;11&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;12&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;13&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;14&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;15&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;16&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;17&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_start-date&quot;&gt;18&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_highlight-date&quot;&gt;19&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_highlight-date&quot;&gt;20&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_highlight-date&quot;&gt;21&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_highlight-date&quot;&gt;22&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_highlight-date&quot;&gt;23&lt;/span&gt;
+            &lt;span class=&quot;calendar__item calendar__item_end-date&quot;&gt;24&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;25&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;26&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;27&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;28&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;29&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;30&lt;/span&gt;
+            &lt;span class=&quot;calendar__item&quot;&gt;31&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>
@@ -141,13 +241,72 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.calendar {
+    &amp;, &amp;__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    box-sizing: border-box;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    width: 100%;
+    padding: 28px 30px 40px 30px;
+    font-family: &apos;Inter&apos;, sans-serif;
+
+    &amp;__title {
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 600;
+        margin-bottom: 24px;
+    }
+    &amp;__wraper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+    }
+    &amp;__inner {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    &amp;__item {
+        color: #334D6E;
+        font-family: &apos;Source Sans Pro&apos;, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0px;
+    }
+    &amp;__item_day {
+        font-family: Inter;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        color: #90A0B7;
+    }
+    &amp;__item_start-date,
+    &amp;__item_end-date {
+        background-color: var(--blue);
+        color: var(--main-background);
+    }
+    &amp;__item_highlight-date {
+        background-color: #A0B1F5;
+    }
+}
                                 </code>
                             </pre>
                         </div>
                         <div class="tabs-code__content tabs-code__content_java-script">
                             <!-- Java Script -->
                             <pre>
-                                <code data-language="java-script"></code>
+                                <code data-language="js"></code>
                             </pre>
                         </div>
                     </div>
