@@ -1680,7 +1680,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   border-top: 1px solid var(--grey-2);
   padding: 0 16px;
 }
-.component__preview_button, .component__preview_accordion, .component__preview_modal {
+.component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar {
   display: flex;
   flex-direction: column;
 }
@@ -1692,7 +1692,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   width: 100%;
   min-height: max-content;
 }
-.component__preview_modal {
+.component__preview_modal, .component__preview_avatar {
   justify-content: center;
   align-items: center;
 }
