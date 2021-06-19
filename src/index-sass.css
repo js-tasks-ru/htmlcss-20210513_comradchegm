@@ -1680,17 +1680,32 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   border-top: 1px solid var(--grey-2);
   padding: 0 16px;
 }
-.component__preview_button, .component__preview_accordion {
+.component__preview_button, .component__preview_accordion, .component__preview_modal {
   display: flex;
   flex-direction: column;
+}
+.component__preview_button {
+  width: 250px;
+  justify-content: space-around;
 }
 .component__preview_accordion {
   width: 100%;
   min-height: max-content;
 }
-.component__preview_button {
-  width: 250px;
-  justify-content: space-around;
+.component__preview_modal {
+  justify-content: center;
+  align-items: center;
+}
+.component__preview_modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 30;
+}
+.component__preview_modal-window {
+  z-index: 40;
 }
 @media screen and (min-width: 1280px) {
   .component__title {

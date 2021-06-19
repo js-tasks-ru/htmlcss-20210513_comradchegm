@@ -25,17 +25,32 @@
         border-top: 1px solid var(--grey-2);
         padding: 0 16px;
     }
-    &__preview_button, &__preview_accordion {
+    &__preview_button, &__preview_accordion, &__preview_modal {
         display: flex;
         flex-direction: column;
+    }
+    &__preview_button {
+        width: 250px;
+        justify-content: space-around;
     }
     &__preview_accordion {
         width: 100%;
         min-height: max-content;
     }
-    &__preview_button {
-        width: 250px;
-        justify-content: space-around;
+    &__preview_modal {
+        justify-content: center;
+        align-items: center;
+    }
+    &__preview_modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 30;
+    }
+    &__preview_modal-window {
+        z-index: 40;
     }
     @include variables.media-pc {
         &__title {
