@@ -109,8 +109,29 @@
             </div>
             <div class="component">
                 <div class="component__title">Toggler</div>
-                <div class="component__preview preview-flex__accordion">
-                    <div class="component__preview_accordion">
+                <div class="component__preview">
+                    <div class="component__preview_toggler">
+                        <label class="toggler toggler_preview">
+                            <input type="checkbox" class="toggler__native" id="on" name="on" focus>
+                            <div class="toggler__box">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <span class="toggler__text">Off</span>
+                        </label>
+                        <label class="toggler toggler_preview">
+                            <input type="checkbox" class="toggler__native" id="off" name="off" checked>
+                            <div class="toggler__box">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <span class="toggler__text">On</span>
+                        </label>
+                        <label class="toggler toggler_preview">
+                            <input type="checkbox" class="toggler__native" id="disabled" name="disabled" disabled>
+                            <div class="toggler__box">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <span class="toggler__text">Disabled</span>
+                        </label>
                     </div>
                 </div>
                 <div class="component__code">
@@ -133,6 +154,35 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;toggler&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; class=&quot;toggler__native&quot; id=&quot;on&quot; name=&quot;on&quot; focus&gt;
+            &lt;div class=&quot;toggler__box&quot;&gt;
+                &lt;div class=&quot;toggler__img&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;toggler__text&quot;&gt;Off&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;toggler&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; class=&quot;toggler__native&quot; id=&quot;off&quot; name=&quot;off&quot; checked&gt;
+            &lt;div class=&quot;toggler__box&quot;&gt;
+                &lt;div class=&quot;toggler__img&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;toggler__text&quot;&gt;On&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;toggler&quot;&gt;
+            &lt;input type=&quot;checkbox&quot; class=&quot;toggler__native&quot; id=&quot;disabled&quot; name=&quot;disabled&quot; disabled&gt;
+            &lt;div class=&quot;toggler__box&quot;&gt;
+                &lt;div class=&quot;toggler__img&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;span class=&quot;toggler__text&quot;&gt;Disabled&lt;/span&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
                                 </code>
                             </pre>
                         </div>
@@ -140,6 +190,67 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.toggler {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+
+    &amp;__native, &amp;__native:disabled ~ &amp;__box, &amp;__native:disabled ~ &amp;__text {
+        pointer-events: none;
+    }
+    &amp;__native {
+        position: absolute;
+        width: 0;
+        height: 0;
+        outline: none;
+        opacity: 0;
+    }
+    &amp;__text {
+        color: var(--grey-4);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        padding-left: 12px;
+    }
+    &amp;__box {
+        display: inline-block;
+        box-sizing: border-box;
+        border: 1px solid var(--grey-2);
+        border-radius: 14px;
+        width: 52px;
+        height: 28px;
+    }
+    &amp;__img {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: var(--grey-2);
+    }
+    &amp;__native:checked ~ &amp;__box {
+        background: var(--blue);
+        border-color: var(--blue);
+    }
+    &amp;__native:checked ~ &amp;__box &amp;__img {
+        background: var(--main-background);
+        transform: translate(24px, 0);
+    }
+    &amp;__native:disabled ~ &amp;__box, &amp;__native:disabled ~ &amp;__text {
+        opacity: 0.5;
+    }
+    &amp;__native:focus ~ &amp;__text {
+        text-decoration: underline;
+    }
+    &amp;_preview {
+        margin-bottom: 16px;
+    }
+}
                                 </code>
                             </pre>
                         </div>

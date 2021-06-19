@@ -30,7 +30,8 @@
     &__preview_modal,
     &__preview_avatar,
     &__preview_checkbox,
-    &__preview_radio {
+    &__preview_radio,
+    &__preview_toggler {
         display: flex;
         flex-direction: column;
     }
@@ -57,7 +58,9 @@
     &__preview_modal-window {
         z-index: 40;
     }
-    &__preview_checkbox, &__preview_radio {
+    &__preview_checkbox,
+    &__preview_radio,
+    &__preview_toggler {
         padding-left: 30%;
         align-items: flex-start;
     }
