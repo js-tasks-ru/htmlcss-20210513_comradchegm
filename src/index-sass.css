@@ -1679,7 +1679,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   border-top: 1px solid var(--grey-2);
   padding: 0 16px;
 }
-.component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar, .component__preview_checkbox, .component__preview_radio, .component__preview_toggler {
+.component__preview_button, .component__preview_accordion, .component__preview_modal, .component__preview_avatar, .component__preview_checkbox, .component__preview_radio, .component__preview_toggler, .component__preview_input {
   display: flex;
   flex-direction: column;
 }

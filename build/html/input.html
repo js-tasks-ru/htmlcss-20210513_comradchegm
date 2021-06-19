@@ -109,8 +109,47 @@
             </div>
             <div class="component">
                 <div class="component__title">Custom input fields</div>
-                <div class="component__preview preview-flex__accordion">
-                    <div class="component__preview_accordion">
+                <div class="component__preview">
+                    <div class="component__preview_input">
+                        <label class="input input_preview">
+                            <div class="input__label">DEFAULT</div>
+                            <input type="text" class="input__field" id="default" name="default"
+                                placeholder="Placeholder">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="input input_preview">
+                            <div class="input__label">SUCCESS</div>
+                            <input type="text" class="input__field input__field_success" id="success"
+                                name="success" value="Success">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="input input_preview">
+                            <div class="input__label">ERROR</div>
+                            <input type="text" class="input__field input__field_invalid" id="invald"
+                                name="invald" value="Error">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
                     </div>
                 </div>
                 <div class="component__code">
@@ -133,6 +172,50 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;DEFAULT&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field&quot; id=&quot;default&quot; name=&quot;default&quot; placeholder=&quot;Placeholder&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;SUCCESS&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field input__field_success&quot; id=&quot;success&quot; name=&quot;success&quot; value=&quot;Success&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;ERROR&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field input__field_invalid&quot; id=&quot;invald&quot; name=&quot;invald&quot; value=&quot;Error&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
                                 </code>
                             </pre>
                         </div>
@@ -140,6 +223,72 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.input {
+    position: relative;
+
+    &amp;, &amp;__field, &amp;__img {
+        display: inline-block;
+    }
+    &amp;__field, &amp;__label {
+        font-style: normal;
+        text-align: left;
+    }
+    &amp;__field, &amp;__field_focus {
+        outline: none;
+        appearance: none;
+    }
+    &amp;__field {
+        box-sizing: border-box;
+        border: 1px solid var(--grey-2);
+        border-radius: 8px;
+        padding: 0 24px;
+        height: 56px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    &amp;__label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+    }
+    &amp;__img {
+        position: absolute;
+        transform: translate(-42px, 16px);
+    }
+    &amp;__field:focus, &amp;__field_focus {
+        border: 1px solid var(--blue);
+    }
+    &amp;__field_focus {
+        border-radius: 8px;
+    }
+    &amp;__field_success, &amp;__field_invalid {
+        padding-right: 56px;
+    }
+    &amp;__field_invalid, &amp;__field_invalid:focus {
+        border-color: var(--invalid);
+    }
+    &amp;__svg_success, &amp;__svg_invalid {
+        display: none;
+    }
+    &amp;__field_success ~ &amp;__img &amp;__svg_success, &amp;__field_invalid ~ &amp;__img &amp;__svg_invalid {
+        display: block;
+        color: var(--success);
+    }
+    &amp;__field_invalid ~ &amp;__img &amp;__svg_invalid {
+        color: var(--invalid);
+    }
+    &amp;__field:disabled {
+        background: var(--disabled);
+    }
+    &amp;_preview, &amp;__field_preview {
+        width: 100%;
+    }
+    &amp;_preview {
+        margin-bottom: 16px;
+    }
+}
                                 </code>
                             </pre>
                         </div>
