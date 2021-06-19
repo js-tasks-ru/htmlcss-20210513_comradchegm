@@ -2,7 +2,7 @@
     position: relative;
 }
 
-.burger__open, .burger__close, .burger__menu {
+.burger__menu {
     position: fixed;
 }
 

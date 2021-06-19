@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accordion</title>
+    <title>Skeleton</title>
     <link rel="stylesheet" href="../index.css">
     <script defer src="../../assets/js/burger-menu.js"></script>
 </head>
@@ -110,7 +110,18 @@
             <div class="component">
                 <div class="component__title">Skeleton</div>
                 <div class="component__preview preview-flex__accordion">
-                    <div class="component__preview_accordion">
+                    <div class="skeleton">
+                        <div class="skeleton__header">
+                            <div class="skeleton__avatar"></div>
+                            <div class="skeleton__legend">
+                                <div class="skeleton__item" style="width: 50%;"></div>
+                                <div class="skeleton__item" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton__content">
+                            <div class="skeleton__item"></div>
+                            <div class="skeleton__item"></div>
+                        </div>
                     </div>
                 </div>
                 <div class="component__code">
@@ -133,6 +144,19 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__header&quot;&gt;
+        &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__legend&quot;&gt;
+            &lt;div class=&quot;skeleton__item&quot; style=&quot;width: 50%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__item&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;skeleton__content&quot;&gt;
+        &lt;div class=&quot;skeleton__item&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__item&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>
@@ -140,6 +164,48 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.skeleton {
+    &amp;,
+    &amp;__header,
+    &amp;__legend,
+    &amp;__content {
+        display: flex;
+    }
+    &amp;,
+    &amp;__legend,
+    &amp;__content {
+        flex-direction: column;
+    }
+    &amp; {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: 192px;
+        border: 1px solid var(--grey-3);
+        border-radius: 8px;
+        padding: 24px 40px 24px 24px;
+    }
+    &amp;__header {
+        flex-direction: row;
+        margin-bottom: 16px;
+    }
+    &amp;__legend {
+        flex-grow: 1;
+    }
+    &amp;__avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background-color: var(--grey-2);
+        margin-right: 16px;
+    }
+    &amp;__item {
+        height: 20px;
+        background: linear-gradient(
+            92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+        );
+        margin-top: 8px;
+    }
+}
                                 </code>
                             </pre>
                         </div>

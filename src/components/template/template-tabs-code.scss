@@ -31,6 +31,9 @@
     &__switcher, &__content {
         display: none;
     }
+    &__content {
+        width: 100%;
+    }
     #html-tab:checked ~ &__scroller #html-lbl,
     #css-tab:checked ~ &__scroller #css-lbl,
     #java-script-tab:checked ~ &__scroller #java-script-lbl {
