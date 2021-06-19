@@ -12,11 +12,12 @@
         height: 100%;
         padding: 8px;
     }
-    &__button, &__accordion, &__histogam {
+    &__button, &__accordion, &__histogam, &__tooltip {
         display: flex;
         flex-direction: column;
     }
-    &__button {
+    &__button, &__tooltip {
+        justify-content: center;
         align-items: center;
     }
     &__accordion {

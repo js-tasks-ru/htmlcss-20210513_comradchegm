@@ -1,12 +1,9 @@
-.burger {
-    position: relative;
-}
-
 .burger__menu {
     position: fixed;
 }
 
 .burger__open, .burger__close {
+    position: absolute;
     top: 32px;
     left: 32px;
     width: 32px;
@@ -32,7 +29,7 @@
     visibility: hidden;
 }
 
-.burger__menu, .burger__menu[data-open] {
+.burger__menu {
     transition: transform 200ms ease-in-out;
 }
 

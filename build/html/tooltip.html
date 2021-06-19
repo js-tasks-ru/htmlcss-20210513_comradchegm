@@ -109,8 +109,16 @@
             </div>
             <div class="component">
                 <div class="component__title">Tooltip</div>
-                <div class="component__preview preview-flex__accordion">
-                    <div class="component__preview_accordion">
+                <div class="component__preview preview-flex__tooltip">
+                    <div class="tooltip">
+                        <div class="tooltip__label">
+                            <svg width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#question"></use>
+                            </svg>
+                        </div>
+                        <div class="tooltip__help">
+                            <span class="tooltip__text">Help Text</span>
+                        </div>
                     </div>
                 </div>
                 <div class="component__code">
@@ -133,6 +141,16 @@
                             <!-- HTML -->
                             <pre>
                                 <code data-language="html">
+&lt;div class=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;tooltip__label&quot;&gt;
+        &lt;svg width=&quot;24&quot; height=&quot;24&quot;&gt;
+            &lt;use xlink:href=&quot;../../assets/images/sprite.svg#question&quot;&gt;&lt;/use&gt;
+        &lt;/svg&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;tooltip__help&quot;&gt;
+        &lt;span class=&quot;tooltip__text&quot;&gt;Help Text&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
                                 </code>
                             </pre>
                         </div>
@@ -140,6 +158,52 @@
                             <!-- CSS -->
                             <pre>
                                 <code data-language="scss">
+.tooltip {
+    position: relative;
+
+    &amp;__help,
+    &amp;__help::after {
+        position: absolute;
+    }
+    &amp;__help {
+        display: none;
+        box-sizing: border-box;
+        padding: 10px 21px;
+        bottom: 100%;
+        left: 50%;
+        transform: translate(-50%, -9px);
+        background: var(--blue);
+        border-radius: 10px;
+        box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
+    }
+    &amp;__text {
+        display: inline-block;
+        width: 87px;
+        color: var(--grey-2);
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+    &amp;__help::after {
+        content: &apos;&apos;;
+        border: 7px solid transparent;
+        border-top: 6px solid var(--blue);
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 100%);
+    }
+    &amp;__label {
+        display: block;
+        width: 24px;
+        height: 24px;
+    }
+    &amp;__label:hover ~ &amp;__help {
+        display: block;
+    }
+    &amp;__help_preview {
+        display: block;
+    }
+}
                                 </code>
                             </pre>
                         </div>
