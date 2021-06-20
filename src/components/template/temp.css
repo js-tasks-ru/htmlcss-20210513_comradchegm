@@ -1,0 +1,77 @@
+.button {
+    box-sizing: border-box;
+    height: 48px;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    color: var(--button-clr);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0;
+    text-align: center;
+    transition: transform 200ms ease-in-out;
+}
+
+.button:active {
+    transform: translate(0, 1px);
+    transition: transform 200ms ease-in-out;
+}
+
+.button_primary:hover,
+.button_secondary:hover,
+.button_alternate:hover {
+    cursor: pointer;
+}
+
+.button_primary:disabled,
+.button_secondary:disabled,
+.button_alternate:disabled {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.button_primary {
+    background: var(--primary);
+}
+
+.button_primary:hover {
+    background: var(--primary-hvr);
+}
+
+.button_primary:active {
+    background: var(--primary-act);
+}
+
+.button_secondary {
+    background: var(--secondary);
+}
+
+.button_secondary:hover {
+    background: var(--secondary-hvr);
+}
+
+.button_secondary:active {
+    background: var(--secondary-act);
+}
+
+.button_alternate {
+    color: var(--alternate-clr);
+    background-color: var(--alternate);
+    border-color: var(--alternate-brd);
+}
+
+.button_alternate:hover {
+    border-color: var(--alternate-brd-hvr);
+}
+
+.button_alternate:active {
+    border-color: var(--alternate-brd-act);
+}
+
+.button_preview {
+    display: block;
+    width: 100%;
+    margin-bottom: 16px;
+}

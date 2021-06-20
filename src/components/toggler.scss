@@ -33,6 +33,9 @@
         border-radius: 14px;
         width: 52px;
         height: 28px;
+        transition:
+            background-color 400ms ease-in-out,
+            border-color 400ms ease-in-out;
     }
     &__img {
         position: relative;
@@ -41,15 +44,24 @@
         width: 24px;
         height: 24px;
         border-radius: 50%;
-        background: var(--grey-2);
-    }
+        background-color: var(--grey-2);
+        transition:
+            transform 400ms ease-in-out,
+            background-color 400ms ease-in-out;
+}
     &__native:checked ~ &__box {
-        background: var(--blue);
+        background-color: var(--blue);
         border-color: var(--blue);
+        transition:
+            background-color 400ms ease-in-out,
+            border-color 400ms ease-in-out;
     }
     &__native:checked ~ &__box &__img {
-        background: var(--main-background);
+        background-color: var(--main-background);
         transform: translate(24px, 0);
+        transition:
+            transform 400ms ease-in-out,
+            background-color 400ms ease-in-out;
     }
     &__native:disabled ~ &__box, &__native:disabled ~ &__text {
         opacity: 0.5;
