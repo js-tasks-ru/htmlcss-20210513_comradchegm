@@ -585,6 +585,11 @@ body {
   line-height: 19px;
   letter-spacing: 0;
   text-align: center;
+  transition: transform 200ms ease-in-out;
+}
+.button:active {
+  transform: translate(0, 1px);
+  transition: transform 200ms ease-in-out;
 }
 .button_primary:hover, .button_secondary:hover, .button_alternate:hover {
   cursor: pointer;

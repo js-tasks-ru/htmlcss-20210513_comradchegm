@@ -13,7 +13,12 @@
     line-height: 19px;
     letter-spacing: 0;
     text-align: center;
+    transition: transform 200ms ease-in-out;
 
+    &:active {
+        transform: translate(0, 1px);
+        transition: transform 200ms ease-in-out;
+    }
     &_primary:hover,
     &_secondary:hover,
     &_alternate:hover {
