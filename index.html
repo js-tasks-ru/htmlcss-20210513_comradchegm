@@ -12,17 +12,79 @@
     <div class="page">
         <header class="header">
             <div class="page__box">
-                <div class="header__nav-box">
-                    <div class="header__logo">
-                        <svg width="110" height="32">
-                            <use xlink:href="./assets/images/sprite.svg#logo"></use>
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="./assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on" focus>
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./build/html/button.html">Button</a>
+                            <a class="burger__item" href="./build/html/accordion.html">Accordion</a>
+                            <a class="burger__item" href="./build/html/histogram.html">Histogram</a>
+                            <a class="burger__item" href="./build/html/skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./build/html/tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./build/html/modal.html">Modal</a>
+                            <a class="burger__item" href="./build/html/calendar.html">Calendar</a>
+                            <a class="burger__item" href="./build/html/avatar.html">Avatar</a>
+                            <a class="burger__item" href="./build/html/checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./build/html/radio.html">Radio</a>
+                            <a class="burger__item" href="./build/html/toggler.html">Toggler</a>
+                            <a class="burger__item" href="./build/html/input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="./index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/images/sprite.svg#burger-symbol"></use>
                         </svg>
                     </div>
-                    <nav class="header__nav">
-                        <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
-                        <div class="header__nav-item"><a href="#2" class="header__nav-link">About</a></div>
-                        <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
-                    </nav>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="./assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="./index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="./assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler">
+                            <input type="checkbox" class="toggler__native" id="theme" name="theme">
+                            <svg width="24" height="24" class="theme-toggler__sun">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg width="24" height="24" class="theme-toggler__moon">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
                 </div>
                 <div class="header__title">
                     Reusable component library
@@ -55,7 +117,7 @@
                         <section class="preview-flex__container">
                             <!-- Button -->
                             <div class="card">
-                                <a href="#component1" class="card__link"></a>
+                                <a href="./build/html/button.html" class="card__link"></a>
                                 <div class="card__content">
                                     <button class="button button_primary button_preview">Primary</button>
                                     <button class="button button_secondary button_preview">Secondary</button>
@@ -68,9 +130,9 @@
                             </div>
                             <!-- Accordion -->
                             <div class="card">
-                                <a href="#component2" class="card__link"></a>
+                                <a href="./build/html/accordion.html" class="card__link"></a>
                                 <div class="card__content preview-flex__accordion">
-                                    <details class="accordion__item accordion_preview">
+                                    <details class="accordion__item accordion_preview" open>
                                         <summary class="accordion__summary">
                                             <span class="accordion__title">Accordion item 1</span>
                                             <svg class="accordion__arrow" width="26" height="26">
@@ -80,29 +142,12 @@
                                         <div class="accordion__content">
                                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut quam rem
                                             accusantium, provident corrupti
-                                            ipsa ad numquam perspiciatis, quidem in. Consequatur impedit hic laboriosam
-                                            deleniti eaque nostrum, quae
-                                            modi.
+                                            ipsa ad numquam perspiciatis, quidem in.
                                         </div>
                                     </details>
                                     <details class="accordion__item accordion_preview">
                                         <summary class="accordion__summary">
                                             <span class="accordion__title">Accordion item 2</span>
-                                            <svg class="accordion__arrow" width="26" height="26">
-                                                <use xlink:href="./assets/images/sprite.svg#arrow"></use>
-                                            </svg>
-                                        </summary>
-                                        <div class="accordion__content">
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero ut quam rem
-                                            accusantium, provident corrupti
-                                            ipsa ad numquam perspiciatis, quidem in. Consequatur impedit hic laboriosam
-                                            deleniti eaque nostrum, quae
-                                            modi.
-                                        </div>
-                                    </details>
-                                    <details class="accordion__item accordion_preview">
-                                        <summary class="accordion__summary">
-                                            <span class="accordion__title">Accordion item 3</span>
                                             <svg class="accordion__arrow" width="26" height="26">
                                                 <use xlink:href="./assets/images/sprite.svg#arrow"></use>
                                             </svg>
@@ -123,7 +168,7 @@
                             </div>
                             <!-- Histogram -->
                             <div class="card">
-                                <a href="#component3" class="card__link"></a>
+                                <a href="./build/html/histogram.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="histogram">
                                         <div class="histogram__legend">
@@ -294,7 +339,7 @@
                             </div>
                             <!-- Skeleton -->
                             <div class="card">
-                                <a href="#component4" class="card__link"></a>
+                                <a href="./build/html/skeleton.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="skeleton">
                                         <div class="skeleton__header">
@@ -317,7 +362,7 @@
                             </div>
                             <!-- Tooltip -->
                             <div class="card">
-                                <a href="#component5" class="card__link"></a>
+                                <a href="./build/html/tooltip.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="tooltip">
                                         <div class="tooltip__label">
@@ -337,7 +382,7 @@
                             </div>
                             <!-- Modal -->
                             <div class="card">
-                                <a href="#component6" class="card__link"></a>
+                                <a href="./build/html/modal.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="modal preview-flex__modal">
                                         <div class="modal__backdrop modal__backdrop_preview" id="backdrop"></div>
@@ -365,7 +410,7 @@
                             </div>
                             <!-- Calendar -->
                             <div class="card">
-                                <a href="#component7" class="card__link"></a>
+                                <a href="./build/html/calendar.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="calendar">
                                         <div class="calendar__title">
@@ -426,7 +471,7 @@
                             </div>
                             <!-- Avatar -->
                             <div class="card">
-                                <a href="#component8" class="card__link"></a>
+                                <a href="./build/html/avatar.html" class="card__link"></a>
                                 <div class="card__content">
                                     <div class="avatar avatar_pr">
                                         <img class="avatar__img"
@@ -437,6 +482,151 @@
                                 </div>
                                 <div class="card__header">
                                     <span class="card__title">Avatar</span>
+                                    <span class="card__subtile">Element</span>
+                                </div>
+                            </div>
+                            <!-- Checkbox -->
+                            <div class="card">
+                                <a href="./build/html/checkbox.html" class="card__link"></a>
+                                <div class="card__content preview-flex__checkbox">
+                                    <label class="checkbox checkbox_preview">
+                                        <input type="checkbox" class="checkbox__native" id="default" name="default" focus>
+                                        <div class="checkbox__box">
+                                            <svg width="24" height="24" class="checkbox__img">
+                                                <use xlink:href="./assets/images/sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__text">Default</span> 
+                                    </label>
+                                    <label class="checkbox checkbox_preview">
+                                        <input type="checkbox" class="checkbox__native" id="checked" name="checked" checked>
+                                        <div class="checkbox__box">
+                                            <svg width="24" height="24" class="checkbox__img">
+                                                <use xlink:href="./assets/images/sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__text">Checked</span>
+                                    </label>
+                                    <label class="checkbox checkbox_preview">
+                                        <input type="checkbox" class="checkbox__native" id="disabled" name="disabled" disabled>
+                                        <div class="checkbox__box">
+                                            <svg width="24" height="24" class="checkbox__img">
+                                                <use xlink:href="./assets/images/sprite.svg#check"></use>
+                                            </svg>
+                                        </div>
+                                        <span class="checkbox__text">Disabled</span>
+                                    </label>
+                                </div>
+                                <div class="card__header">
+                                    <span class="card__title">Checkbox</span>
+                                    <span class="card__subtile">Element</span>
+                                </div>
+                            </div>
+                            <!-- Radio -->
+                            <div class="card">
+                                <a href="./build/html/radio.html" class="card__link"></a>
+                                <div class="card__content preview-flex__radio">
+                                    <label class="radio radio_preview">
+                                        <input type="radio" class="radio__native" id="default" name="radio">
+                                        <div class="radio__box">
+                                            <div class="radio__img"></div>
+                                        </div>
+                                        <span class="radio__text">Default</span>
+                                    </label>
+                                    <label class="radio radio_preview">
+                                        <input type="radio" class="radio__native" id="checked" name="radio" checked>
+                                        <div class="radio__box">
+                                            <div class="radio__img"></div>
+                                        </div>
+                                        <span class="radio__text">Checked</span>
+                                    </label>
+                                    <label class="radio radio_preview">
+                                        <input type="radio" class="radio__native" id="disabled" name="radio-disabled" disabled>
+                                        <div class="radio__box">
+                                            <div class="radio__img"></div>
+                                        </div>
+                                        <span class="radio__text">Disabled</span>
+                                    </label>
+                                </div>
+                                <div class="card__header">
+                                    <span class="card__title">Radio</span>
+                                    <span class="card__subtile">Element</span>
+                                </div>
+                            </div>
+                            <!-- Toggler -->
+                            <div class="card">
+                                <a href="./build/html/toggler.html" class="card__link"></a>
+                                <div class="card__content preview-flex__toggler">
+                                    <label class="toggler toggler_preview">
+                                        <input type="checkbox" class="toggler__native" id="on" name="on" focus>
+                                        <div class="toggler__box">
+                                            <div class="toggler__img"></div>
+                                        </div>
+                                        <span class="toggler__text">Off</span>
+                                    </label>
+                                    <label class="toggler toggler_preview">
+                                        <input type="checkbox" class="toggler__native" id="off" name="off" checked>
+                                        <div class="toggler__box">
+                                            <div class="toggler__img"></div>
+                                        </div>
+                                        <span class="toggler__text">On</span>
+                                    </label>
+                                    <label class="toggler toggler_preview">
+                                        <input type="checkbox" class="toggler__native" id="disabled" name="disabled" disabled>
+                                        <div class="toggler__box">
+                                            <div class="toggler__img"></div>
+                                        </div>
+                                        <span class="toggler__text">Disabled</span>
+                                    </label>
+                                </div>
+                                <div class="card__header">
+                                    <span class="card__title">Toggler</span>
+                                    <span class="card__subtile">Element</span>
+                                </div>
+                            </div>
+                            <!-- Input -->
+                            <div class="card">
+                                <a href="./build/html/input.html" class="card__link"></a>
+                                <div class="card__content">
+                                    <label class="input input_preview">
+                                        <div class="input__label">DEFAULT</div>
+                                        <input type="text" class="input__field input__field_preview" id="default" name="default" placeholder="Placeholder">
+                                        <div class="input__img">
+                                            <svg width="24" height="24" class="input__svg_success">
+                                                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" class="input__svg_invalid">
+                                                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <label class="input input_preview">
+                                        <div class="input__label">SUCCESS</div>
+                                        <input type="text" class="input__field input__field_success" id="success" name="success" value="Success">
+                                        <div class="input__img">
+                                            <svg width="24" height="24" class="input__svg_success">
+                                                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" class="input__svg_invalid">
+                                                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                    <label class="input input_preview">
+                                        <div class="input__label">ERROR</div>
+                                        <input type="text" class="input__field input__field_preview input_previw input__field_invalid" id="invald" name="invald" value="Error">
+                                        <div class="input__img">
+                                            <svg width="24" height="24" class="input__svg_success">
+                                                <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                            </svg>
+                                            <svg width="24" height="24" class="input__svg_invalid">
+                                                <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                            </svg>
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="card__header">
+                                    <span class="card__title">Input fields</span>
                                     <span class="card__subtile">Element</span>
                                 </div>
                             </div>
@@ -454,7 +644,7 @@
                 </div>
             </div>
         </main>
-        <footer class="footer" id="component">
+        <footer class="footer" id="about">
             <h2 class="footer__title">About</h2>
             <p class="footer__description">This project is a collection of professionally designed, pre-built, fully
                 responsive HTML snippets you
@@ -465,4 +655,5 @@
         </footer>
     </div>
 </body>
+<script src="./assets/js/burger-menu.js"></script>
 </html>

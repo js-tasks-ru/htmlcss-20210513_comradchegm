@@ -1,6 +1,6 @@
 @use '../variables.scss' as variables;
 
 .main {
-    background-color: variables.$main-page;
+    background-color: var(--main-page-bgr);
     padding: 0 16px;
 }

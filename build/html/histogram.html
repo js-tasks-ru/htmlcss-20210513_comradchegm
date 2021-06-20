@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<!-- Страница histogram -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histogram</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="../../assets/js/burger-menu.js"></script>
+</head>
+<body>
+    <div class="template-page">
+        <div class="template-page__header">
+            <div class="page__box">
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on">
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./button.html">Button</a>
+                            <a class="burger__item" href="./accordion.html">Accordion</a>
+                            <a class="burger__item" href="./histogram.html">Histogram</a>
+                            <a class="burger__item" href="./skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./modal.html">Modal</a>
+                            <a class="burger__item" href="./calendar.html">Calendar</a>
+                            <a class="burger__item" href="./avatar.html">Avatar</a>
+                            <a class="burger__item" href="./checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./radio.html">Radio</a>
+                            <a class="burger__item" href="./toggler.html">Toggler</a>
+                            <a class="burger__item" href="./input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="../../index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#burger-symbol"></use>
+                        </svg>
+                    </div>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__main page__box">
+            <div class="menu">
+                <div class="menu__title">
+                    Components
+                </div>
+                <a class="menu__item" href="./button.html">Button</a>
+                <a class="menu__item" href="./accordion.html">Accordion</a>
+                <a class="menu__item" href="./histogram.html">Histogram</a>
+                <a class="menu__item" href="./skeleton.html">Skeleton</a>
+                <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                <a class="menu__item" href="./modal.html">Modal</a>
+                <a class="menu__item" href="./calendar.html">Calendar</a>
+                <a class="menu__item" href="./avatar.html">Avatar</a>
+                <a class="menu__item" href="./checkbox.html">Checkbox</a>
+                <a class="menu__item" href="./radio.html">Radio</a>
+                <a class="menu__item" href="./toggler.html">Toggler</a>
+                <a class="menu__item" href="./input.html">Input</a>
+            </div>
+            <div class="component">
+                <div class="component__title">Histogram</div>
+                <div class="component__preview preview-flex__histogram">
+                    <div class="component__preview_histogram">
+                        <div class="histogram histogram_preview">
+                            <div class="histogram__legend">
+                                <div class="histogram__orders">
+                                    <span class="histogram__title">Total orders</span>
+                                    <span class="histogram__value">50254</span>
+                                </div>
+                                <a class="histogram__link" href="#1">View all</a>
+                            </div>
+                            <div class="histogram__graph">
+                                <div class="histogram__col" style="height: 50%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">50</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 35%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">35</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 22%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">22</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 39%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">39</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 22%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">22</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 39%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">39</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 50%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">50</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 22%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">22</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 35%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">35</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 50%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">50</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 39%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">39</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 22%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">22</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 35%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">35</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 39%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">39</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 35%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">35</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 45%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">45</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 30%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">30</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 11%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">11</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 35%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">35</div>
+                                    </div>
+                                </div>
+                                <div class="histogram__col" style="height: 17%;">
+                                    <div class="histogram__tooltip">
+                                        <div class="histogram__tt-text">17</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            <pre>
+                                <code data-language="html">
+&lt;div class=&quot;histogram&quot;&gt;
+    &lt;div class=&quot;histogram__legend&quot;&gt;
+        &lt;div class=&quot;histogram__orders&quot;&gt;
+            &lt;span class=&quot;histogram__title&quot;&gt;Total orders&lt;/span&gt;
+            &lt;span class=&quot;histogram__value&quot;&gt;50254&lt;/span&gt;
+        &lt;/div&gt;
+        &lt;a class=&quot;histogram__link&quot; href=&quot;#1&quot;&gt;View all&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;histogram__graph&quot;&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 50%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;50&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 35%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;35&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 22%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;22&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 39%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;39&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 22%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;22&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 39%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;39&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 50%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;50&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 22%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;22&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 35%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;35&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 50%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;50&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 39%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;39&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 22%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;22&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 35%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;35&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 39%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;39&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 35%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;35&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 45%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;45&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 30%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;30&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 11%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;11&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 35%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;35&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;histogram__col&quot; style=&quot;height: 17%;&quot;&gt;
+            &lt;div class=&quot;histogram__tooltip&quot;&gt;
+                &lt;div class=&quot;histogram__tt-text&quot;&gt;17&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            <pre>
+                                <code data-language="css">
+.histogram,
+.histogram__legend,
+.histogram__orders,
+.histogram__graph {
+    display: flex;
+}
+
+.histogram,
+.histogram__orders {
+    flex-direction: column;
+}
+
+.histogram__legend,
+.histogram__graph {
+    flex-direction: row;
+}
+
+.histogram,
+.histogram__legend {
+    justify-content: space-between;
+}
+
+.histogram {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 16px 24px 24px 24px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.histogram__link,
+.histogram__tooltip {
+    display: inline-block;
+}
+
+.histogram__value {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.histogram__link {
+    text-decoration: none;
+    color: var(--blue);
+    letter-spacing: 0;
+    text-align: right;
+}
+
+.histogram__link:hover {
+    text-decoration: underline;
+}
+
+.histogram__graph {
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.histogram__col {
+    background-color: var(--blue);
+    flex-grow: 1;
+    margin-right: 1px;
+}
+
+.histogram__col:last-child {
+    margin-right: 0;
+}
+
+.histogram__tooltip {
+    position: relative;
+    top: -40px;
+}
+
+.histogram__tooltip .histogram__tt-text {
+    visibility: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.histogram__col:hover .histogram__tt-text {
+    visibility: visible;
+}
+
+.histogram_preview {
+    height: 300px;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            <pre>
+                                <code data-language="java-script"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__footer">
+            Reusable component library
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
+</html>

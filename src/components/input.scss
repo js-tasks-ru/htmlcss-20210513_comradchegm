@@ -1,0 +1,68 @@
+@use '../variables.scss' as variables;
+
+.input {
+    position: relative;
+
+    &, &__field, &__img {
+        display: inline-block;
+    }
+    &__field, &__label {
+        font-style: normal;
+        text-align: left;
+    }
+    &__field, &__field_focus {
+        outline: none;
+        appearance: none;
+    }
+    &__field {
+        box-sizing: border-box;
+        border: 1px solid var(--grey-2);
+        border-radius: 8px;
+        padding: 0 24px;
+        height: 56px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+    &__label {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 18px;
+        letter-spacing: 0.04em;
+    }
+    &__img {
+        position: absolute;
+        transform: translate(-42px, 16px);
+    }
+    &__field:focus, &__field_focus {
+        border: 1px solid var(--blue);
+    }
+    &__field_focus {
+        border-radius: 8px;
+    }
+    &__field_success, &__field_invalid {
+        padding-right: 56px;
+    }
+    &__field_invalid, &__field_invalid:focus {
+        border-color: var(--invalid);
+    }
+    &__svg_success, &__svg_invalid {
+        display: none;
+    }
+    &__field_success ~ &__img &__svg_success, &__field_invalid ~ &__img &__svg_invalid {
+        display: block;
+        color: var(--success);
+    }
+    &__field_invalid ~ &__img &__svg_invalid {
+        color: var(--invalid);
+    }
+    &__field:disabled {
+        background: var(--disabled);
+    }
+    &_preview, &__field_preview {
+        width: 100%;
+    }
+    &_preview {
+        margin-bottom: 16px;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../../variables.scss' as variables;
+
+.template-page {
+    height: max-content;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    background: var(--main-page-bgr);
+}

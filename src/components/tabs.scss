@@ -2,7 +2,6 @@
 
 .tabs {
     &__switcher,
-    &__scroller,
     &__content {
         display: none;
     }
@@ -14,8 +13,13 @@
     &__item:last-child {
         margin-right: 0;
     }
+    &__scroller {
+        display: flex;
+        flex-wrap: nowrap;
+        transform: translate(0, -37px);
+    }
     &__title {
-        color: variables.$grey-3;
+        color: var(--grey-3);
         cursor: pointer;
         font-family: Inter;
         font-size: 16px;
@@ -24,6 +28,7 @@
         line-height: 24px;
         letter-spacing: 0;
         text-align: left;
+        white-space: nowrap;
     }
     &__content {
         padding: 68px 0;
@@ -32,25 +37,18 @@
     #elements-tab:checked ~ &__scroller #elements-lbl,
     #containers-tab:checked ~ &__scroller #containers-lbl,
     #templates-tab:checked ~ &__scroller #templates-lbl {
-        border-bottom: 5px solid variables.$black;
+        border-bottom: 5px solid var(--main-color);
     }
     #all-tab:checked ~ &__scroller #all-lbl &__title,
     #elements-tab:checked ~ &__scroller #elements-lbl &__title,
     #containers-tab:checked ~ &__scroller #containers-lbl &__title,
     #templates-tab:checked ~ &__scroller #templates-lbl &__title {
-        color: variables.$black;
+        color: var(--main-color);
     }
     #all-tab:checked ~ &__content_all,
     #elements-tab:checked ~ &__content_elements,
     #containers-tab:checked ~ &__content_containers,
     #templates-tab:checked ~ &__content_templates {
         display: block;
-    }
-    @include variables.media-pc {
-        &__scroller {
-            display: block;
-            transform: translate(0, -100%) translate(0, -12px);
-            background: variables.$white;
-        }
     }
 }

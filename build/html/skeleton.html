@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<!-- Страница skeleton -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skeleton</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="../../assets/js/burger-menu.js"></script>
+</head>
+<body>
+    <div class="template-page">
+        <div class="template-page__header">
+            <div class="page__box">
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on">
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./button.html">Button</a>
+                            <a class="burger__item" href="./accordion.html">Accordion</a>
+                            <a class="burger__item" href="./histogram.html">Histogram</a>
+                            <a class="burger__item" href="./skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./modal.html">Modal</a>
+                            <a class="burger__item" href="./calendar.html">Calendar</a>
+                            <a class="burger__item" href="./avatar.html">Avatar</a>
+                            <a class="burger__item" href="./checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./radio.html">Radio</a>
+                            <a class="burger__item" href="./toggler.html">Toggler</a>
+                            <a class="burger__item" href="./input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="../../index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#burger-symbol"></use>
+                        </svg>
+                    </div>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__main page__box">
+            <div class="menu">
+                <div class="menu__title">
+                    Components
+                </div>
+                <a class="menu__item" href="./button.html">Button</a>
+                <a class="menu__item" href="./accordion.html">Accordion</a>
+                <a class="menu__item" href="./histogram.html">Histogram</a>
+                <a class="menu__item" href="./skeleton.html">Skeleton</a>
+                <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                <a class="menu__item" href="./modal.html">Modal</a>
+                <a class="menu__item" href="./calendar.html">Calendar</a>
+                <a class="menu__item" href="./avatar.html">Avatar</a>
+                <a class="menu__item" href="./checkbox.html">Checkbox</a>
+                <a class="menu__item" href="./radio.html">Radio</a>
+                <a class="menu__item" href="./toggler.html">Toggler</a>
+                <a class="menu__item" href="./input.html">Input</a>
+            </div>
+            <div class="component">
+                <div class="component__title">Skeleton</div>
+                <div class="component__preview preview-flex__accordion">
+                    <div class="skeleton">
+                        <div class="skeleton__header">
+                            <div class="skeleton__avatar"></div>
+                            <div class="skeleton__legend">
+                                <div class="skeleton__item" style="width: 50%;"></div>
+                                <div class="skeleton__item" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skeleton__content">
+                            <div class="skeleton__item"></div>
+                            <div class="skeleton__item"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            <pre>
+                                <code data-language="html">
+&lt;div class=&quot;skeleton&quot;&gt;
+    &lt;div class=&quot;skeleton__header&quot;&gt;
+        &lt;div class=&quot;skeleton__avatar&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__legend&quot;&gt;
+            &lt;div class=&quot;skeleton__item&quot; style=&quot;width: 50%;&quot;&gt;&lt;/div&gt;
+            &lt;div class=&quot;skeleton__item&quot; style=&quot;width: 75%;&quot;&gt;&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;skeleton__content&quot;&gt;
+        &lt;div class=&quot;skeleton__item&quot;&gt;&lt;/div&gt;
+        &lt;div class=&quot;skeleton__item&quot;&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            <pre>
+                                <code data-language="css">
+.skeleton,
+.skeleton__header,
+.skeleton__legend,
+.skeleton__content {
+    display: flex;
+}
+
+.skeleton,
+.skeleton__legend,
+.skeleton__content {
+    flex-direction: column;
+}
+
+.skeleton {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 192px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 40px 24px 24px;
+}
+
+.skeleton__header {
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.skeleton__legend {
+    flex-grow: 1;
+}
+
+.skeleton__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    margin-right: 16px;
+}
+
+.skeleton__item {
+    height: 20px;
+    background: linear-gradient( 92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    margin-top: 8px;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            <pre>
+                                <code data-language="java-script"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__footer">
+            Reusable component library
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
+</html>

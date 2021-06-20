@@ -1,0 +1,13 @@
+@use '../../variables.scss' as variables;
+
+.template-page__footer {
+    grid-area: footer;
+    display: flex;
+    height: 166px;
+    background: var(--main-page-bgr);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+}

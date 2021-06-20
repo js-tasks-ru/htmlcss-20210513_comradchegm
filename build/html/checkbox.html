@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<!-- Страница checkbox -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="../../assets/js/burger-menu.js"></script>
+</head>
+<body>
+    <div class="template-page">
+        <div class="template-page__header">
+            <div class="page__box">
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on">
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./button.html">Button</a>
+                            <a class="burger__item" href="./accordion.html">Accordion</a>
+                            <a class="burger__item" href="./histogram.html">Histogram</a>
+                            <a class="burger__item" href="./skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./modal.html">Modal</a>
+                            <a class="burger__item" href="./calendar.html">Calendar</a>
+                            <a class="burger__item" href="./avatar.html">Avatar</a>
+                            <a class="burger__item" href="./checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./radio.html">Radio</a>
+                            <a class="burger__item" href="./toggler.html">Toggler</a>
+                            <a class="burger__item" href="./input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="../../index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#burger-symbol"></use>
+                        </svg>
+                    </div>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__main page__box">
+            <div class="menu">
+                <div class="menu__title">
+                    Components
+                </div>
+                <a class="menu__item" href="./button.html">Button</a>
+                <a class="menu__item" href="./accordion.html">Accordion</a>
+                <a class="menu__item" href="./histogram.html">Histogram</a>
+                <a class="menu__item" href="./skeleton.html">Skeleton</a>
+                <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                <a class="menu__item" href="./modal.html">Modal</a>
+                <a class="menu__item" href="./calendar.html">Calendar</a>
+                <a class="menu__item" href="./avatar.html">Avatar</a>
+                <a class="menu__item" href="./checkbox.html">Checkbox</a>
+                <a class="menu__item" href="./radio.html">Radio</a>
+                <a class="menu__item" href="./toggler.html">Toggler</a>
+                <a class="menu__item" href="./input.html">Input</a>
+            </div>
+            <div class="component">
+                <div class="component__title">Checkbox</div>
+                <div class="component__preview">
+                    <div class="component__preview_checkbox">
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="default" name="default" focus>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Default</span>
+                        </label>
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="checked" name="checked" checked>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Checked</span>
+                        </label>
+                        <label class="checkbox checkbox_preview">
+                            <input type="checkbox" class="checkbox__native" id="disabled" name="disabled" disabled>
+                            <div class="checkbox__box">
+                                <svg width="24" height="24" class="checkbox__img">
+                                    <use xlink:href="/../../assets/images/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <span class="checkbox__text">Disabled</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            <pre>
+                                <code data-language="html">
+&lt;div&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;default&quot; name=&quot;default&quot; focus&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Default&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;checked&quot; name=&quot;checked&quot; checked&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Checked&lt;/span&gt;
+    &lt;/label&gt;
+    &lt;label class=&quot;checkbox&quot;&gt;
+        &lt;input type=&quot;checkbox&quot; class=&quot;checkbox__native&quot; id=&quot;disabled&quot; name=&quot;disabled&quot; disabled&gt;
+        &lt;div class=&quot;checkbox__box&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;checkbox__img&quot;&gt;
+                &lt;use xlink:href=&quot;/../../assets/images/sprite.svg#check&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;checkbox__text&quot;&gt;Disabled&lt;/span&gt;
+    &lt;/label&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            <pre>
+                                <code data-language="css">
+.checkbox,
+.checkbox__box {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__native {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox__text {
+    color: var(--grey-4);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.checkbox__box {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+}
+
+.checkbox__img {
+    visibility: hidden;
+    color: var(--main-background);
+    stroke-width: 3px;
+}
+
+.checkbox__box,
+.checkbox__text {
+    cursor: pointer;
+}
+
+.checkbox__native:checked~.checkbox__box {
+    background: var(--blue);
+}
+
+.checkbox__native:checked~.checkbox__box .checkbox__img {
+    visibility: visible;
+}
+
+.checkbox__native:disabled~.checkbox__box,
+.checkbox__native:disabled~.checkbox__text {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.checkbox__native:disabled~.checkbox__box {
+    background: var(--grey-2);
+}
+
+.checkbox__native:focus~.checkbox__text {
+    text-decoration: underline;
+}
+
+.checkbox_preview {
+    margin-bottom: 16px;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            <pre>
+                                <code data-language="java-script"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__footer">
+            Reusable component library
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
+</html>

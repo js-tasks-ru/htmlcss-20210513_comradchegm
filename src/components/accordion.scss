@@ -5,7 +5,7 @@
         box-sizing: border-box;
         width: 100%;
         min-height: 72px;
-        border: 1px solid variables.$black;
+        border: 1px solid var(--main-color);
         border-radius: 8px;
         padding: 24px 32px;
         margin-bottom: 8px;
@@ -22,6 +22,9 @@
     }
     &__summary::-webkit-details-marker {
         display: none;
+    }
+    &__content {
+        margin-top: 16px;
     }
     &__item[open] &__arrow {
         transform: rotate(180deg);

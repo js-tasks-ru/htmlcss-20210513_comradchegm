@@ -1,0 +1,118 @@
+@use '../variables.scss' as variables;
+
+.burger {
+    position: relative;
+    z-index: 20;
+
+    &__open, &__close, &__menu {
+        position: fixed;
+    }
+    &__open, &__close {
+        top: 32px;
+        left: 32px;
+        width: 32px;
+        height: 32px;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--main-color);
+    }
+    &__open {
+        background: var(--main-page-bgr);
+    }
+    &__open:hover {
+        background: var(--open-hvr);
+    }
+    &__close:hover {
+        background: var(--close-hvr);
+    }
+    &__close {
+        background: var(--grey-2);
+        border-radius: 50%;
+        visibility: hidden;
+    }
+    &__logo {
+        height: 64px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__menu, &__menu[data-open] {
+        transition: transform 200ms ease-in-out;
+    }
+    &__menu {
+        top: 0;
+        left: 0;
+        width: 96vw;
+        height: 100vh;
+        transform: translateX(-100vw);
+        padding: 0 16px 16px 16px;
+        background: var(--main-page-bgr);
+        display: grid;
+        grid-template-rows:
+            64px
+            78px
+            66px
+            calc(100vh - 64px - 78px - 66px - 72px)
+            72px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        height: 66px;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0;
+        text-align: left;
+        color: var(--grey-3);
+    }
+    &__item, &__main-link {
+        display: block;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        text-decoration: none;
+        color: var(--main-color);
+    }
+    &__main-link {
+        padding-top: 24px;
+    }
+    &__item {
+        margin-bottom: 16px;
+    }
+    &__menu[data-open] {
+        transform: translateX(0);
+    }
+
+    &__menu[data-open] ~ &__open {
+        visibility: hidden;
+    }
+    &__menu[data-open] ~ &__close {
+        visibility: visible;
+    }
+    &__theme-title {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0;
+        text-align: left;
+        color: var(--grey-4);
+    }
+    @include variables.media-pc {
+        & {
+            display: none;
+        }
+    }
+}

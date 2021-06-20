@@ -9,7 +9,7 @@
         box-sizing: border-box;
         padding: 30px 40px;
         transform: translate(-50%, -50%);
-        background: variables.$white;
+        background: var(--main-background);
         flex-direction: column;
         border-radius: 8px;
     }
@@ -18,7 +18,7 @@
         font-weight: 600;
         font-size: 20px;
         line-height: 24px;
-        color: variables.$grey-4;
+        color: var(--grey-4);
     }
     &__backdrop {
         position: fixed;
@@ -41,7 +41,7 @@
         transform: translate(50%, -50%);
     }
     &__close:hover {
-        background: variables.$red;
+        background: var(--close-hvr);
         cursor: pointer;
     }
     &__text {
@@ -49,7 +49,7 @@
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-        color: variables.$grey-4;
+        color: var(--grey-4);
     }
     &__backdrop_preview {
         display: block;

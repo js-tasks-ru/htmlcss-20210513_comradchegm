@@ -1,0 +1,17 @@
+@use '../../variables.scss' as variables;
+
+.template-page__main {
+    grid-area: main;
+
+    @include variables.media-pc {
+        & {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            grid-template-areas: 
+                "main-menu component";
+            column-gap: 56px;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

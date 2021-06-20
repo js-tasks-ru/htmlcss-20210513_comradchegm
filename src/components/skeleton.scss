@@ -16,7 +16,7 @@
         box-sizing: border-box;
         width: 100%;
         min-height: 192px;
-        border: 1px solid variables.$grey-3;
+        border: 1px solid var(--grey-3);
         border-radius: 8px;
         padding: 24px 40px 24px 24px;
     }
@@ -31,7 +31,7 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background-color: variables.$grey-2;
+        background-color: var(--grey-2);
         margin-right: 16px;
     }
     &__item {

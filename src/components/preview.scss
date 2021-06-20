@@ -12,6 +12,21 @@
         height: 100%;
         padding: 8px;
     }
+    &__button, &__accordion, &__histogam, &__tooltip {
+        display: flex;
+        flex-direction: column;
+    }
+    &__button, &__tooltip {
+        justify-content: center;
+        align-items: center;
+    }
+    &__accordion {
+        align-items: flex-start;
+    }
+    &__checkbox, &__radio, &__toggler {
+        padding-left: 33%;
+        align-items: flex-start;
+    }
     @include variables.media-tab {
         &__container {
             grid-template-columns: 1fr 1fr;

@@ -1,0 +1,85 @@
+@use '../../variables.scss' as variables;
+
+.component {
+    grid-area: component;
+    background: var(--main-background);
+    border-radius: 12px;
+
+    &__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0;
+        text-align: left;
+        padding: 32px 16px;
+    }
+    &__preview {
+        box-sizing: border-box;
+        min-height: 270px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px 89px 16px;
+    }
+    &__code {
+        border-top: 1px solid var(--grey-2);
+        padding: 0 16px;
+    }
+    &__preview_button,
+    &__preview_accordion,
+    &__preview_modal,
+    &__preview_avatar,
+    &__preview_checkbox,
+    &__preview_radio,
+    &__preview_toggler,
+    &__preview_input {
+        display: flex;
+        flex-direction: column;
+    }
+    &__preview_button {
+        width: 250px;
+        justify-content: space-around;
+    }
+    &__preview_accordion {
+        width: 100%;
+        min-height: max-content;
+    }
+    &__preview_modal, &__preview_avatar {
+        justify-content: center;
+        align-items: center;
+    }
+    &__preview_modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 30;
+    }
+    &__preview_modal-window {
+        z-index: 40;
+    }
+    &__preview_checkbox,
+    &__preview_radio,
+    &__preview_toggler {
+        padding-left: 30%;
+        align-items: flex-start;
+    }
+    &__preview_input {
+        padding: 0 10%;
+    }
+    @include variables.media-pc {
+        &__title {
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 38px;
+            padding: 32px 48px;
+        }
+        &__preview {
+            padding: 0 48px 102px 48px;
+        }
+        &__code {
+            padding: 0 48px 64px 42px;
+        }
+    }
+}

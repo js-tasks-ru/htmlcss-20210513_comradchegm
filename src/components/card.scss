@@ -7,7 +7,7 @@
     border-radius: 12px;
     box-sizing: border-box;
     padding: 32px 40px;
-    background: variables.$white;
+    background: var(--main-background);
     @include variables.box-shadow;
 
     &__link {

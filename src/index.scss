@@ -14,4 +14,19 @@
 @use './components/modal.scss';
 @use './components/calendar.scss';
 @use './components/avatar.scss';
+@use './components/checkbox.scss';
+@use './components/radio.scss';
+@use './components/toggler.scss';
+@use './components/theme_toggler.scss';
+@use './components/burger.scss';
+@use './components/input.scss';
 @use './components/preview.scss';
+@use '../assets/css/rainbow-code.css';
+
+@use './components/template/template.scss';
+@use './components/template/template-header.scss';
+@use './components/template/template-main.scss';
+@use './components/template/template-footer.scss';
+@use './components/template/template-menu.scss';
+@use './components/template/template-component.scss';
+@use './components/template/template-tabs-code.scss';

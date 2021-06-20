@@ -33,11 +33,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     top: 15px;
     right: 15px;
     transform: translate(50%, -50%);
+    border-radius: 6px;
 }
 
 .modal__close:hover {

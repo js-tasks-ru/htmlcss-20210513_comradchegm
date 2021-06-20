@@ -1,14 +1,23 @@
 @use '../variables.scss' as variables;
 
 .header {
-    padding: 96px 16px 56px 16px;
+    padding: 16px 16px 69px 16px;
 
     &__logo {
-        color: variables.$black;
+        color: var(--main-color);
+    }
+    &__nav-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 48px;
     }
     &__nav-box {
         display: flex;
+        flex-grow: 1;
         justify-content: center;
+    }
+    &__nav, &__nav-wrapper .theme-toggler {
+        display: none;
     }
     &__title {
         font-size: 28px;
@@ -18,14 +27,11 @@
         letter-spacing: 0;
         text-align: left;
     }
-    &__nav {
-        display: none;
-    }
     &__nav-item {
         margin-right: 24px;
     }
     &__nav-item:last-child {
-        margin-right: 0;
+        margin-right: 56px;
     }
     &__nav-link {
         text-decoration: none;
@@ -35,34 +41,39 @@
         line-height: 24px;
         letter-spacing: 0;
         text-align: right;
-        color: variables.$grey-3;
+        color: var(--grey-3);
     }
     &__nav-item:first-child &__nav-link {
-        color: variables.$black;
+        color: var(--main-color);
     }
     &__nav-link:hover {
         text-decoration: none;
     }
     &__nav-link:visited {
-        color: variables.$grey-3;
+        color: var(--grey-3);
     }
     &__nav-item:first-child &__nav-link:visited {
-        color: variables.$black;
+        color: var(--main-color);
     }
     @include variables.media-pc {
+        & {
+            padding: 24px 0 77px 0;
+        }
         &__title {
             font-size: 50px;
             font-weight: 500;
             line-height: 64px;
             text-align: left;
         }
-        &__nav {
+        &__nav-wrapper {
+            margin-bottom: 40px;
+        }
+        &__nav, &__nav-wrapper .theme-toggler {
             display: flex;
-            flex-direction: row;
         }
         &__nav-box {
-            flex-direction: row;
             justify-content: space-between;
+            align-items: center;
         }
     }
 }

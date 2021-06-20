@@ -1,0 +1,38 @@
+@use '../../variables.scss' as variables;
+
+.menu {
+    grid-area: main-menu;
+    display: none;
+
+    &__title {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 16px;
+        color: var(--black);
+    }
+    &__item {
+        display: block;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0;
+        text-align: left;
+        margin-bottom: 4px;
+        color: var(--black);
+        text-decoration: none;
+    }
+    &__item:last-child {
+        margin-bottom: 0;
+    }
+    @include variables.media-pc {
+        & {
+            width: 229px;
+            display: block;
+        }
+    }
+}

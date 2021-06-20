@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!-- Страница modal -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="../../assets/js/burger-menu.js"></script>
+</head>
+<body>
+    <div class="template-page">
+        <div class="template-page__header">
+            <div class="page__box">
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on">
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./button.html">Button</a>
+                            <a class="burger__item" href="./accordion.html">Accordion</a>
+                            <a class="burger__item" href="./histogram.html">Histogram</a>
+                            <a class="burger__item" href="./skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./modal.html">Modal</a>
+                            <a class="burger__item" href="./calendar.html">Calendar</a>
+                            <a class="burger__item" href="./avatar.html">Avatar</a>
+                            <a class="burger__item" href="./checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./radio.html">Radio</a>
+                            <a class="burger__item" href="./toggler.html">Toggler</a>
+                            <a class="burger__item" href="./input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="../../index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#burger-symbol"></use>
+                        </svg>
+                    </div>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__main page__box">
+            <div class="menu">
+                <div class="menu__title">
+                    Components
+                </div>
+                <a class="menu__item" href="./button.html">Button</a>
+                <a class="menu__item" href="./accordion.html">Accordion</a>
+                <a class="menu__item" href="./histogram.html">Histogram</a>
+                <a class="menu__item" href="./skeleton.html">Skeleton</a>
+                <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                <a class="menu__item" href="./modal.html">Modal</a>
+                <a class="menu__item" href="./calendar.html">Calendar</a>
+                <a class="menu__item" href="./avatar.html">Avatar</a>
+                <a class="menu__item" href="./checkbox.html">Checkbox</a>
+                <a class="menu__item" href="./radio.html">Radio</a>
+                <a class="menu__item" href="./toggler.html">Toggler</a>
+                <a class="menu__item" href="./input.html">Input</a>
+            </div>
+            <div class="component">
+                <div class="component__title">Modal</div>
+                <div class="component__preview component__preview_modal">
+                    <div class="modal">
+                        <button class="button button_primary" id="modal-open">Open modal</button>
+                        <div class="modal__backdrop component__preview_modal-backdrop" id="backdrop"></div>
+                        <div class="modal__window component__preview_modal-window" id="modal">
+                            <div class="modal__title">Modal title</div>
+                            <div class="modal__close" id="modal-close">
+                                <svg width="24" height="24">
+                                    <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="modal__text">
+                                    Perspiciatis cum itaque aut. Quia, officiis expedita ex corporis sequi
+                                    officia ab eligendi dolorum id illo voluptates corrupti magni autem
+                                    facere tenetur?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            <pre>
+                                <code data-language="html">
+&lt;div class=&quot;modal&quot;&gt;
+    &lt;button class=&quot;button button_primary&quot; id=&quot;modal-open&quot;&gt;Open modal&lt;/button&gt;
+    &lt;div class=&quot;modal__backdrop component__preview_modal-backdrop&quot; id=&quot;backdrop&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;modal__window component__preview_modal-window&quot; id=&quot;modal&quot;&gt;
+        &lt;div class=&quot;modal__title&quot;&gt;Modal title&lt;/div&gt;
+        &lt;div class=&quot;modal__close&quot; id=&quot;modal-close&quot;&gt;
+            &lt;svg width=&quot;24&quot; height=&quot;24&quot;&gt;
+                &lt;use xlink:href=&quot;../../assets/images/sprite.svg#close&quot;&gt;&lt;/use&gt;
+            &lt;/svg&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;p class=&quot;modal__text&quot;&gt;
+                Perspiciatis cum itaque aut. Quia, officiis expedita ex corporis sequi
+                officia ab eligendi dolorum id illo voluptates corrupti magni autem
+                facere tenetur?
+            &lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            <pre>
+                                <code data-language="css">
+.modal__backdrop,
+.modal__window {
+    display: none;
+    position: fixed;
+}
+
+.modal__window {
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    transform: translate(-50%, -50%);
+    background: var(--main-background);
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.modal__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.modal__backdrop {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #0000007f;
+}
+
+.modal__close {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    top: 15px;
+    right: 15px;
+    transform: translate(50%, -50%);
+}
+
+.modal__close:hover {
+    background: var(--close-hvr);
+    cursor: pointer;
+}
+
+.modal__text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--grey-4);
+}
+
+.modal__backdrop_preview {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.modal__window_preview {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            <pre>
+                                <code data-language="js">
+(function() {
+    const close = document.getElementById(&apos;modal-close&apos;);
+    const modal = document.getElementById(&apos;modal&apos;);
+    const modalOpen = document.getElementById(&apos;modal-open&apos;);
+    const backdrop = document.getElementById(&apos;backdrop&apos;);
+
+    if (!close || !modalOpen || !modal || !backdrop) {
+        return;
+    }
+
+    modalOpen.addEventListener(&apos;click&apos;, () =&gt; {
+        backdrop.style.display = &apos;block&apos;;
+        modal.style.display = &apos;flex&apos;;
+        document.body.style.overflow = &apos;hidden&apos;;
+    });
+
+    close.addEventListener(&apos;click&apos;, () =&gt; {
+        backdrop.style.display = &apos;none&apos;;
+        modal.style.display = &apos;none&apos;;
+        document.body.style.overflow = &apos;initial&apos;;
+    });
+})();
+                                </code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__footer">
+            Reusable component library
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
+<script src="../../assets/js/modal.js"></script>
+</html>

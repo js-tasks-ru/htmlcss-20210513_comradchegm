@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- Страница input -->
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input fields</title>
+    <link rel="stylesheet" href="../index.css">
+    <script defer src="../../assets/js/burger-menu.js"></script>
+</head>
+<body>
+    <div class="template-page">
+        <div class="template-page__header">
+            <div class="page__box">
+                <div class="burger">
+                    <div class="burger__menu" id="burger-menu">
+                        <div class="burger__logo">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </div>
+                        <div class="theme-toggler theme-toggler_burger">
+                            <span class="burger__theme-title">Dark mode</span>
+                            <label class="toggler theme-toggler__toggler">
+                                <input type="checkbox" class="toggler__native" id="on" name="on">
+                                <div class="toggler__box">
+                                    <div class="toggler__img"></div>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="burger__title">
+                            Components
+                        </div>
+                        <div class="burger__list">
+                            <a class="burger__item" href="./button.html">Button</a>
+                            <a class="burger__item" href="./accordion.html">Accordion</a>
+                            <a class="burger__item" href="./histogram.html">Histogram</a>
+                            <a class="burger__item" href="./skeleton.html">Skeleton</a>
+                            <a class="burger__item" href="./tooltip.html">Tooltip</a>
+                            <a class="burger__item" href="./modal.html">Modal</a>
+                            <a class="burger__item" href="./calendar.html">Calendar</a>
+                            <a class="burger__item" href="./avatar.html">Avatar</a>
+                            <a class="burger__item" href="./checkbox.html">Checkbox</a>
+                            <a class="burger__item" href="./radio.html">Radio</a>
+                            <a class="burger__item" href="./toggler.html">Toggler</a>
+                            <a class="burger__item" href="./input.html">Input</a>
+                        </div>
+                        <a class="burger__main-link" href="../../index.html">Main page</a>
+                    </div>
+                    <div class="burger__open" id="burger-menu-open">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#burger-symbol"></use>
+                        </svg>
+                    </div>
+                    <div class="burger__close" id="burger-menu-close">
+                        <svg width="24" height="24">
+                            <use xlink:href="../../assets/images/sprite.svg#close"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="header__nav-wrapper">
+                    <div class="header__nav-box">
+                        <a class="header__logo" href="../../index.html">
+                            <svg width="110" height="32">
+                                <use xlink:href="../../assets/images/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <nav class="header__nav">
+                            <div class="header__nav-item"><a href="#1" class="header__nav-link">Components</a></div>
+                            <div class="header__nav-item"><a href="#about" class="header__nav-link">About</a></div>
+                            <div class="header__nav-item"><a href="#3" class="header__nav-link">Contact</a></div>
+                        </nav>
+                    </div>
+                    <div class="theme-toggler">
+                        <label class="toggler theme-toggler__toggler">
+                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <svg class="theme-toggler__sun" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#sun"></use>
+                            </svg>
+                            <div class="toggler__box theme-toggler__toggler">
+                                <div class="toggler__img"></div>
+                            </div>
+                            <svg class="theme-toggler__moon" width="24" height="24">
+                                <use xlink:href="../../assets/images/sprite.svg#moon"></use>
+                            </svg>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__main page__box">
+            <div class="menu">
+                <div class="menu__title">
+                    Components
+                </div>
+                <a class="menu__item" href="./button.html">Button</a>
+                <a class="menu__item" href="./accordion.html">Accordion</a>
+                <a class="menu__item" href="./histogram.html">Histogram</a>
+                <a class="menu__item" href="./skeleton.html">Skeleton</a>
+                <a class="menu__item" href="./tooltip.html">Tooltip</a>
+                <a class="menu__item" href="./modal.html">Modal</a>
+                <a class="menu__item" href="./calendar.html">Calendar</a>
+                <a class="menu__item" href="./avatar.html">Avatar</a>
+                <a class="menu__item" href="./checkbox.html">Checkbox</a>
+                <a class="menu__item" href="./radio.html">Radio</a>
+                <a class="menu__item" href="./toggler.html">Toggler</a>
+                <a class="menu__item" href="./input.html">Input</a>
+            </div>
+            <div class="component">
+                <div class="component__title">Custom input fields</div>
+                <div class="component__preview">
+                    <div class="component__preview_input">
+                        <label class="input input_preview">
+                            <div class="input__label">DEFAULT</div>
+                            <input type="text" class="input__field" id="default" name="default"
+                                placeholder="Placeholder">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="input input_preview">
+                            <div class="input__label">SUCCESS</div>
+                            <input type="text" class="input__field input__field_success" id="success"
+                                name="success" value="Success">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="input input_preview">
+                            <div class="input__label">ERROR</div>
+                            <input type="text" class="input__field input__field_invalid" id="invald"
+                                name="invald" value="Error">
+                            <div class="input__img">
+                                <svg width="24" height="24" class="input__svg_success">
+                                    <use xlink:href="../../assets/images/sprite.svg#success"></use>
+                                </svg>
+                                <svg width="24" height="24" class="input__svg_invalid">
+                                    <use xlink:href="../../assets/images/sprite.svg#error"></use>
+                                </svg>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+                <div class="component__code">
+                    <div class="tabs-code">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="html-tab" checked>
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="css-tab">
+                        <input type="radio" name="tabs-code" class="tabs-code__switcher" id="java-script-tab">
+                        <div class="tabs-code__scroller">
+                            <label class="tabs-code__item" for="html-tab" id="html-lbl">
+                                <span class="tabs-code__title">HTML</span>
+                            </label>
+                            <label class="tabs-code__item" for="css-tab" id="css-lbl">
+                                <span class="tabs-code__title">CSS</span>
+                            </label>
+                            <label class="tabs-code__item" for="java-script-tab" id="java-script-lbl">
+                                <span class="tabs-code__title">Java Script</span>
+                            </label>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_html">
+                            <!-- HTML -->
+                            <pre>
+                                <code data-language="html">
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;DEFAULT&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field&quot; id=&quot;default&quot; name=&quot;default&quot; placeholder=&quot;Placeholder&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;SUCCESS&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field input__field_success&quot; id=&quot;success&quot; name=&quot;success&quot; value=&quot;Success&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;label class=&quot;input input_preview&quot;&gt;
+            &lt;div class=&quot;input__label&quot;&gt;ERROR&lt;/div&gt;
+            &lt;input type=&quot;text&quot; class=&quot;input__field input__field_invalid&quot; id=&quot;invald&quot; name=&quot;invald&quot; value=&quot;Error&quot;&gt;
+            &lt;div class=&quot;input__img&quot;&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_success&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#success&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+                &lt;svg width=&quot;24&quot; height=&quot;24&quot; class=&quot;input__svg_invalid&quot;&gt;
+                    &lt;use xlink:href=&quot;../../assets/images/sprite.svg#error&quot;&gt;&lt;/use&gt;
+                &lt;/svg&gt;
+            &lt;/div&gt;
+        &lt;/label&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_css">
+                            <!-- CSS -->
+                            <pre>
+                                <code data-language="css">
+.input {
+    position: relative;
+}
+
+.input,
+.input__field,
+.input__img {
+    display: inline-block;
+}
+
+.input__field,
+.input__label {
+    font-style: normal;
+    text-align: left;
+}
+
+.input__field,
+.input__field_focus {
+    outline: none;
+    appearance: none;
+}
+
+.input__field {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.input__label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+
+.input__img {
+    position: absolute;
+    transform: translate(-42px, 16px);
+}
+
+.input__field:focus,
+.input__field_focus {
+    border: 1px solid var(--blue);
+}
+
+.input__field_focus {
+    border-radius: 8px;
+}
+
+.input__field_success,
+.input__field_invalid {
+    padding-right: 56px;
+}
+
+.input__field_invalid,
+.input__field_invalid:focus {
+    border-color: var(--invalid);
+}
+
+.input__svg_success,
+.input__svg_invalid {
+    display: none;
+}
+
+.input__field_success~.input__img .input__svg_success, .input__field_invalid~.input__img .input__svg_invalid {
+    display: block;
+    color: var(--success);
+}
+
+.input__field_invalid~.input__img .input__svg_invalid {
+    color: var(--invalid);
+}
+
+.input__field:disabled {
+    background: var(--disabled);
+}
+
+.input_preview,
+.input__field_preview {
+    width: 100%;
+}
+
+.input_preview {
+    margin-bottom: 16px;
+}
+                                </code>
+                            </pre>
+                        </div>
+                        <div class="tabs-code__content tabs-code__content_java-script">
+                            <!-- Java Script -->
+                            <pre>
+                                <code data-language="java-script"></code>
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="template-page__footer">
+            Reusable component library
+        </div>
+    </div>
+</body>
+<script src="../../assets/js/rainbow-custom.min.js"></script>
+</html>
