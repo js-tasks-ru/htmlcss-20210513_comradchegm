@@ -1719,6 +1719,9 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   padding-left: 30%;
   align-items: flex-start;
 }
+.component__preview_input {
+  padding: 0 10%;
+}
 @media screen and (min-width: 1280px) {
   .component__title {
     font-size: 28px;

@@ -228,36 +228,39 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
-.accordion {
-    &amp;__item {
-        box-sizing: border-box;
-        width: 100%;
-        min-height: 72px;
-        border: 1px solid var(--main-color);
-        border-radius: 8px;
-        padding: 24px 32px;
-        margin-bottom: 8px;
-        font: 400 1em &apos;Inter&apos;, sans-serif;
-        line-height: 24px;
-        min-height: max-content;
-    }
-    &amp;__item:last-child {
-        margin-bottom: 0;
-    }
-    &amp;__summary {
+                                <code data-language="css">
+.accordion__item {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 72px;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin-bottom: 8px;
+    font: 400 1em 'Inter', sans-serif;
+    line-height: 24px;
+    min-height: max-content;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
     display: flex;
-        justify-content: space-between;
-    }
-    &amp;__summary::-webkit-details-marker {
-        display: none;
-    }
-    &amp;__content {
-        margin-top: 16px;
-    }
-    &amp;__item[open] &amp;__arrow {
-        transform: rotate(180deg);
-    }
+    justify-content: space-between;
+}
+
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__content {
+    margin-top: 16px;
+}
+
+.accordion__item[open] .accordion__arrow {
+    transform: rotate(180deg);
 }
                                 </code>
                             </pre>

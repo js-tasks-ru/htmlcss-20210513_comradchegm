@@ -65,6 +65,9 @@
         padding-left: 30%;
         align-items: flex-start;
     }
+    &__preview_input {
+        padding: 0 10%;
+    }
     @include variables.media-pc {
         &__title {
             font-size: 28px;

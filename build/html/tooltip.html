@@ -157,52 +157,58 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
+                                <code data-language="css">
 .tooltip {
     position: relative;
+}
 
-    &amp;__help,
-    &amp;__help::after {
-        position: absolute;
-    }
-    &amp;__help {
-        display: none;
-        box-sizing: border-box;
-        padding: 10px 21px;
-        bottom: 100%;
-        left: 50%;
-        transform: translate(-50%, -9px);
-        background: var(--blue);
-        border-radius: 10px;
-        box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
-    }
-    &amp;__text {
-        display: inline-block;
-        width: 87px;
-        color: var(--grey-2);
-        font-size: 16px;
-        line-height: 24px;
-        text-align: center;
-    }
-    &amp;__help::after {
-        content: &apos;&apos;;
-        border: 7px solid transparent;
-        border-top: 6px solid var(--blue);
-        left: 50%;
-        bottom: 0;
-        transform: translate(-50%, 100%);
-    }
-    &amp;__label {
-        display: block;
-        width: 24px;
-        height: 24px;
-    }
-    &amp;__label:hover ~ &amp;__help {
-        display: block;
-    }
-    &amp;__help_preview {
-        display: block;
-    }
+.tooltip__help,
+.tooltip__help::after {
+    position: absolute;
+}
+
+.tooltip__help {
+    display: none;
+    box-sizing: border-box;
+    padding: 10px 21px;
+    bottom: 100%;
+    left: 50%;
+    transform: translate(-50%, -9px);
+    background: var(--blue);
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, .05);
+}
+
+.tooltip__text {
+    display: inline-block;
+    width: 87px;
+    color: var(--grey-2);
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.tooltip__help::after {
+    content: '';
+    border: 7px solid transparent;
+    border-top: 6px solid var(--blue);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 100%);
+}
+
+.tooltip__label {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.tooltip__label:hover~.tooltip__help {
+    display: block;
+}
+
+.tooltip__help_preview {
+    display: block;
 }
                                 </code>
                             </pre>

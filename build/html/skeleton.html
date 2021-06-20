@@ -163,48 +163,50 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
+                                <code data-language="css">
+.skeleton,
+.skeleton__header,
+.skeleton__legend,
+.skeleton__content {
+    display: flex;
+}
+
+.skeleton,
+.skeleton__legend,
+.skeleton__content {
+    flex-direction: column;
+}
+
 .skeleton {
-    &amp;,
-    &amp;__header,
-    &amp;__legend,
-    &amp;__content {
-        display: flex;
-    }
-    &amp;,
-    &amp;__legend,
-    &amp;__content {
-        flex-direction: column;
-    }
-    &amp; {
-        box-sizing: border-box;
-        width: 100%;
-        min-height: 192px;
-        border: 1px solid var(--grey-3);
-        border-radius: 8px;
-        padding: 24px 40px 24px 24px;
-    }
-    &amp;__header {
-        flex-direction: row;
-        margin-bottom: 16px;
-    }
-    &amp;__legend {
-        flex-grow: 1;
-    }
-    &amp;__avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background-color: var(--grey-2);
-        margin-right: 16px;
-    }
-    &amp;__item {
-        height: 20px;
-        background: linear-gradient(
-            92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
-        );
-        margin-top: 8px;
-    }
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 192px;
+    border: 1px solid var(--grey-3);
+    border-radius: 8px;
+    padding: 24px 40px 24px 24px;
+}
+
+.skeleton__header {
+    flex-direction: row;
+    margin-bottom: 16px;
+}
+
+.skeleton__legend {
+    flex-grow: 1;
+}
+
+.skeleton__avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--grey-2);
+    margin-right: 16px;
+}
+
+.skeleton__item {
+    height: 20px;
+    background: linear-gradient( 92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
+    margin-top: 8px;
 }
                                 </code>
                             </pre>

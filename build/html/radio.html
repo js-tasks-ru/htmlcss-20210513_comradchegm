@@ -190,75 +190,87 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
+                                <code data-language="css">
 .radio {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
+}
 
-    &amp;__native {
-        position: absolute;
-        width: 0;
-        height: 0;
-        pointer-events: none;
-        outline: none;
-        opacity: 0;
-    }
-    &amp;__text {
-        color: var(--grey-4);
-        font-family: Inter;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0em;
-        text-align: left;
-        padding-left: 12px;
-    }
-    &amp;__box {
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        box-sizing: border-box;
-        border: 1px solid var(--grey-2);
-        border-radius: 50%;
-        width: 28px;
-        height: 28px;
-    }
-    &amp;__img {
-        display: none;
-        width: 18px;
-        height: 18px;
-        border-radius: 50%;
-        background: var(--blue);
-    }
-    &amp;__box, &amp;__text {
-        cursor: pointer;
-    }
-    &amp;__native:checked ~ &amp;__box {
-        border: 2px solid var(--blue);
-    }
-    &amp;__native:checked ~ &amp;__box &amp;__img {
-        display: block;
-    }
-    &amp;__native:disabled ~ &amp;__box {
-        background: var(--grey-2);
-        border: 2px solid var(--grey-3);
-        pointer-events: none;
-    }
-    &amp;__native:disabled ~ &amp;__box &amp;__img {
-        background: var(--grey-3);
-    }
-    &amp;__native:disabled ~ &amp;__text {
-        opacity: 0.5;
-        pointer-events: none;
-    }
-    &amp;__native:focus ~ &amp;__text {
-        text-decoration: underline;
-    }
-    &amp;_preview {
-        margin-bottom: 16px;
-    }
+.radio__native {
+    position: absolute;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    outline: none;
+    opacity: 0;
+}
+
+.radio__text {
+    color: var(--grey-4);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.radio__box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+}
+
+.radio__img {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--blue);
+}
+
+.radio__box,
+.radio__text {
+    cursor: pointer;
+}
+
+.radio__native:checked ~ .radio__box {
+    border: 2px solid var(--blue);
+}
+
+.radio__native:checked ~ .radio__box .radio__img {
+    display: block;
+}
+
+.radio__native:disabled ~ .radio__box {
+    background: var(--grey-2);
+    border: 2px solid var(--grey-3);
+    pointer-events: none;
+}
+
+.radio__native:disabled ~ .radio__box .radio__img {
+    background: var(--grey-3);
+}
+
+.radio__native:disabled ~ .radio__text {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.radio__native:focus ~ .radio__text {
+    text-decoration: underline;
+}
+
+.radio_preview {
+    margin-bottom: 16px;
 }
                                 </code>
                             </pre>

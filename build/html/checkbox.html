@@ -195,66 +195,77 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
-.checkbox {
-    &amp;, &amp;__box {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    &amp;__native {
-        position: absolute;
-        width: 0;
-        height: 0;
-        opacity: 0;
-        pointer-events: none;
-    }
-    &amp;__text {
-        color: var(--grey-4);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 24px;
-        letter-spacing: 0;
-        text-align: left;
-        padding-left: 12px;
-    }
-    &amp;__box {
-        box-sizing: border-box;
-        border: 1px solid var(--grey-2);
-        border-radius: 4px;
-        width: 28px;
-        height: 28px;
-    }
-    &amp;__img {
-        visibility: hidden;
-        color: var(--main-background);
-        stroke-width: 3px;
-    }
-    &amp;__box, &amp;__text {
-        cursor: pointer;
-    }
-    &amp;__native:checked ~ &amp;__box {
-        background: var(--blue);
-    }
-    &amp;__native:checked ~ &amp;__box &amp;__img {
-        visibility: visible;
-    }
-    &amp;__native:disabled ~ &amp;__box,
-    &amp;__native:disabled ~ &amp;__text{
-        opacity: 0.5;
-        pointer-events: none;
-    }
-    &amp;__native:disabled ~ &amp;__box {
-        background: var(--grey-2);
-    }
-    &amp;__native:focus ~ &amp;__text {
-        text-decoration: underline;
-    }
-    &amp;_preview {
-        margin-bottom: 16px;
-    }
+                                <code data-language="css">
+.checkbox,
+.checkbox__box {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox__native {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.checkbox__text {
+    color: var(--grey-4);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0;
+    text-align: left;
+    padding-left: 12px;
+}
+
+.checkbox__box {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 4px;
+    width: 28px;
+    height: 28px;
+}
+
+.checkbox__img {
+    visibility: hidden;
+    color: var(--main-background);
+    stroke-width: 3px;
+}
+
+.checkbox__box,
+.checkbox__text {
+    cursor: pointer;
+}
+
+.checkbox__native:checked~.checkbox__box {
+    background: var(--blue);
+}
+
+.checkbox__native:checked~.checkbox__box .checkbox__img {
+    visibility: visible;
+}
+
+.checkbox__native:disabled~.checkbox__box,
+.checkbox__native:disabled~.checkbox__text {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.checkbox__native:disabled~.checkbox__box {
+    background: var(--grey-2);
+}
+
+.checkbox__native:focus~.checkbox__text {
+    text-decoration: underline;
+}
+
+.checkbox_preview {
+    margin-bottom: 16px;
 }
                                 </code>
                             </pre>

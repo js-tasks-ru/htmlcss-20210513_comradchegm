@@ -143,35 +143,37 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
-$avatar-sm: 64px;
-$avatar-nr: 102px;
-$avatar-lg: 160px;
-$avatar-pr: 200px;
-
+                                <code data-language="css">
 .avatar {
-    width: $avatar-nr;
-    height: $avatar-nr;
+    --avatar-sm: 64px;
+    --avatar-nr: 102px;
+    --avatar-lg: 160px;
+    --avatar-pr: 200px;
+    width: var(--avatar-nr);
+    height: var(--avatar-nr);
     box-sizing: border-box;
+}
 
-    &amp;__img {
-        width: 100%;
-        height: 100%;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-    &amp;_sm {
-        width: $avatar-sm;
-        height: $avatar-sm;
-    }
-    &amp;_lg {
-        width: $avatar-lg;
-        height: $avatar-lg;
-    }
-    &amp;_pr {
-        width: $avatar-pr;
-        height: $avatar-pr;
-    }
+.avatar__img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar_sm {
+    width: var(--avatar-sm);
+    height: var(--avatar-sm);
+}
+
+.avatar_lg {
+    width: var(--avatar-lg);
+    height: var(--avatar-lg);
+}
+
+.avatar_pr {
+    width: var(--avatar-pr);
+    height: var(--avatar-pr);
 }
                                 </code>
                             </pre>

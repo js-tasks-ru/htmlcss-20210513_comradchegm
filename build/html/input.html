@@ -222,72 +222,96 @@
                         <div class="tabs-code__content tabs-code__content_css">
                             <!-- CSS -->
                             <pre>
-                                <code data-language="scss">
+                                <code data-language="css">
 .input {
     position: relative;
+}
 
-    &amp;, &amp;__field, &amp;__img {
-        display: inline-block;
-    }
-    &amp;__field, &amp;__label {
-        font-style: normal;
-        text-align: left;
-    }
-    &amp;__field, &amp;__field_focus {
-        outline: none;
-        appearance: none;
-    }
-    &amp;__field {
-        box-sizing: border-box;
-        border: 1px solid var(--grey-2);
-        border-radius: 8px;
-        padding: 0 24px;
-        height: 56px;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 26px;
-    }
-    &amp;__label {
-        font-size: 12px;
-        font-weight: 500;
-        line-height: 18px;
-        letter-spacing: 0.04em;
-    }
-    &amp;__img {
-        position: absolute;
-        transform: translate(-42px, 16px);
-    }
-    &amp;__field:focus, &amp;__field_focus {
-        border: 1px solid var(--blue);
-    }
-    &amp;__field_focus {
-        border-radius: 8px;
-    }
-    &amp;__field_success, &amp;__field_invalid {
-        padding-right: 56px;
-    }
-    &amp;__field_invalid, &amp;__field_invalid:focus {
-        border-color: var(--invalid);
-    }
-    &amp;__svg_success, &amp;__svg_invalid {
-        display: none;
-    }
-    &amp;__field_success ~ &amp;__img &amp;__svg_success, &amp;__field_invalid ~ &amp;__img &amp;__svg_invalid {
-        display: block;
-        color: var(--success);
-    }
-    &amp;__field_invalid ~ &amp;__img &amp;__svg_invalid {
-        color: var(--invalid);
-    }
-    &amp;__field:disabled {
-        background: var(--disabled);
-    }
-    &amp;_preview, &amp;__field_preview {
-        width: 100%;
-    }
-    &amp;_preview {
-        margin-bottom: 16px;
-    }
+.input,
+.input__field,
+.input__img {
+    display: inline-block;
+}
+
+.input__field,
+.input__label {
+    font-style: normal;
+    text-align: left;
+}
+
+.input__field,
+.input__field_focus {
+    outline: none;
+    appearance: none;
+}
+
+.input__field {
+    box-sizing: border-box;
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    padding: 0 24px;
+    height: 56px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.input__label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+}
+
+.input__img {
+    position: absolute;
+    transform: translate(-42px, 16px);
+}
+
+.input__field:focus,
+.input__field_focus {
+    border: 1px solid var(--blue);
+}
+
+.input__field_focus {
+    border-radius: 8px;
+}
+
+.input__field_success,
+.input__field_invalid {
+    padding-right: 56px;
+}
+
+.input__field_invalid,
+.input__field_invalid:focus {
+    border-color: var(--invalid);
+}
+
+.input__svg_success,
+.input__svg_invalid {
+    display: none;
+}
+
+.input__field_success~.input__img .input__svg_success, .input__field_invalid~.input__img .input__svg_invalid {
+    display: block;
+    color: var(--success);
+}
+
+.input__field_invalid~.input__img .input__svg_invalid {
+    color: var(--invalid);
+}
+
+.input__field:disabled {
+    background: var(--disabled);
+}
+
+.input_preview,
+.input__field_preview {
+    width: 100%;
+}
+
+.input_preview {
+    margin-bottom: 16px;
 }
                                 </code>
                             </pre>
