@@ -62,7 +62,7 @@ $page-width: 1110px;
 
 @keyframes checkbox-shadow {
     0% {box-shadow: 0 0 0 0 var(--grey-2);}
-    50% {box-shadow: 0 0 16px 32px transparent;}
+    99% {box-shadow: 0 0 16px 32px transparent;}
     100%{box-shadow: none;background: var(--blue);}
 }
 
