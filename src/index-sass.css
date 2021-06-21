@@ -380,6 +380,24 @@ body {
   --disabled: #0000003f;
 }
 
+@keyframes checkbox-shadow {
+  0% {
+    box-shadow: 0 0 0 0 var(--grey-2);
+  }
+  25% {
+    box-shadow: 0 0 16px 32px var(--grey-2);
+  }
+  50% {
+    box-shadow: 0 0 8px 16px var(--grey-1);
+  }
+  90% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  100% {
+    box-shadow: none;
+    background: var(--blue);
+  }
+}
 .page {
   font: 400 16px "Inter", sans-serif;
   line-height: 24px;
@@ -990,7 +1008,7 @@ body {
   cursor: pointer;
 }
 .checkbox__native:checked ~ .checkbox__box {
-  background: var(--blue);
+  animation: checkbox-shadow 750ms forwards;
 }
 .checkbox__native:checked ~ .checkbox__box .checkbox__img {
   visibility: visible;

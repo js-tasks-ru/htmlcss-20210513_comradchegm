@@ -40,7 +40,7 @@
         cursor: pointer;
     }
     &__native:checked ~ &__box {
-        background: var(--blue);
+        animation: checkbox-shadow 750ms forwards;
     }
     &__native:checked ~ &__box &__img {
         visibility: visible;
