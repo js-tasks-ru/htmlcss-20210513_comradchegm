@@ -208,6 +208,23 @@
     background: linear-gradient( 92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     margin-top: 8px;
 }
+
+.skeleton__avatar, .skeleton__item {
+    animation-name: background-move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(
+        92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+    );
+    background-size: 200%;
+}
+
+@keyframes background-move {
+0% {background-position: 100%;}
+100% {background-position: -100%;}
+}
                                 </code>
                             </pre>
                         </div>
