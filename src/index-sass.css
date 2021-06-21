@@ -547,7 +547,7 @@ body {
 .tabs__scroller {
   display: flex;
   flex-wrap: nowrap;
-  transform: translate(0, -37px);
+  transform: translate(0, -32px);
 }
 .tabs__title {
   color: var(--grey-3);
@@ -1817,7 +1817,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
 .tabs-code__scroller {
   display: flex;
   flex-wrap: nowrap;
-  transform: translate(0, -37px);
+  transform: translate(0, -32px);
   padding: 0 16px;
 }
 .tabs-code__title {
