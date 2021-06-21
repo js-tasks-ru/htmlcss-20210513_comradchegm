@@ -12,7 +12,7 @@
         letter-spacing: 0;
         text-align: left;
         margin-bottom: 16px;
-        color: var(--black);
+        color: var(--main-color);
     }
     &__item {
         display: block;
@@ -23,7 +23,7 @@
         letter-spacing: 0;
         text-align: left;
         margin-bottom: 4px;
-        color: var(--black);
+        color: var(--main-color);
         text-decoration: none;
     }
     &__item:last-child {
