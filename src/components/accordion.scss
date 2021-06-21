@@ -1,6 +1,7 @@
 @use '../variables.scss' as variables;
 
 .accordion {
+    color: var(--second-color);
     &__item {
         box-sizing: border-box;
         width: 100%;

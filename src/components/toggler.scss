@@ -17,7 +17,7 @@
         opacity: 0;
     }
     &__text {
-        color: var(--grey-4);
+        color: var(--second-color);
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -30,17 +30,17 @@
         display: inline-block;
         box-sizing: border-box;
         border: 1px solid var(--grey-2);
-        border-radius: 14px;
-        width: 52px;
-        height: 28px;
+        border-radius: 15px;
+        width: 54px;
+        height: 30px;
         transition:
             background-color 400ms ease-in-out,
             border-color 400ms ease-in-out;
     }
     &__img {
         position: relative;
-        top: 1px;
-        left: 1px;
+        top: 2px;
+        left: 2px;
         width: 24px;
         height: 24px;
         border-radius: 50%;
@@ -57,7 +57,7 @@
             border-color 400ms ease-in-out;
     }
     &__native:checked ~ &__box &__img {
-        background-color: var(--main-background);
+        background-color: var(--white);
         transform: translate(24px, 0);
         transition:
             transform 400ms ease-in-out,

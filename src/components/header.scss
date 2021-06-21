@@ -2,6 +2,7 @@
 
 .header {
     padding: 16px 16px 69px 16px;
+    background: var(--main-background);
 
     &__logo {
         color: var(--main-color);
@@ -26,6 +27,7 @@
         line-height: 38px;
         letter-spacing: 0;
         text-align: left;
+        color: var(--second-color);
     }
     &__nav-item {
         margin-right: 24px;
