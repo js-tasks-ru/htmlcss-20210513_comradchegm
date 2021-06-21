@@ -518,7 +518,7 @@
 
 .histogram__graph {
     align-items: flex-end;
-    flex-grow: 1;
+    animation: hist-height 500ms ease-in-out forwards;
 }
 
 .histogram__col {
@@ -549,6 +549,12 @@
 .histogram_preview {
     height: 300px;
 }
+
+@keyframes hist-height {
+0% {height: 0%;}
+100% {height: 100%;}
+}
+
                                 </code>
                             </pre>
                         </div>

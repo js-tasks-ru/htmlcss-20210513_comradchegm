@@ -49,7 +49,7 @@
     }
     &__graph {
         align-items: flex-end;
-        height: 100%;
+        animation: hist-height 500ms ease-in-out forwards;
     }
     &__col {
         background-color: var(--blue);
