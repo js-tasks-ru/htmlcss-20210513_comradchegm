@@ -1722,7 +1722,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   letter-spacing: 0;
   text-align: left;
   margin-bottom: 16px;
-  color: var(--black);
+  color: var(--main-color);
 }
 .menu__item {
   display: block;
@@ -1733,7 +1733,7 @@ pre .entity.function, pre .support.magic, pre.support.method, code .entity.funct
   letter-spacing: 0;
   text-align: left;
   margin-bottom: 4px;
-  color: var(--black);
+  color: var(--main-color);
   text-decoration: none;
 }
 .menu__item:last-child {
