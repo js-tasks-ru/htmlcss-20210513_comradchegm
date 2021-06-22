@@ -1,6 +1,8 @@
-const changer = document.getElementById('theme-changer');
+const changer = document.querySelectorAll('.theme-toggler .toggler__native');
 const html = document.documentElement;
 
-changer.addEventListener('change', function () {
-    html.toggleAttribute('data-theme-dark');
-});
+for (let i = 0; i < changer.length; i++) {
+    changer[i].addEventListener('change', function (event) {
+        html.toggleAttribute('data-theme-dark');
+    });
+}
