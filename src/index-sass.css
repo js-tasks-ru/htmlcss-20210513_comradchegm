@@ -1351,7 +1351,7 @@ html[data-theme-dark] {
   line-height: 24px;
   letter-spacing: 0;
   text-align: left;
-  color: var(--grey-4);
+  color: var(--second-color);
 }
 @media screen and (min-width: 1280px) {
   .burger {
