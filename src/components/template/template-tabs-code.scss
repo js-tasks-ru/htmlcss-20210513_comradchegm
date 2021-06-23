@@ -3,9 +3,27 @@
 .tabs-code {
     &__switcher,
     &__item {
+        position: relative;
         margin-right: 40px;
         padding-bottom: 8px;
-        border-bottom: 5px solid transparent;
+    }
+    &__item:after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 0;
+        border-top: 5px solid var(--main-color);
+    }
+    &__item:hover &__title {
+        color: var(--main-color);
+        transition: color 200ms ease-in-out;
+    }
+    &__item:hover:after {
+        width: 100%;
+        transition: width 200ms ease-in-out;
     }
     &__item:last-child {
         margin-right: 0;
@@ -13,7 +31,7 @@
     &__scroller {
         display: flex;
         flex-wrap: nowrap;
-        transform: translate(0, -37px);
+        transform: translate(0, -32px);
         padding: 0 16px;
     }
     &__title {
@@ -34,10 +52,10 @@
     &__content {
         width: 100%;
     }
-    #html-tab:checked ~ &__scroller #html-lbl,
-    #css-tab:checked ~ &__scroller #css-lbl,
-    #java-script-tab:checked ~ &__scroller #java-script-lbl {
-        border-bottom: 5px solid var(--main-color);
+    #html-tab:checked ~ &__scroller #html-lbl:after,
+    #css-tab:checked ~ &__scroller #css-lbl:after,
+    #java-script-tab:checked ~ &__scroller #java-script-lbl:after {
+        width: 100%;
     }
     #html-tab:checked ~ &__scroller #html-lbl &__title,
     #css-tab:checked ~ &__scroller #css-lbl &__title,

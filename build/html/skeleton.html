@@ -8,6 +8,7 @@
     <title>Skeleton</title>
     <link rel="stylesheet" href="../index.css">
     <script defer src="../../assets/js/burger-menu.js"></script>
+    <script defer src="../../assets/js/theme-changer.js"></script>
 </head>
 <body>
     <div class="template-page">
@@ -74,7 +75,7 @@
                     </div>
                     <div class="theme-toggler">
                         <label class="toggler theme-toggler__toggler">
-                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <input type="checkbox" class="toggler__native" id="theme-changer" name="on">
                             <svg class="theme-toggler__sun" width="24" height="24">
                                 <use xlink:href="../../assets/images/sprite.svg#sun"></use>
                             </svg>
@@ -207,6 +208,23 @@
     height: 20px;
     background: linear-gradient( 92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
     margin-top: 8px;
+}
+
+.skeleton__avatar, .skeleton__item {
+    animation-name: background-move;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background: linear-gradient(
+        92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%
+    );
+    background-size: 200%;
+}
+
+@keyframes background-move {
+0% {background-position: 100%;}
+100% {background-position: -100%;}
 }
                                 </code>
                             </pre>

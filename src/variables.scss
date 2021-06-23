@@ -35,6 +35,7 @@ $page-width: 1110px;
 
     --main-background: var(--white);
     --main-color: var(--black);
+    --second-color: var(--black);
     --main-page-bgr: #F9FAFC;
 
     --button-clr: var(--white);
@@ -58,4 +59,49 @@ $page-width: 1110px;
     --invalid: #F03D3E;
     --success: var(--blue);
     --disabled: #0000003f;
+}
+
+html[data-theme-dark] {
+    --main-background: var(--black);
+    --main-color: var(--white);
+    --second-color: var(--grey-3);
+    --main-page-bgr: var(--grey-4);
+
+    --button-clr: var(--white);
+    --primary: var(--blue);
+    --primary-hvr: #5d7aee;
+    --primary-act: #264de8;
+
+    --secondary: var(--purple);
+    --secondary-hvr: #8665ec;
+    --secondary-act: #5c2ee5;
+
+    --alternate: var(--white);
+    --alternate-clr: var(--grey-4);
+    --alternate-brd: var(--grey-3);
+    --alternate-brd-hvr: #c1c7cd;
+    --alternate-brd-act: #99a4ad;
+
+    --open-hvr: var(--grey-2);
+    --close-hvr: var(--red);
+
+    --invalid: #F03D3E;
+    --success: var(--blue);
+    --disabled: #0000003f;
+}
+
+@keyframes checkbox-shadow {
+    0% {box-shadow: 0 0 0 0 var(--grey-2);}
+    99% {box-shadow: 0 0 16px 32px transparent;}
+    100%{box-shadow: none;background: var(--blue);}
+}
+
+@keyframes hist-height {
+    0% {height: 0%;}
+    100% {height: 100%;}
+}
+
+@keyframes background-move {
+    0% {background-position: 100%;}
+    100% {background-position: -100%;}
 }

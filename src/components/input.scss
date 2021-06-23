@@ -18,7 +18,7 @@
         box-sizing: border-box;
         border: 1px solid var(--grey-2);
         border-radius: 8px;
-        padding: 0 24px;
+        padding: 0 56px 0 24px;
         height: 56px;
         font-size: 20px;
         font-weight: 400;
@@ -39,9 +39,6 @@
     }
     &__field_focus {
         border-radius: 8px;
-    }
-    &__field_success, &__field_invalid {
-        padding-right: 56px;
     }
     &__field_invalid, &__field_invalid:focus {
         border-color: var(--invalid);

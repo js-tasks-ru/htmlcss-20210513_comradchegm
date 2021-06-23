@@ -8,6 +8,7 @@
     <title>Histogram</title>
     <link rel="stylesheet" href="../index.css">
     <script defer src="../../assets/js/burger-menu.js"></script>
+    <script defer src="../../assets/js/theme-changer.js"></script>
 </head>
 <body>
     <div class="template-page">
@@ -74,7 +75,7 @@
                     </div>
                     <div class="theme-toggler">
                         <label class="toggler theme-toggler__toggler">
-                            <input type="checkbox" class="toggler__native" id="on" name="on">
+                            <input type="checkbox" class="toggler__native" id="theme-changer" name="on">
                             <svg class="theme-toggler__sun" width="24" height="24">
                                 <use xlink:href="../../assets/images/sprite.svg#sun"></use>
                             </svg>
@@ -518,7 +519,7 @@
 
 .histogram__graph {
     align-items: flex-end;
-    flex-grow: 1;
+    animation: hist-height 500ms ease-in-out forwards;
 }
 
 .histogram__col {
@@ -549,6 +550,12 @@
 .histogram_preview {
     height: 300px;
 }
+
+@keyframes hist-height {
+0% {height: 0%;}
+100% {height: 100%;}
+}
+
                                 </code>
                             </pre>
                         </div>
